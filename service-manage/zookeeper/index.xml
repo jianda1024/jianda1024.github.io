@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zookeeper on IWiki</title>
+    <link>https://localhost:1313/service-manage/zookeeper/</link>
+    <description>Recent content in Zookeeper on IWiki</description>
+    <generator>Hugo</generator>
+    <language>iwiki</language>
+    <atom:link href="https://localhost:1313/service-manage/zookeeper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>工作原理</title>
+      <link>https://localhost:1313/service-manage/zookeeper/work-principle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/service-manage/zookeeper/work-principle/</guid>
+      <description>&lt;h1 id=&#34;工作原理&#34;&gt;&#xD;&#xA;  工作原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;工作机制&#34;&gt;&#xD;&#xA;  工作机制&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b7%a5%e4%bd%9c%e6%9c%ba%e5%88%b6&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;基于观察者模式设计，接受观察者的注册&lt;/li&gt;&#xA;&lt;li&gt;负责存储和管理大家都关心的数据&lt;/li&gt;&#xA;&lt;li&gt;当这些数据发现变化时，将会通知到已注册的观察者。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;监听原理&#34;&gt;&#xD;&#xA;  监听原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%9b%91%e5%90%ac%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在 main() 主线程中创建 zkClient 客户端。&lt;/li&gt;&#xA;&lt;li&gt;zkClient 会创建两个线程，一个负责网络连接通信（connet），一个负责监听（listener）。&lt;/li&gt;&#xA;&lt;li&gt;zkClient 通过 connet 线程，将监听事件注册到 Zookeeper 的监听列表。&lt;/li&gt;&#xA;&lt;li&gt;当数据或路径发生改变时，Zookeeper 会将消息发送给 listener 线程。&lt;/li&gt;&#xA;&lt;li&gt;listener 线程调用 process() 方法，执行相应的操作。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;img src=&#34;https://localhost:1313/images/2022Q2/img_2022-05-22_133945.png&#34; width=&#34;650&#34;/&gt;</description>
+    </item>
+    <item>
+      <title>选举机制</title>
+      <link>https://localhost:1313/service-manage/zookeeper/elect-leader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/service-manage/zookeeper/elect-leader/</guid>
+      <description>&lt;h1 id=&#34;选举机制&#34;&gt;&#xD;&#xA;  选举机制&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%80%89%e4%b8%be%e6%9c%ba%e5%88%b6&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;选举&#34;&gt;&#xD;&#xA;  选举&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%80%89%e4%b8%be&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在 Zookeeper工作时，有一个节点为 Leader，其他则为 Follower，而 Leader 是通过内部的选举机制临时产生的&lt;/li&gt;&#xA;&lt;li&gt;节点状态：领导者（LEADING）、竞选者（LOOKING）、跟随者（FOLLOWING）、观察者（OBSERVER）&lt;/li&gt;&#xA;&lt;li&gt;触发选举时机：集群首次启动、集群在工作时Leader宕机&lt;/li&gt;&#xA;&lt;li&gt;投票信息：myid（服务器id）、ZXID （事务id）、逻辑时钟、节点状态&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;选举原则&#34;&gt;&#xD;&#xA;  选举原则&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%80%89%e4%b8%be%e5%8e%9f%e5%88%99&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Zookeeper 集群中只有超过半数以上的服务器启动，集群才能正常工作；&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;在集群正常工作之前，myid 小的服务器给 myid 大的服务器投票，直到集群正常工作，选出 Leader；&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;选出Leader之后，之前的服务器状态由 Looking 改变为 Following，以后的服务器都是 Follower。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="参考题 - 1">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://localhost:1313/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="参考题 - 1">
+  <meta property="og:description" content="参考题 - 1">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="program-design">
+<title>参考题 - 1 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://localhost:1313/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.834e616a57785fe25d7b266ca827488b1f6af52f4fcd69416b822ca91af03eab.js" integrity="sha256-g05hald4X&#43;JdeyZsqCdIix9q9S9PzWlBa4IsqRrwPqs=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="clickContent('https:\/\/localhost:1313\/interview\/program-design\/structure-algorithm\/huawei-od\/%E5%8F%82%E8%80%83%E9%A2%981\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li>
+              <a href="https://localhost:1313/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7af54bb6384ef366b268a9438900490" class="toggle"  />
+    <label for="section-d7af54bb6384ef366b268a9438900490" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d368cfb348ae2c31b67bc0cd97524469" class="toggle" checked />
+    <label for="section-d368cfb348ae2c31b67bc0cd97524469" class="flex justify-between">
+      <a role="button" class="">程序设计</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-547eb2a955702a10f6a5115390900419" class="toggle" checked />
+    <label for="section-547eb2a955702a10f6a5115390900419" class="flex justify-between">
+      <a role="button" class="">数据结构与算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7784697cbea516c63f36e08f8ea9b7b" class="toggle"  />
+    <label for="section-d7784697cbea516c63f36e08f8ea9b7b" class="flex justify-between">
+      <a role="button" class="">leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/" class="">哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/" class="">双指针</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="">滑动窗口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/" class="">子串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e1272beed7905527d0fba42083bdee40" class="toggle" checked />
+    <label for="section-e1272beed7905527d0fba42083bdee40" class="flex justify-between">
+      <a role="button" class="">华为OD</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/" class="">必会题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/" class="">必会题 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/" class="active">参考题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/" class="">机试题库 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/" class="">机试题库 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/" class="">华为机试</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/dir/" class="">目录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="toggle"  />
+    <label for="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="flex justify-between">
+      <a role="button" class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-534b4c3b58152c7a029cbad8bcc9e467" class="toggle"  />
+    <label for="section-534b4c3b58152c7a029cbad8bcc9e467" class="flex justify-between">
+      <a role="button" class="">分布式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/distributed/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b032946e6aac69e7d2bfca696347bd30" class="toggle"  />
+    <label for="section-b032946e6aac69e7d2bfca696347bd30" class="flex justify-between">
+      <a role="button" class="">程序语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62f00d6c6c4fc42ea6cda66313338d79" class="toggle"  />
+    <label for="section-62f00d6c6c4fc42ea6cda66313338d79" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="toggle"  />
+    <label for="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a42d8e26dc157dad91266007f615424" class="toggle"  />
+    <label for="section-2a42d8e26dc157dad91266007f615424" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="toggle"  />
+    <label for="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="flex justify-between">
+      <a role="button" class="">数据存储</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="toggle"  />
+    <label for="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="flex justify-between">
+      <a role="button" class="">MySQL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/mysql/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd18413517cb0125b84955ad7966530" class="toggle"  />
+    <label for="section-bfd18413517cb0125b84955ad7966530" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/redis/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cd205a449ba65dd2a21212b6922546d" class="toggle"  />
+    <label for="section-3cd205a449ba65dd2a21212b6922546d" class="flex justify-between">
+      <a role="button" class="">开源框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d32f47fca6b34b56b534735afccc1729" class="toggle"  />
+    <label for="section-d32f47fca6b34b56b534735afccc1729" class="flex justify-between">
+      <a role="button" class="">MQ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mq/mq/" class="">MQ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f3f420fbf9c98b8554806eb25798e5a2" class="toggle"  />
+    <label for="section-f3f420fbf9c98b8554806eb25798e5a2" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mybatis/" class="">MyBatis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cc51f608bfbc7068b8b058b45385b866" class="toggle"  />
+    <label for="section-cc51f608bfbc7068b8b058b45385b866" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-boot/" class="">SpringBoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e3a1bbd5ca40b4023e33e48202fe092" class="toggle"  />
+    <label for="section-4e3a1bbd5ca40b4023e33e48202fe092" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b7dab53cbc67c8e99988c8e69645e1ca" class="toggle"  />
+    <label for="section-b7dab53cbc67c8e99988c8e69645e1ca" class="flex justify-between">
+      <a role="button" class="">Jianda</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>参考题 - 1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#01-字符串反转">01. 字符串反转</a></li>
+    <li><a href="#02-数字颠倒">02. 数字颠倒</a></li>
+    <li><a href="#03-表达式求值">03. 表达式求值</a></li>
+    <li><a href="#04-字符逆序">04. 字符逆序</a></li>
+    <li><a href="#05-尼科彻斯定力">05. 尼科彻斯定力</a></li>
+    <li><a href="#06-公共子串计算">06. 公共子串计算</a></li>
+    <li><a href="#07-求最大连续bit数">07. 求最大连续bit数</a></li>
+    <li><a href="#08-最长回文子串">08. 最长回文子串</a></li>
+    <li><a href="#09-等差数列">09. 等差数列</a></li>
+    <li><a href="#10-密码强度等级">10. 密码强度等级</a></li>
+    <li><a href="#11-字符个数统计">11. 字符个数统计</a></li>
+    <li><a href="#12-截取字符串">12. 截取字符串</a></li>
+    <li><a href="#13-查找组成一个偶数最接近的两个素数">13. 查找组成一个偶数最接近的两个素数</a></li>
+    <li><a href="#14-统计字符">14. 统计字符</a></li>
+    <li><a href="#15-字符串排序">15. 字符串排序</a></li>
+    <li><a href="#16-进制转换">16. 进制转换</a></li>
+    <li><a href="#17-找出字符串中第一个只出现一次的字符">17. 找出字符串中第一个只出现一次的字符</a></li>
+    <li><a href="#18-输入n个整数输出其中最小的k个">18. 输入n个整数，输出其中最小的K个</a></li>
+    <li><a href="#19-字符串字符匹配">19. 字符串字符匹配</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="01-字符串反转">
+  01. 字符串反转
+  <a class="anchor" href="#01-%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%8f%8d%e8%bd%ac">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>接受一个只包含小写字母的字符串，然后输出该字符串反转后的字符串。（字符串长度不超过1000）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：输入一行，为一个只包含小写字母的字符串。
+</span></span><span style="display:flex;"><span>输出描述：输出该字符串反转后的字符串。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：abcd
+</span></span><span style="display:flex;"><span>输出：dcba
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>StringBuilder<span style="color:#bbb"> </span>sb<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder(str);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>sb.<span style="color:#658b00">reverse</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(sb);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="02-数字颠倒">
+  02. 数字颠倒
+  <a class="anchor" href="#02-%e6%95%b0%e5%ad%97%e9%a2%a0%e5%80%92">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>输入一个整数，将这个整数以字符串的形式逆序输出
+</span></span><span style="display:flex;"><span>程序不考虑负数的情况，若数字含有0，则逆序形式也含有0，如输入为100，则输出为001
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：0≤n≤2^30−1 
+</span></span><span style="display:flex;"><span>输入描述：输入一个int整数
+</span></span><span style="display:flex;"><span>输出描述：将这个整数以字符串的形式逆序输出
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：1516000
+</span></span><span style="display:flex;"><span>输出：0006151
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>同01题<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="03-表达式求值">
+  03. 表达式求值
+  <a class="anchor" href="#03-%e8%a1%a8%e8%be%be%e5%bc%8f%e6%b1%82%e5%80%bc">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个字符串描述的算术表达式，计算出结果值。
+</span></span><span style="display:flex;"><span>输入字符串长度不超过 100 ，合法的字符包括 +, -, *, /, (, ),0-9
+</span></span><span style="display:flex;"><span>数据范围：运算过程中和最终结果均满足∣val∣≤2^31 −1  ，即只进行整型运算，确保输入的表达式合法
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：输入算术表达式
+</span></span><span style="display:flex;"><span>输出描述：计算出结果值
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：400+5
+</span></span><span style="display:flex;"><span>输出：405
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">throws</span><span style="color:#bbb"> </span>ScriptException<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ScriptEngine<span style="color:#bbb"> </span>engine<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>ScriptEngineManager().<span style="color:#658b00">getEngineByName</span>(<span style="color:#cd5555">&#34;js&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(engine.<span style="color:#658b00">eval</span>(line));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="04-字符逆序">
+  04. 字符逆序
+  <a class="anchor" href="#04-%e5%ad%97%e7%ac%a6%e9%80%86%e5%ba%8f">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>将一个字符串str的内容颠倒过来，并输出。
+</span></span><span style="display:flex;"><span>数据范围：1≤len(str)≤10000 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：输入一个字符串，可以有空格
+</span></span><span style="display:flex;"><span>输出描述：输出逆序的字符串
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：I am a student
+</span></span><span style="display:flex;"><span>输出：tneduts a ma I
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>StringBuilder<span style="color:#bbb"> </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder(line);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(res.<span style="color:#658b00">reverse</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="05-尼科彻斯定力">
+  05. 尼科彻斯定力
+  <a class="anchor" href="#05-%e5%b0%bc%e7%a7%91%e5%bd%bb%e6%96%af%e5%ae%9a%e5%8a%9b">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>验证尼科彻斯定理，即：任何一个整数m的立方都可以写成m个连续奇数之和。
+</span></span><span style="display:flex;"><span>例如：
+</span></span><span style="display:flex;"><span>1^3=1
+</span></span><span style="display:flex;"><span>2^3=3+5
+</span></span><span style="display:flex;"><span>3^3=7+9+11
+</span></span><span style="display:flex;"><span>4^3=13+15+17+19
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入一个正整数m（m≤100），将m的立方写成m个连续奇数之和的形式输出。
+</span></span><span style="display:flex;"><span>数据范围：1≤m≤100 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：输入一个int整数
+</span></span><span style="display:flex;"><span>输出描述：输出分解后的string
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：6
+</span></span><span style="display:flex;"><span>输出：31+33+35+37+39+41
+</span></span></code></pre></div><img src="/images/2024Q3/img_2024-09-22_145216.png" width="500"/>
+</li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 由等差数列公式，公差d=2</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 可得a1=m(m-1)+1</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>a1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>(m<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>StringBuilder<span style="color:#bbb"> </span>sb<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder(Integer.<span style="color:#658b00">toString</span>(a1));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>m;<span style="color:#bbb"> </span>i++){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>a1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>a1<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>2;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>sb.<span style="color:#658b00">append</span>(<span style="color:#cd5555">&#34;+&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>sb.<span style="color:#658b00">append</span>(a1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(sb);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="06-公共子串计算">
+  06. 公共子串计算
+  <a class="anchor" href="#06-%e5%85%ac%e5%85%b1%e5%ad%90%e4%b8%b2%e8%ae%a1%e7%ae%97">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定两个只包含小写字母的字符串，计算两个字符串的最大公共子串的长度。
+</span></span><span style="display:flex;"><span>注：子串的定义指一个字符串删掉其部分前缀和后缀（也可以不删）后形成的字符串。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：字符串长度：1≤s≤150 
+</span></span><span style="display:flex;"><span>输入描述：输入两个只包含小写字母的字符串
+</span></span><span style="display:flex;"><span>输出描述：输出一个整数，代表最大公共子串的长度
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：asdfas
+</span></span><span style="display:flex;"><span>     werasdfaswer
+</span></span><span style="display:flex;"><span>输出：6
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>maxLen<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>chs1.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>chs2.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>t1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>t2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>j;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>count<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(chs1[t1]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>chs2[t2])<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>t1++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>t2++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>count++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>maxLen<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(count,<span style="color:#bbb"> </span>maxLen);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(t1<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>chs1.<span style="color:#658b00">length</span><span style="color:#bbb"> </span>||<span style="color:#bbb"> </span>t2<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>chs2.<span style="color:#658b00">length</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#8b008b;font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(maxLen);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="07-求最大连续bit数">
+  07. 求最大连续bit数
+  <a class="anchor" href="#07-%e6%b1%82%e6%9c%80%e5%a4%a7%e8%bf%9e%e7%bb%adbit%e6%95%b0">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>求一个int类型数字对应的二进制数字中1的最大连续数，例如3的二进制为00000011，最大连续2个1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：数据组数：1≤t≤5 ，1≤n≤500000 
+</span></span><span style="display:flex;"><span>输入描述：输入一个int类型数字
+</span></span><span style="display:flex;"><span>输出描述：输出转成二进制之后连续1的个数
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：200
+</span></span><span style="display:flex;"><span>输出：2
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">throws</span><span style="color:#bbb"> </span>IOException<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>BufferedReader<span style="color:#bbb"> </span>br<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>BufferedReader(<span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>InputStreamReader(System.<span style="color:#658b00">in</span>));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>input<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">null</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>((input<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>br.<span style="color:#658b00">readLine</span>())<span style="color:#bbb"> </span>!=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">null</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>binary<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">toBinaryString</span>(Integer.<span style="color:#658b00">parseInt</span>(input)).<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>max<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span><span style="color:#228b22">// 最大连续数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>count<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span><span style="color:#228b22">// 当前连续数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">char</span><span style="color:#bbb"> </span>b<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>binary)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(b<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span><span style="color:#cd5555">&#39;1&#39;</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>count++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(count<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>max)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>max<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>count;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb">    
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>count<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(max);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="08-最长回文子串">
+  08. 最长回文子串
+  <a class="anchor" href="#08-%e6%9c%80%e9%95%bf%e5%9b%9e%e6%96%87%e5%ad%90%e4%b8%b2">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个仅包含小写字母的字符串，求它的最长回文子串的长度。所谓回文串，指左右对称的字符串。
+</span></span><span style="display:flex;"><span>所谓子串，指一个字符串删掉其部分前缀和后缀（也可以不删）的字符串
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：字符串长度1≤s≤350 
+</span></span><span style="display:flex;"><span>输入描述：输入一个仅包含小写字母的字符串
+</span></span><span style="display:flex;"><span>输出描述：返回最长回文子串的长度
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：cdabbacc
+</span></span><span style="display:flex;"><span>输出：4
+</span></span><span style="display:flex;"><span>说明：abba为最长的回文子串   
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>maxLen<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>line.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>line.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#228b22">// 回文字符串 反转后与其自身相等</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>String<span style="color:#bbb"> </span>sub<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>line.<span style="color:#658b00">substring</span>(i,<span style="color:#bbb"> </span>j);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>String<span style="color:#bbb"> </span>subRev<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder(sub).<span style="color:#658b00">reverse</span>().<span style="color:#658b00">toString</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(sub.<span style="color:#658b00">equals</span>(subRev))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>maxLen<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(maxLen,<span style="color:#bbb"> </span>sub.<span style="color:#658b00">length</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(maxLen);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="09-等差数列">
+  09. 等差数列
+  <a class="anchor" href="#09-%e7%ad%89%e5%b7%ae%e6%95%b0%e5%88%97">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>等差数列 2，5，8，11，14。。。。（从 2 开始的 3 为公差的等差数列）
+</span></span><span style="display:flex;"><span>输出求等差数列前n项和
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：1≤n≤1000 
+</span></span><span style="display:flex;"><span>输入描述：输入一个正整数n。
+</span></span><span style="display:flex;"><span>输出描述：输出一个相加后的整数。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：2
+</span></span><span style="display:flex;"><span>输出：7
+</span></span><span style="display:flex;"><span>说明：2+5=7 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：275
+</span></span><span style="display:flex;"><span>输出：113575
+</span></span></code></pre></div><img src="/images/2024Q3/img_2024-09-22_145216.png" width="500"/>
+</li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 等差数列求和公式</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>2<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>(n<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>(n<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>3)<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(sum);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="10-密码强度等级">
+  10. 密码强度等级
+  <a class="anchor" href="#10-%e5%af%86%e7%a0%81%e5%bc%ba%e5%ba%a6%e7%ad%89%e7%ba%a7">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>密码按如下规则进行计分，并根据不同的得分为密码进行安全等级划分。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>一、密码长度:
+</span></span><span style="display:flex;"><span>5 分: 小于等于4 个字符
+</span></span><span style="display:flex;"><span>10 分: 5 到7 字符
+</span></span><span style="display:flex;"><span>25 分: 大于等于8 个字符
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>二、字母:
+</span></span><span style="display:flex;"><span>0 分: 没有字母
+</span></span><span style="display:flex;"><span>10 分: 密码里的字母全都是小（大）写字母
+</span></span><span style="display:flex;"><span>20 分: 密码里的字母符合”大小写混合“
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>三、数字:
+</span></span><span style="display:flex;"><span>0 分: 没有数字
+</span></span><span style="display:flex;"><span>10 分: 1 个数字
+</span></span><span style="display:flex;"><span>20 分: 大于1 个数字
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>四、符号:
+</span></span><span style="display:flex;"><span>0 分: 没有符号
+</span></span><span style="display:flex;"><span>10 分: 1 个符号
+</span></span><span style="display:flex;"><span>25 分: 大于1 个符号
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>五、奖励（只能选符合最多的那一种奖励）:
+</span></span><span style="display:flex;"><span>2 分: 字母和数字
+</span></span><span style="display:flex;"><span>3 分: 字母、数字和符号
+</span></span><span style="display:flex;"><span>5 分: 大小写字母、数字和符号
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>最后的评分标准:
+</span></span><span style="display:flex;"><span>&gt;= 90: 非常安全
+</span></span><span style="display:flex;"><span>&gt;= 80: 安全（Secure）
+</span></span><span style="display:flex;"><span>&gt;= 70: 非常强
+</span></span><span style="display:flex;"><span>&gt;= 60: 强（Strong）
+</span></span><span style="display:flex;"><span>&gt;= 50: 一般（Average）
+</span></span><span style="display:flex;"><span>&gt;= 25: 弱（Weak）
+</span></span><span style="display:flex;"><span>&gt;= 0:  非常弱（Very_Weak）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>对应输出为：VERY_SECURE、SECURE、VERY_STRONG、STRONG、AVERAGE、WEAK、VERY_WEAK
+</span></span><span style="display:flex;"><span>请根据输入的密码字符串，进行安全评定。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>注：
+</span></span><span style="display:flex;"><span>字母：a-z, A-Z
+</span></span><span style="display:flex;"><span>数字：0-9
+</span></span><span style="display:flex;"><span>符号包含如下： (ASCII码表可以在UltraEdit的菜单view-&gt;ASCII Table查看)
+</span></span><span style="display:flex;"><span>!&#34;#$%<span style="color:#a61717;background-color:#e3d2d2">&amp;</span>&#39;()*+,-./     (ASCII码：0x21~0x2F)
+</span></span><span style="display:flex;"><span>:;<span style="color:#a61717;background-color:#e3d2d2">&lt;</span>=&gt;?@             (ASCII码：0x3A~0x40)
+</span></span><span style="display:flex;"><span>[\]^_`              (ASCII码：0x5B~0x60)
+</span></span><span style="display:flex;"><span>{|}~                (ASCII码：0x7B~0x7E)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>提示：1≤字符串的长度≤300
+</span></span><span style="display:flex;"><span>输入描述：输入一个string的密码
+</span></span><span style="display:flex;"><span>输出描述：输出密码等级
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：38$@NoNoN
+</span></span><span style="display:flex;"><span>输出：VERY_SECURE
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//统计长度</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>chs.<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(len<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>4)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>5;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(len<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>8)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>10;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>25;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//遍历获取大小写字母、数字、符号数目</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>upCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>lowCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>numCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sigCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">char</span><span style="color:#bbb"> </span>ch<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>chs)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(Character.<span style="color:#658b00">isUpperCase</span>(ch))<span style="color:#bbb"> </span>++upCount;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(Character.<span style="color:#658b00">isLowerCase</span>(ch))<span style="color:#bbb"> </span>++lowCount;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(Character.<span style="color:#658b00">isDigit</span>(ch))<span style="color:#bbb"> </span>++numCount;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>++sigCount;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//字母分数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>((upCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>lowCount<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>||<span style="color:#bbb"> </span>(upCount<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>lowCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0))<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>10;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(upCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>lowCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>20;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//数字分数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(numCount<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>10;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(numCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>20;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//符号分数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(sigCount<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>10;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(sigCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>25;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//奖励分数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(numCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>upCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>lowCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>sigCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>5;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(numCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>sigCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>(upCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>||<span style="color:#bbb"> </span>lowCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0))<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>3;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(numCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>(upCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>||<span style="color:#bbb"> </span>lowCount<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0))<span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>2;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//评分</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>90)<span style="color:#bbb"> </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(<span style="color:#cd5555">&#34;VERY_SECURE&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>80)<span style="color:#bbb"> </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(<span style="color:#cd5555">&#34;SECURE&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>70)<span style="color:#bbb"> </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(<span style="color:#cd5555">&#34;VERY_STRONG&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>60)<span style="color:#bbb"> </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(<span style="color:#cd5555">&#34;STRONG&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>50)<span style="color:#bbb"> </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(<span style="color:#cd5555">&#34;AVERAGE&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(score<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>25)<span style="color:#bbb"> </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(<span style="color:#cd5555">&#34;WEAK&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(<span style="color:#cd5555">&#34;VERY_WEAK&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="11-字符个数统计">
+  11. 字符个数统计
+  <a class="anchor" href="#11-%e5%ad%97%e7%ac%a6%e4%b8%aa%e6%95%b0%e7%bb%9f%e8%ae%a1">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>编写一个函数，计算字符串中含有的不同字符的个数。字符在 ASCII 码范围内( 0~127 ，包括 0 和 127 )，换行表示结束符，不算在字符里。不在范围内的不作统计。多个相同的字符只计算一次
+</span></span><span style="display:flex;"><span>例如，对于字符串 abaca 而言，有 a、b、c 三种不同的字符，因此输出 3 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：1≤n≤500 
+</span></span><span style="display:flex;"><span>输入描述：输入一行没有空格的字符串。
+</span></span><span style="display:flex;"><span>输出描述：输出 输入字符串 中范围在(0~127，包括0和127)字符的种数。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：abc
+</span></span><span style="display:flex;"><span>输出：3
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 数组下标不重复，且有序</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>temArr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[128];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>count<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">char</span><span style="color:#bbb"> </span>ch<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>chs)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(temArr[ch]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>count++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>temArr[ch]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(count);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="12-截取字符串">
+  12. 截取字符串
+  <a class="anchor" href="#12-%e6%88%aa%e5%8f%96%e5%ad%97%e7%ac%a6%e4%b8%b2">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>输入一个字符串和一个整数 k ，截取字符串的前k个字符并输出
+</span></span><span style="display:flex;"><span>数据范围：字符串长度满足 1≤n≤1000，1≤k≤n
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：1.输入待截取的字符串。2.输入一个正整数k，代表截取的长度
+</span></span><span style="display:flex;"><span>输出描述：截取后的字符串
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：abABCcDEF
+</span></span><span style="display:flex;"><span>     6
+</span></span><span style="display:flex;"><span>输出：abABCc
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(in.<span style="color:#658b00">nextLine</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(str.<span style="color:#658b00">substring</span>(0,<span style="color:#bbb"> </span>k));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="13-查找组成一个偶数最接近的两个素数">
+  13. 查找组成一个偶数最接近的两个素数
+  <a class="anchor" href="#13-%e6%9f%a5%e6%89%be%e7%bb%84%e6%88%90%e4%b8%80%e4%b8%aa%e5%81%b6%e6%95%b0%e6%9c%80%e6%8e%a5%e8%bf%91%e7%9a%84%e4%b8%a4%e4%b8%aa%e7%b4%a0%e6%95%b0">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>任意一个偶数（大于2）都可以由2个素数组成，组成偶数的2个素数有很多种情况，本题目要求输出组成指定偶数的两个素数差值最小的素数对。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：输入的数据满足 4≤n≤1000 
+</span></span><span style="display:flex;"><span>输入描述：输入一个大于2的偶数
+</span></span><span style="display:flex;"><span>输出描述：从小到大输出两个素数
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：20
+</span></span><span style="display:flex;"><span>输出：7
+</span></span><span style="display:flex;"><span>     13
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!isPrime(m1)<span style="color:#bbb"> </span>||<span style="color:#bbb"> </span>!isPrime(m2))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>m1--;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>m2++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(m1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(m2);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">boolean</span><span style="color:#bbb"> </span><span style="color:#008b45">isPrime</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>2;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(n<span style="color:#bbb"> </span>%<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">false</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">true</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="14-统计字符">
+  14. 统计字符
+  <a class="anchor" href="#14-%e7%bb%9f%e8%ae%a1%e5%ad%97%e7%ac%a6">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>输入一行字符，分别统计出包含英文字母、空格、数字和其它字符的个数。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：输入的字符串长度满足 1≤n≤1000 
+</span></span><span style="display:flex;"><span>输入描述：输入一行字符串，可以有空格
+</span></span><span style="display:flex;"><span>输出描述：统计其中英文字符，空格字符，数字字符，其他字符的个数
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：1qazxsw23 edcvfr45tgbn hy67uj m,ki89ol.\\/;p0-=\\][
+</span></span><span style="display:flex;"><span>输出：26
+</span></span><span style="display:flex;"><span>     3
+</span></span><span style="display:flex;"><span>     10
+</span></span><span style="display:flex;"><span>     12
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">replaceAll</span>(<span style="color:#cd5555">&#34;[^a-zA-Z]&#34;</span>,<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">replaceAll</span>(<span style="color:#cd5555">&#34;[^ ]&#34;</span>,<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str3<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">replaceAll</span>(<span style="color:#cd5555">&#34;[^0-9]&#34;</span>,<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str4<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">replaceAll</span>(<span style="color:#cd5555">&#34;[a-zA-Z0-9 ]&#34;</span>,<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(str1.<span style="color:#658b00">length</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(str2.<span style="color:#658b00">length</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(str3.<span style="color:#658b00">length</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(str4.<span style="color:#658b00">length</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="15-字符串排序">
+  15. 字符串排序
+  <a class="anchor" href="#15-%e5%ad%97%e7%ac%a6%e4%b8%b2%e6%8e%92%e5%ba%8f">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定 n 个字符串，请对 n 个字符串按照字典序排列。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：1≤n≤1000，字符串长度满足 1≤len≤100 
+</span></span><span style="display:flex;"><span>输入描述：输入第一行为一个正整数n(1≤n≤1000),下面n行为n个字符串(字符串长度≤100),字符串中只含有大小写字母。
+</span></span><span style="display:flex;"><span>输出描述：数据输出n行，输出结果为按照字典序排列的字符串。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：5
+</span></span><span style="display:flex;"><span>	 cap
+</span></span><span style="display:flex;"><span>	 to
+</span></span><span style="display:flex;"><span>	 cat
+</span></span><span style="display:flex;"><span>     boat
+</span></span><span style="display:flex;"><span>     boot
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输出：boat
+</span></span><span style="display:flex;"><span>	 boot
+</span></span><span style="display:flex;"><span>     cap
+</span></span><span style="display:flex;"><span>     cat
+</span></span><span style="display:flex;"><span>     to
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(in.<span style="color:#658b00">nextLine</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String[]<span style="color:#bbb"> </span>arr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>String[sum];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>sum;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>arr[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Arrays.<span style="color:#658b00">sort</span>(arr);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Arrays.<span style="color:#658b00">stream</span>(arr).<span style="color:#658b00">forEach</span>(System.<span style="color:#658b00">out</span>::println);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="16-进制转换">
+  16. 进制转换
+  <a class="anchor" href="#16-%e8%bf%9b%e5%88%b6%e8%bd%ac%e6%8d%a2">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>写出一个程序，接受一个十六进制的数，输出该数值的十进制表示。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：保证结果在1≤n≤2^31−1 
+</span></span><span style="display:flex;"><span>输入描述：输入一个十六进制的数值字符串。
+</span></span><span style="display:flex;"><span>输出描述：输出该数值的十进制字符串。不同组的测试用例用\n隔开。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：0xAA
+</span></span><span style="display:flex;"><span>输出：170
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">substring</span>(2);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(str,<span style="color:#bbb"> </span>16);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(val);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="17-找出字符串中第一个只出现一次的字符">
+  17. 找出字符串中第一个只出现一次的字符
+  <a class="anchor" href="#17-%e6%89%be%e5%87%ba%e5%ad%97%e7%ac%a6%e4%b8%b2%e4%b8%ad%e7%ac%ac%e4%b8%80%e4%b8%aa%e5%8f%aa%e5%87%ba%e7%8e%b0%e4%b8%80%e6%ac%a1%e7%9a%84%e5%ad%97%e7%ac%a6">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>找出字符串中第一个只出现一次的字符
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：输入的字符串长度满足1≤n≤1000 
+</span></span><span style="display:flex;"><span>输入描述：输入一个非空字符串
+</span></span><span style="display:flex;"><span>输出描述：输出第一个只出现一次的字符，如果不存在输出-1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：asdfasdfo
+</span></span><span style="display:flex;"><span>输出：o
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>str.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">char</span><span style="color:#bbb"> </span>ch<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">charAt</span>(i);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(str.<span style="color:#658b00">indexOf</span>(ch)<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>str.<span style="color:#658b00">lastIndexOf</span>(ch))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(ch);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">return</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(-1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="18-输入n个整数输出其中最小的k个">
+  18. 输入n个整数，输出其中最小的K个
+  <a class="anchor" href="#18-%e8%be%93%e5%85%a5n%e4%b8%aa%e6%95%b4%e6%95%b0%e8%be%93%e5%87%ba%e5%85%b6%e4%b8%ad%e6%9c%80%e5%b0%8f%e7%9a%84k%e4%b8%aa">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>输入n个整数，找出其中最小的k个整数并按升序输出
+</span></span><span style="display:flex;"><span>本题有多组输入样例
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：1≤n≤1000，输入的整数满足 1≤val≤10000 
+</span></span><span style="display:flex;"><span>输入描述：第一行输入两个整数n和k，第二行输入一个整数数组
+</span></span><span style="display:flex;"><span>输出描述：从小到大输出最小的k个整数，用空格分开。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：5 2
+</span></span><span style="display:flex;"><span>     1 3 5 7 2
+</span></span><span style="display:flex;"><span>输出：1 2
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(in.<span style="color:#658b00">hasNext</span>())<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>arr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[n];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>arr[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Arrays.<span style="color:#658b00">sort</span>(arr);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>StringBuilder<span style="color:#bbb"> </span>sb<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>k;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>sb.<span style="color:#658b00">append</span>(arr[i]).<span style="color:#658b00">append</span>(<span style="color:#cd5555">&#34; &#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(sb.<span style="color:#658b00">toString</span>().<span style="color:#658b00">trim</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="19-字符串字符匹配">
+  19. 字符串字符匹配
+  <a class="anchor" href="#19-%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%ad%97%e7%ac%a6%e5%8c%b9%e9%85%8d">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>判断短字符串S中的所有字符是否在长字符串T中全部出现。
+</span></span><span style="display:flex;"><span>请注意本题有多组样例输入。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数据范围：1≤len(S),len(T)≤200 
+</span></span><span style="display:flex;"><span>输入描述：输入两个字符串。第一个为短字符串，第二个为长字符串。两个字符串均由小写字母组成。
+</span></span><span style="display:flex;"><span>输出描述：如果短字符串的所有字符均在长字符串中出现过，则输出字符串&#34;true&#34;。否则输出字符串&#34;false&#34;。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：bc
+</span></span><span style="display:flex;"><span>     abc
+</span></span><span style="display:flex;"><span>输出：true
+</span></span><span style="display:flex;"><span>说明：其中abc含有bc，输出&#34;true&#34;
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(in.<span style="color:#658b00">hasNext</span>())<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>shortStr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>longStr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Set&lt;Character&gt;<span style="color:#bbb"> </span>set<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>HashSet&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>shortStr.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>++i)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>set.<span style="color:#658b00">add</span>(shortStr.<span style="color:#658b00">charAt</span>(i));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>longStr.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>++i)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>set.<span style="color:#658b00">remove</span>(longStr.<span style="color:#658b00">charAt</span>(i));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(set.<span style="color:#658b00">isEmpty</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    Copyright © 2024-2025
+    <br/>
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#01-字符串反转">01. 字符串反转</a></li>
+    <li><a href="#02-数字颠倒">02. 数字颠倒</a></li>
+    <li><a href="#03-表达式求值">03. 表达式求值</a></li>
+    <li><a href="#04-字符逆序">04. 字符逆序</a></li>
+    <li><a href="#05-尼科彻斯定力">05. 尼科彻斯定力</a></li>
+    <li><a href="#06-公共子串计算">06. 公共子串计算</a></li>
+    <li><a href="#07-求最大连续bit数">07. 求最大连续bit数</a></li>
+    <li><a href="#08-最长回文子串">08. 最长回文子串</a></li>
+    <li><a href="#09-等差数列">09. 等差数列</a></li>
+    <li><a href="#10-密码强度等级">10. 密码强度等级</a></li>
+    <li><a href="#11-字符个数统计">11. 字符个数统计</a></li>
+    <li><a href="#12-截取字符串">12. 截取字符串</a></li>
+    <li><a href="#13-查找组成一个偶数最接近的两个素数">13. 查找组成一个偶数最接近的两个素数</a></li>
+    <li><a href="#14-统计字符">14. 统计字符</a></li>
+    <li><a href="#15-字符串排序">15. 字符串排序</a></li>
+    <li><a href="#16-进制转换">16. 进制转换</a></li>
+    <li><a href="#17-找出字符串中第一个只出现一次的字符">17. 找出字符串中第一个只出现一次的字符</a></li>
+    <li><a href="#18-输入n个整数输出其中最小的k个">18. 输入n个整数，输出其中最小的K个</a></li>
+    <li><a href="#19-字符串字符匹配">19. 字符串字符匹配</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

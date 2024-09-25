@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程基础 on Interview</title>
+    <link>https://localhost:1313/interview/program-base/</link>
+    <description>Recent content in 编程基础 on Interview</description>
+    <generator>Hugo</generator>
+    <language>interview</language>
+    <atom:link href="https://localhost:1313/interview/program-base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络</title>
+      <link>https://localhost:1313/interview/program-base/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/interview/program-base/network/</guid>
+      <description>&lt;h2 id=&#34;---网络模型&#34;&gt;&#xD;&#xA;  &amp;ndash; 网络模型&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---%e7%bd%91%e7%bb%9c%e6%a8%a1%e5%9e%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;img src=&#34;https://localhost:1313/images/2024Q1/img_2024-03-18_223615.png&#34; width=&#34;650&#34;&gt;&#xD;&#xA;&lt;h2 id=&#34;---tcp-协议&#34;&gt;&#xD;&#xA;  &amp;ndash; TCP 协议&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---tcp-%e5%8d%8f%e8%ae%ae&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1. Transmission Control Protocol，传输控制协议&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2. 是面向连接的协议，在收发数据前，必须和对方建立可靠的连接。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;3. 一个TCP连接必须有三次握手、四次挥手&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;---tcp-三次握手&#34;&gt;&#xD;&#xA;  &amp;ndash; TCP 三次握手&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---tcp-%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;三次握手：Three-way Handshake，是指建立一个 TCP 连接时，需要客户端和服务器总共发送3个包&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://localhost:1313/interview/program-base/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/interview/program-base/linux/</guid>
+      <description>&lt;h2 id=&#34;---目录路径&#34;&gt;&#xD;&#xA;  &amp;ndash; 目录路径&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---%e7%9b%ae%e5%bd%95%e8%b7%af%e5%be%84&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;绝对路径： /etc/init.d&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;当前目录： ./&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;上层目录： ../&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;主目录：   ~/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;切换目录： cd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;---命令查看文件&#34;&gt;&#xD;&#xA;  &amp;ndash; 命令：查看文件&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---%e5%91%bd%e4%bb%a4%e6%9f%a5%e7%9c%8b%e6%96%87%e4%bb%b6&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ vi   文件名    &lt;span style=&#34;color:#228b22&#34;&gt;#编辑方式查看，可修改&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cat  文件名    &lt;span style=&#34;color:#228b22&#34;&gt;#显示全部文件内容&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ more 文件名    &lt;span style=&#34;color:#228b22&#34;&gt;#分页显示文件内容&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ less 文件名    &lt;span style=&#34;color:#228b22&#34;&gt;#与 more 相似，更好的是可以往前翻页&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ tail 文件名    &lt;span style=&#34;color:#228b22&#34;&gt;#仅查看尾部，还可以指定行数&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ head 文件名    &lt;span style=&#34;color:#228b22&#34;&gt;#仅查看头部,还可以指定行数&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+    </item>
+  </channel>
+</rss>

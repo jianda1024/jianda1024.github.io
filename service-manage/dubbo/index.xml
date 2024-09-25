@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dubbo on IWiki</title>
+    <link>https://localhost:1313/service-manage/dubbo/</link>
+    <description>Recent content in Dubbo on IWiki</description>
+    <generator>Hugo</generator>
+    <language>iwiki</language>
+    <atom:link href="https://localhost:1313/service-manage/dubbo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RPC</title>
+      <link>https://localhost:1313/service-manage/dubbo/rpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/service-manage/dubbo/rpc/</guid>
+      <description>&lt;h1 id=&#34;rpc&#34;&gt;&#xD;&#xA;  RPC&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;rpc-1&#34;&gt;&#xD;&#xA;  RPC&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc-1&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Remote Procedure Call，远程过程调用，是一种进程间通信方式&lt;/li&gt;&#xA;&lt;li&gt;允许程序调用另一个地址空间的过程或函数，而不用程序员显式编码这个远程调用的细节。&lt;/li&gt;&#xA;&lt;li&gt;优点：调用简单、性能高、低延迟、自带负载均衡&lt;/li&gt;&#xA;&lt;li&gt;缺点：耦合性强、无法跨语言，平台敏感&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;img src=&#34;https://localhost:1313/images/2022Q2/img_2022-05-21_143651.png&#34; width=&#34;650&#34;/&gt;&#xD;&#xA;&lt;h3 id=&#34;rest&#34;&gt;&#xD;&#xA;  REST&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rest&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;REST，即 &lt;a href=&#34;https://localhost:1313/docs/dev-tool/frameworks/springmvc/RESTful/&#34; target=&#34;_blank&#34;&gt;RESTful&lt;/a&gt; ，是一种架构风格，指的是一组架构约束条件和原则。&lt;/li&gt;&#xA;&lt;li&gt;优点：耦合性低，兼容性好，通用性好，跨语言支持&lt;/li&gt;&#xA;&lt;li&gt;缺点：性能不如 RPC 高&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rpc--rest&#34;&gt;&#xD;&#xA;  RPC &amp;amp; REST&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc--rest&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;RPC ：服务提供方与调用方接口依赖方式太强、服务对平台敏感，难以简单复用。&lt;/li&gt;&#xA;&lt;li&gt;REST ：牺牲了服务调用的性能，但避免了RPC带来的问题。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rpc-or-rest&#34;&gt;&#xD;&#xA;  RPC or REST&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc-or-rest&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;RPC 适用于内网服务调用，对外提供服务请走 REST。&lt;/li&gt;&#xA;&lt;li&gt;IO 密集的服务调用用 RPC，低频服务用 REST&lt;/li&gt;&#xA;&lt;li&gt;服务调用过于密集与复杂，RPC 就比较适用&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>工作原理</title>
+      <link>https://localhost:1313/service-manage/dubbo/work-principle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/service-manage/dubbo/work-principle/</guid>
+      <description>&lt;h1 id=&#34;工作原理&#34;&gt;&#xD;&#xA;  工作原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;核心功能&#34;&gt;&#xD;&#xA;  核心功能&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;面向接口的远程方法调用&lt;/li&gt;&#xA;&lt;li&gt;智能容错和负载均衡&lt;/li&gt;&#xA;&lt;li&gt;服务自动注册和发现&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;dubbo-角色&#34;&gt;&#xD;&#xA;  Dubbo 角色&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#dubbo-%e8%a7%92%e8%89%b2&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;服务提供者：Provider&lt;/li&gt;&#xA;&lt;li&gt;服务消费者：Consumer&lt;/li&gt;&#xA;&lt;li&gt;注册中心：Registry&lt;/li&gt;&#xA;&lt;li&gt;监控中心：Monitor&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;dubbo-工作原理&#34;&gt;&#xD;&#xA;  Dubbo 工作原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#dubbo-%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;服务容器负责启动，加载，运行服务提供者。&lt;/li&gt;&#xA;&lt;li&gt;服务提供者在启动时，向注册中心注册自己提供的服务。&lt;/li&gt;&#xA;&lt;li&gt;服务消费者在启动时，向注册中心订阅自己所需的服务。&lt;/li&gt;&#xA;&lt;li&gt;注册中心返回服务提供者地址列表给消费者，如果有变更，注册中心将基于长连接推送变更数据给消费者。&lt;/li&gt;&#xA;&lt;li&gt;服务消费者，从提供者地址列表中，基于软负载均衡算法，选一台进行调用，如果调用失败，再选另一台调用。&lt;/li&gt;&#xA;&lt;li&gt;服务消费者和提供者，在内存中累计调用次数和调用时间，定时每分钟发送一次统计数据到监控中心。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;img src=&#34;https://localhost:1313/images/2022Q2/img_2022-05-21_144519.png&#34; width=&#34;650&#34;/&gt;</description>
+    </item>
+  </channel>
+</rss>

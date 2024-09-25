@@ -1,0 +1,191 @@
+body {
+  background: #f0f0e8;
+  overflow-y:scroll;
+}
+
+/* 正文 */
+.book-page {
+  background: white;
+  z-index: 10;
+}
+.markdown{
+  min-height: 560px;
+  margin: 0 3rem 0 1rem;
+  padding: 0;
+}
+
+/* 文章菜单 */
+.book-menu {
+  flex: 0 0 14rem;
+}
+
+.book-menu .book-menu-content {
+  background: #f0f0e8;
+  max-height: 48rem;
+  z-index: 10;
+  font-size: 0.85rem;
+  width: 14rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+aside.book-menu{
+  z-index: 10;
+}
+.book-section-flat {
+  margin-bottom: 0.5rem;
+}
+.book-section-flat:not(:first-child) {
+  margin-top: 1rem;
+}
+.book-section-flat>label{
+  font-size: 0.9rem;
+}
+
+/* 搜索框 */
+.book-search{
+  margin: 0 0 .5rem 0;
+}
+.book-search input{
+  padding: 5px;
+}
+
+/* 网页主体 */
+.container {
+  max-width: 95rem;
+}
+
+/* 文章大纲 */
+.book-toc .book-toc-content {
+  font-size: .8rem;
+  width: 16rem;
+  background: #f0f0e8;
+  max-height: 48rem;
+  z-index: 10;
+  padding: 2rem 0rem 2rem 1rem;
+  white-space: nowrap; /* 确保文本不换行 */
+  overflow-x: hidden; /* 隐藏溢出的内容 */
+  overflow-y: auto;
+  text-overflow: ellipsis; /* 使用省略号显示溢出的文本 */
+}
+
+.book-menu-content li {
+  margin: 0.6em 0;
+}
+.book-toc-content li {
+  margin: 0.6em 0;
+}
+
+.book-page table tr td {
+  border: 1px solid #adb5bd;
+}
+
+.book-page table tr th {
+  border: 1px solid #adb5bd;
+}
+
+.markdown table {
+  width: 100%;
+  display: table;
+  box-sizing: border-box;
+}
+
+/* 标题h1，h2，h3，h4 */
+.markdown h2+h3,
+.markdown h2+h4,
+.markdown h2+ul,
+.markdown h3+h4,
+.markdown h3+ul,
+.markdown h4+ul{
+  margin-top: 4px;
+  padding-top: 4px;
+}
+
+.markdown h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+.markdown h2 {
+  font-weight: bolder;
+  font-size: 1.65rem;  
+  padding-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown h3 {
+  color: #1E4E79;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  padding-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown h4 {
+  color: #5B9BD5;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+ul li p{
+  margin-top: 0;
+}
+
+/* 表格 */
+thead {
+  background: var(--gray-100);
+}
+
+/* 锚点 */
+h1 a.anchor {
+  display: none;
+}
+
+/* 段落 */
+p {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+/* 代码块文本自动换行 */
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+/* 居中 */
+.style-center {
+  text-align: center;
+}
+
+/* 隐藏 */
+.style-hide {
+  display: none;
+}
+
+/* 左缩进 */
+.style-margin-left {
+  margin-left: 2rem;
+}
+
+/* 版权 */
+footer .copyright {
+  font-size: 12px;
+  color: #999;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* 切换内容 */
+#multi-content-list {
+  font-size:1rem;
+}

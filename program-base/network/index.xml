@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络 on IWiki</title>
+    <link>https://localhost:1313/program-base/network/</link>
+    <description>Recent content in 网络 on IWiki</description>
+    <generator>Hugo</generator>
+    <language>iwiki</language>
+    <atom:link href="https://localhost:1313/program-base/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络模型</title>
+      <link>https://localhost:1313/program-base/network/network-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/program-base/network/network-model/</guid>
+      <description>&lt;h1 id=&#34;网络模型&#34;&gt;&#xD;&#xA;  网络模型&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bd%91%e7%bb%9c%e6%a8%a1%e5%9e%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;网络协议&#34;&gt;&#xD;&#xA;  网络协议&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bd%91%e7%bb%9c%e5%8d%8f%e8%ae%ae&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是指双方实体完成通信或服务所必须遵循的规则和约定&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;网络协议分层&#34;&gt;&#xD;&#xA;  网络协议分层&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bd%91%e7%bb%9c%e5%8d%8f%e8%ae%ae%e5%88%86%e5%b1%82&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;img src=&#34;https://localhost:1313/images/2024Q1/img_2024-03-18_223615.png&#34; width=&#34;700&#34;/&gt;</description>
+    </item>
+    <item>
+      <title>RPC</title>
+      <link>https://localhost:1313/program-base/network/rpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://localhost:1313/program-base/network/rpc/</guid>
+      <description>&lt;h3 id=&#34;rpc&#34;&gt;&#xD;&#xA;  RPC&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Remote Procedure Call，远程过程调用&lt;/li&gt;&#xA;&lt;li&gt;是一种通过网络从远程计算机程序上请求服务，而不需要了解底层网络技术的协议&lt;/li&gt;&#xA;&lt;li&gt;RPC 使得程序能够像访问本地系统资源一样，去访问远端系统资源&lt;/li&gt;&#xA;&lt;li&gt;主流 RPC 框架：Dubbo/Dubbox、Google gRPC、Spring Boot/Spring Cloud&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rpc-组件&#34;&gt;&#xD;&#xA;  RPC 组件&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc-%e7%bb%84%e4%bb%b6&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;客户端(Client)&#x9;&#x9;&#x9;服务调用者&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;客户端存根(Client Stub)&#x9;存放服务端地址信息，将客户端的请求参数数据信息打包成网络消息，再通过网络传输发送给服务端&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;服务端存根(Server Stub)&#x9;接收客户端发送过来的请求消息并进行解包，然后再调用本地服务进行处理&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;服务端(Server)&#x9;&#x9;&#x9;服务提供者&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;rpc-原理&#34;&gt;&#xD;&#xA;  RPC 原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc-%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;img src=&#34;https://localhost:1313/images/2024Q1/img_2024-03-20_231805.png&#34; width=&#34;750&#34;/&gt;&#xD;&#xA;&lt;h3 id=&#34;rpc-架构&#34;&gt;&#xD;&#xA;  RPC 架构&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rpc-%e6%9e%b6%e6%9e%84&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;img src=&#34;https://localhost:1313/images/2024Q1/img_2024-03-20_233209.png&#34; width=&#34;650&#34;/&gt;</description>
+    </item>
+  </channel>
+</rss>

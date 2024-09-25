@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Part.1">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://localhost:1313/interview/database/redis/p1/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Part.1">
+  <meta property="og:description" content="Part.1">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="database">
+<title>Part.1 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://localhost:1313/interview/database/redis/p1/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.834e616a57785fe25d7b266ca827488b1f6af52f4fcd69416b822ca91af03eab.js" integrity="sha256-g05hald4X&#43;JdeyZsqCdIix9q9S9PzWlBa4IsqRrwPqs=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="clickContent('https:\/\/localhost:1313\/interview\/database\/redis\/p1\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li>
+              <a href="https://localhost:1313/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7af54bb6384ef366b268a9438900490" class="toggle"  />
+    <label for="section-d7af54bb6384ef366b268a9438900490" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d368cfb348ae2c31b67bc0cd97524469" class="toggle"  />
+    <label for="section-d368cfb348ae2c31b67bc0cd97524469" class="flex justify-between">
+      <a role="button" class="">程序设计</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-547eb2a955702a10f6a5115390900419" class="toggle"  />
+    <label for="section-547eb2a955702a10f6a5115390900419" class="flex justify-between">
+      <a role="button" class="">数据结构与算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7784697cbea516c63f36e08f8ea9b7b" class="toggle"  />
+    <label for="section-d7784697cbea516c63f36e08f8ea9b7b" class="flex justify-between">
+      <a role="button" class="">leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/" class="">哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/" class="">双指针</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="">滑动窗口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/" class="">子串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e1272beed7905527d0fba42083bdee40" class="toggle"  />
+    <label for="section-e1272beed7905527d0fba42083bdee40" class="flex justify-between">
+      <a role="button" class="">华为OD</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/" class="">必会题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/" class="">必会题 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/" class="">参考题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/" class="">机试题库 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/" class="">机试题库 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/" class="">华为机试</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/dir/" class="">目录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="toggle"  />
+    <label for="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="flex justify-between">
+      <a role="button" class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-534b4c3b58152c7a029cbad8bcc9e467" class="toggle"  />
+    <label for="section-534b4c3b58152c7a029cbad8bcc9e467" class="flex justify-between">
+      <a role="button" class="">分布式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/distributed/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b032946e6aac69e7d2bfca696347bd30" class="toggle"  />
+    <label for="section-b032946e6aac69e7d2bfca696347bd30" class="flex justify-between">
+      <a role="button" class="">程序语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62f00d6c6c4fc42ea6cda66313338d79" class="toggle"  />
+    <label for="section-62f00d6c6c4fc42ea6cda66313338d79" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="toggle"  />
+    <label for="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a42d8e26dc157dad91266007f615424" class="toggle"  />
+    <label for="section-2a42d8e26dc157dad91266007f615424" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="toggle" checked />
+    <label for="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="flex justify-between">
+      <a role="button" class="">数据存储</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="toggle"  />
+    <label for="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="flex justify-between">
+      <a role="button" class="">MySQL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/mysql/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd18413517cb0125b84955ad7966530" class="toggle" checked />
+    <label for="section-bfd18413517cb0125b84955ad7966530" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/redis/p1/" class="active">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cd205a449ba65dd2a21212b6922546d" class="toggle"  />
+    <label for="section-3cd205a449ba65dd2a21212b6922546d" class="flex justify-between">
+      <a role="button" class="">开源框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d32f47fca6b34b56b534735afccc1729" class="toggle"  />
+    <label for="section-d32f47fca6b34b56b534735afccc1729" class="flex justify-between">
+      <a role="button" class="">MQ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mq/mq/" class="">MQ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f3f420fbf9c98b8554806eb25798e5a2" class="toggle"  />
+    <label for="section-f3f420fbf9c98b8554806eb25798e5a2" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mybatis/" class="">MyBatis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cc51f608bfbc7068b8b058b45385b866" class="toggle"  />
+    <label for="section-cc51f608bfbc7068b8b058b45385b866" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-boot/" class="">SpringBoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e3a1bbd5ca40b4023e33e48202fe092" class="toggle"  />
+    <label for="section-4e3a1bbd5ca40b4023e33e48202fe092" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b7dab53cbc67c8e99988c8e69645e1ca" class="toggle"  />
+    <label for="section-b7dab53cbc67c8e99988c8e69645e1ca" class="flex justify-between">
+      <a role="button" class="">Jianda</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Part.1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---redis">&ndash; Redis</a></li>
+    <li><a href="#---redis-持久化rdb">&ndash; Redis 持久化：RDB</a></li>
+    <li><a href="#---redis-持久化aof">&ndash; Redis 持久化：AOF</a></li>
+    <li><a href="#---redis-数据类型">&ndash; Redis 数据类型</a></li>
+    <li><a href="#---redis-过期策略">&ndash; Redis 过期策略</a></li>
+    <li><a href="#---redis-内存淘汰策略">&ndash; Redis 内存淘汰策略</a></li>
+    <li><a href="#---redis-单线程却高效的原因">&ndash; Redis 单线程却高效的原因</a></li>
+    <li><a href="#---缓存雪崩">&ndash; 缓存雪崩</a></li>
+    <li><a href="#---缓存穿透">&ndash; 缓存穿透</a></li>
+    <li><a href="#---缓存预热">&ndash; 缓存预热</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---redis">
+  &ndash; Redis
+  <a class="anchor" href="#---redis">#</a>
+</h2>
+<ul>
+<li>Remote Dictionary Server</li>
+<li>是一个开源、基于内存、支持多种数据结构的存储系统，可以作为数据库、缓存和消息中间件。</li>
+</ul>
+<h2 id="---redis-持久化rdb">
+  &ndash; Redis 持久化：RDB
+  <a class="anchor" href="#---redis-%e6%8c%81%e4%b9%85%e5%8c%96rdb">#</a>
+</h2>
+<ul>
+<li>
+<p>Redis DataBase</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>在指定的时间间隔内，定时的将Redis存储的数据生成快照并存储到磁盘上
+</span></span><span style="display:flex;"><span>持久化文件：dump.rdb
+</span></span></code></pre></div></li>
+<li>
+<p>触发时机</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. 通过配置文件的配置参数自动触发
+</span></span><span style="display:flex;"><span>save <span style="color:#b452cd">300</span> <span style="color:#b452cd">10</span>    <span style="color:#228b22"># 在300秒内，如果至少有10个键发生变化，就会触发RDB快照保存</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2. 通过调用Redis命令手动触发
+</span></span><span style="display:flex;"><span>SAVE           <span style="color:#228b22"># 会阻塞当前Redis服务器，直到持久化完成，线上应该禁止使用</span>
+</span></span><span style="display:flex;"><span>BGSAVE         <span style="color:#228b22"># 该触发方式会fork一个子进程，由子进程负责持久化过程，因此阻塞只会发生在fork子进程的时候</span>
+</span></span></code></pre></div></li>
+<li>
+<p>优点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 只有一个文件dump.rdb，方便持久化。
+</span></span><span style="display:flex;"><span>2. 容灾性好，一个文件可以保存到安全的磁盘。
+</span></span><span style="display:flex;"><span>3. 性能最大化，fork 子进程来完成写操作，让主进程继续处理命令，保证了Redis的高性能
+</span></span><span style="display:flex;"><span>4. 相对于数据集大时，比AOF的启动效率更高。
+</span></span></code></pre></div></li>
+<li>
+<p>缺点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 数据安全性低。如果Redis意外down掉的话，就会丢失最后一次快照后的所有修改
+</span></span><span style="display:flex;"><span>2. 每次保存RDB的时候，Redis都要fork()出一个子进程。这可能会非常耗时，造成服务器暂时停止处理客户端。
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---redis-持久化aof">
+  &ndash; Redis 持久化：AOF
+  <a class="anchor" href="#---redis-%e6%8c%81%e4%b9%85%e5%8c%96aof">#</a>
+</h2>
+<ul>
+<li>
+<p>Append Only File</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>以日志的形式来记录每个写指令，并追加到文件中。当Redis重启时，通过重新执行这些写命令，就能实现数恢复。
+</span></span><span style="display:flex;"><span>持久化文件：appendonly.aof
+</span></span></code></pre></div></li>
+<li>
+<p>触发时机</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1. 通过配置文件的配置参数自动触发
+</span></span><span style="display:flex;"><span>auto-aof-rewrite-min-size 64mb     <span style="color:#228b22"># AOF文件的最小大小</span>
+</span></span><span style="display:flex;"><span>auto-aof-rewrite-percentage <span style="color:#b452cd">100</span>    <span style="color:#228b22"># AOF文件大小相对于上次重写后的增长比例</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2. 通过调用Redis命令手动触发
+</span></span><span style="display:flex;"><span>BGREWRITEAOF                       <span style="color:#228b22"># 开启AOF文件的重写，且不会影响Redis的正常运行</span>
+</span></span></code></pre></div></li>
+<li>
+<p>优点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 数据安全性高
+</span></span><span style="display:flex;"><span>2. 解决了数据一致性问题
+</span></span><span style="display:flex;"><span>3. AOF机制的rewrite模式
+</span></span></code></pre></div></li>
+<li>
+<p>缺点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. AOF文件比RDB文件大，且恢复速度慢。
+</span></span><span style="display:flex;"><span>2. 数据集大的时候，比RDB启动效率低。
+</span></span></code></pre></div></li>
+<li></li>
+</ul>
+<h2 id="---redis-数据类型">
+  &ndash; Redis 数据类型
+  <a class="anchor" href="#---redis-%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b">#</a>
+</h2>
+<ul>
+<li>
+<p>字符串：String</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>最基本的数据类型，可以存储字符串或数字
+</span></span><span style="display:flex;"><span>应用场景：缓存会话、配置参数、计数器
+</span></span></code></pre></div></li>
+<li>
+<p>哈希：Hash</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>键值对的集合
+</span></span><span style="display:flex;"><span>应用场景：用户属性、配置文件
+</span></span></code></pre></div></li>
+<li>
+<p>列表：List</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>有序列表，支持两端插入和删除
+</span></span><span style="display:flex;"><span>应用场景：消息队列、栈或队列、最新帖子列表
+</span></span></code></pre></div></li>
+<li>
+<p>集合：Set</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>无序集合，元素唯一
+</span></span><span style="display:flex;"><span>应用场景：共同好友、标签、去重
+</span></span></code></pre></div></li>
+<li>
+<p>有序集合：Zset</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>有序集合，元素唯一，每个元素关联一个分数，元素按分数排序
+</span></span><span style="display:flex;"><span>应用场景：排行榜、延迟队列
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---redis-过期策略">
+  &ndash; Redis 过期策略
+  <a class="anchor" href="#---redis-%e8%bf%87%e6%9c%9f%e7%ad%96%e7%95%a5">#</a>
+</h2>
+<ul>
+<li>Redis采用：定期删除+惰性删除
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">过期策略</th>
+          <th style="text-align: left">说明</th>
+          <th style="text-align: left">优点</th>
+          <th style="text-align: left">缺点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">定时删除</td>
+          <td style="text-align: left">为每个定时键创建一个定时器，一旦过期就立即删除</td>
+          <td style="text-align: left">对内存友好</td>
+          <td style="text-align: left">对CPU不友好</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">定期删除</td>
+          <td style="text-align: left">每隔一段时间随机抽查一些键，删除其中已经过期的键</td>
+          <td style="text-align: left">兼顾内存与CPU</td>
+          <td style="text-align: left">难以衡量删除操作的执行频率</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">惰性删除</td>
+          <td style="text-align: left">只有在访问键时，才会检查键是否过期，过期则删除</td>
+          <td style="text-align: left">对CPU友好</td>
+          <td style="text-align: left">对内存不友好，会造成内存泄漏</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<h2 id="---redis-内存淘汰策略">
+  &ndash; Redis 内存淘汰策略
+  <a class="anchor" href="#---redis-%e5%86%85%e5%ad%98%e6%b7%98%e6%b1%b0%e7%ad%96%e7%95%a5">#</a>
+</h2>
+<ul>
+<li>
+<p>如果定期删除漏掉了很多过期的key，也没有及时去查（即未走惰性删除），则通过内存淘汰策略释放内存</p>
+</li>
+<li>
+<p>内存淘汰策略：当Redis的内存超过了配置的最大内存值时，以一定的策略释放内存</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">策略</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">noeviction</td>
+          <td style="text-align: left">默认策略，不进行内存淘汰，当内存不足时，新写入命令会报错</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">allkeys-lru</td>
+          <td style="text-align: left">从所有键值对中，移除最近最少使用的键值对</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">allkeys-random</td>
+          <td style="text-align: left">从所有键值对中，随机移除某个键值对</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">volatile-lru</td>
+          <td style="text-align: left">在设置了过期时间的键值对中，移除最近最少使用的键值对</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">volatile-random</td>
+          <td style="text-align: left">在设置了过期时间的键值对中，随机移除某个键值对</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">volatile-ttl</td>
+          <td style="text-align: left">在设置了过期时间的键值对中，移除剩余生存时间最短的键值对</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<h2 id="---redis-单线程却高效的原因">
+  &ndash; Redis 单线程却高效的原因
+  <a class="anchor" href="#---redis-%e5%8d%95%e7%ba%bf%e7%a8%8b%e5%8d%b4%e9%ab%98%e6%95%88%e7%9a%84%e5%8e%9f%e5%9b%a0">#</a>
+</h2>
+<ul>
+<li>C语言实现</li>
+<li>纯内存操作</li>
+<li>高效的数据结构和算法‌</li>
+<li>基于非阻塞的IO复用模型机制</li>
+<li>单线程操作，避免了频繁的上下文切换</li>
+</ul>
+<h2 id="---缓存雪崩">
+  &ndash; 缓存雪崩
+  <a class="anchor" href="#---%e7%bc%93%e5%ad%98%e9%9b%aa%e5%b4%a9">#</a>
+</h2>
+<ul>
+<li>
+<p>缓存雪崩</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>同一时间大面积的缓存数据过期，此时又有大批量的请求这些数据。
+</span></span><span style="display:flex;"><span>缓存中取不到数据，就会将请求全部转发到数据库，造成数据库瞬时压力过重宕机。
+</span></span><span style="display:flex;"><span>从而形成一系列连锁反应，造成整个系统崩溃
+</span></span></code></pre></div></li>
+<li>
+<p>解决方法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 尽量错开缓存过期时间
+</span></span><span style="display:flex;"><span>2. 并发不是特别多的时候，使用加锁或者队列的方式，防止瞬时大量并发
+</span></span><span style="display:flex;"><span>3. 给每一个缓存数据增加相应的缓存标记，记录缓存的是否失效，如果缓存标记失效，则更新数据缓存
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---缓存穿透">
+  &ndash; 缓存穿透
+  <a class="anchor" href="#---%e7%bc%93%e5%ad%98%e7%a9%bf%e9%80%8f">#</a>
+</h2>
+<ul>
+<li>
+<p>缓存穿透</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>指查询数据库中一定不存在的数据，在缓存中自然也查不到，每次都要去数据库再查询一遍，
+</span></span><span style="display:flex;"><span>以至于产生了两次无用查询，每次请求都会到达数据库，就失去了使用缓存的意义
+</span></span></code></pre></div></li>
+<li>
+<p>解决方法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 采用布隆过滤器
+</span></span><span style="display:flex;"><span>将所有可能存在的数据哈希到一个足够大的bitmap中，一个一定不存在的数据会被这个bitmap拦截掉
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2. 缓存空查询
+</span></span><span style="display:flex;"><span>将空结果也缓存起来，设置较短的过期时间，如此第二次就不会继续访问数据库了
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---缓存预热">
+  &ndash; 缓存预热
+  <a class="anchor" href="#---%e7%bc%93%e5%ad%98%e9%a2%84%e7%83%ad">#</a>
+</h2>
+<ul>
+<li>
+<p>缓存预热</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>就是系统上线后，提前将相关的缓存数据直接加载到缓存系统
+</span></span></code></pre></div></li>
+<li>
+<p>解决方法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 直接写个缓存刷新页面，上线时手工操作下
+</span></span><span style="display:flex;"><span>2. 数据量不大，可以在项目启动的时候自动进行加载
+</span></span><span style="display:flex;"><span>3. 定时刷新缓存
+</span></span></code></pre></div></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    Copyright © 2024-2025
+    <br/>
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---redis">&ndash; Redis</a></li>
+    <li><a href="#---redis-持久化rdb">&ndash; Redis 持久化：RDB</a></li>
+    <li><a href="#---redis-持久化aof">&ndash; Redis 持久化：AOF</a></li>
+    <li><a href="#---redis-数据类型">&ndash; Redis 数据类型</a></li>
+    <li><a href="#---redis-过期策略">&ndash; Redis 过期策略</a></li>
+    <li><a href="#---redis-内存淘汰策略">&ndash; Redis 内存淘汰策略</a></li>
+    <li><a href="#---redis-单线程却高效的原因">&ndash; Redis 单线程却高效的原因</a></li>
+    <li><a href="#---缓存雪崩">&ndash; 缓存雪崩</a></li>
+    <li><a href="#---缓存穿透">&ndash; 缓存穿透</a></li>
+    <li><a href="#---缓存预热">&ndash; 缓存预热</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

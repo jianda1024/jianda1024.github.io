@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="机试题库 - 12">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://localhost:1313/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="机试题库 - 12">
+  <meta property="og:description" content="机试题库 - 12">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="program-design">
+<title>机试题库 - 12 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://localhost:1313/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.cc1e8cf11c13dd148d8feaf0ca0cec9eb4124b5e67cfdf4f09c0ba1de00d77f3.js" integrity="sha256-zB6M8RwT3RSNj&#43;rwygzsnrQSS15nz99PCcC6HeANd/M=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="clickContent('https:\/\/localhost:1313\/interview\/program-design\/structure-algorithm\/huawei-od\/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li>
+              <a href="https://localhost:1313/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7af54bb6384ef366b268a9438900490" class="toggle"  />
+    <label for="section-d7af54bb6384ef366b268a9438900490" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d368cfb348ae2c31b67bc0cd97524469" class="toggle" checked />
+    <label for="section-d368cfb348ae2c31b67bc0cd97524469" class="flex justify-between">
+      <a role="button" class="">程序设计</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-547eb2a955702a10f6a5115390900419" class="toggle" checked />
+    <label for="section-547eb2a955702a10f6a5115390900419" class="flex justify-between">
+      <a role="button" class="">数据结构与算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7784697cbea516c63f36e08f8ea9b7b" class="toggle"  />
+    <label for="section-d7784697cbea516c63f36e08f8ea9b7b" class="flex justify-between">
+      <a role="button" class="">leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/" class="">哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/" class="">双指针</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="">滑动窗口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/" class="">子串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e1272beed7905527d0fba42083bdee40" class="toggle" checked />
+    <label for="section-e1272beed7905527d0fba42083bdee40" class="flex justify-between">
+      <a role="button" class="">华为OD</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/" class="">必会题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/" class="">必会题 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/" class="">参考题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/" class="">机试题库 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/" class="">机试题库 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%934/" class="">机试题库 - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%935/" class="">机试题库 - 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9311/" class="">机试题库 - 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/" class="active">机试题库 - 12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9313/" class="">机试题库 - 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9314/" class="">机试题库 - 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/" class="">华为机试</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/dir/" class="">目录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="toggle"  />
+    <label for="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="flex justify-between">
+      <a role="button" class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-534b4c3b58152c7a029cbad8bcc9e467" class="toggle"  />
+    <label for="section-534b4c3b58152c7a029cbad8bcc9e467" class="flex justify-between">
+      <a role="button" class="">分布式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/distributed/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b032946e6aac69e7d2bfca696347bd30" class="toggle"  />
+    <label for="section-b032946e6aac69e7d2bfca696347bd30" class="flex justify-between">
+      <a role="button" class="">程序语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62f00d6c6c4fc42ea6cda66313338d79" class="toggle"  />
+    <label for="section-62f00d6c6c4fc42ea6cda66313338d79" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="toggle"  />
+    <label for="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a42d8e26dc157dad91266007f615424" class="toggle"  />
+    <label for="section-2a42d8e26dc157dad91266007f615424" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="toggle"  />
+    <label for="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="flex justify-between">
+      <a role="button" class="">数据存储</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="toggle"  />
+    <label for="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="flex justify-between">
+      <a role="button" class="">MySQL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/mysql/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd18413517cb0125b84955ad7966530" class="toggle"  />
+    <label for="section-bfd18413517cb0125b84955ad7966530" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/redis/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cd205a449ba65dd2a21212b6922546d" class="toggle"  />
+    <label for="section-3cd205a449ba65dd2a21212b6922546d" class="flex justify-between">
+      <a role="button" class="">开源框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d32f47fca6b34b56b534735afccc1729" class="toggle"  />
+    <label for="section-d32f47fca6b34b56b534735afccc1729" class="flex justify-between">
+      <a role="button" class="">MQ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mq/mq/" class="">MQ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f3f420fbf9c98b8554806eb25798e5a2" class="toggle"  />
+    <label for="section-f3f420fbf9c98b8554806eb25798e5a2" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mybatis/" class="">MyBatis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cc51f608bfbc7068b8b058b45385b866" class="toggle"  />
+    <label for="section-cc51f608bfbc7068b8b058b45385b866" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-boot/" class="">SpringBoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e3a1bbd5ca40b4023e33e48202fe092" class="toggle"  />
+    <label for="section-4e3a1bbd5ca40b4023e33e48202fe092" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b7dab53cbc67c8e99988c8e69645e1ca" class="toggle"  />
+    <label for="section-b7dab53cbc67c8e99988c8e69645e1ca" class="flex justify-between">
+      <a role="button" class="">Jianda</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>机试题库 - 12</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#01-简易内存池">01. 简易内存池</a></li>
+    <li><a href="#02-结队编程">02. 结队编程</a></li>
+    <li><a href="#03-九宫格按键输入">03. 九宫格按键输入</a></li>
+    <li><a href="#04">04.</a></li>
+    <li><a href="#05">05.</a></li>
+    <li><a href="#06">06.</a></li>
+    <li><a href="#07">07.</a></li>
+    <li><a href="#08">08.</a></li>
+    <li><a href="#09">09.</a></li>
+    <li><a href="#10">10.</a></li>
+    <li><a href="#11">11.</a></li>
+    <li><a href="#12">12.</a></li>
+    <li><a href="#13">13.</a></li>
+    <li><a href="#14">14.</a></li>
+    <li><a href="#15">15.</a></li>
+    <li><a href="#16">16.</a></li>
+    <li><a href="#17">17.</a></li>
+    <li><a href="#18">18.</a></li>
+    <li><a href="#19">19.</a></li>
+    <li><a href="#20">20.</a></li>
+    <li><a href="#21">21.</a></li>
+    <li><a href="#22">22.</a></li>
+    <li><a href="#23">23.</a></li>
+    <li><a href="#24">24.</a></li>
+    <li><a href="#25">25.</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="01-简易内存池">
+  01. 简易内存池
+  <a class="anchor" href="#01-%e7%ae%80%e6%98%93%e5%86%85%e5%ad%98%e6%b1%a0">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>请实现一个简易内存池Q，根据请求命令完成内存分配和释放。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>内存池支持两种操作命令，REQUEST和RELEASE，
+</span></span><span style="display:flex;"><span>REQUEST=请求的内存大小
+</span></span><span style="display:flex;"><span>表示请求分配指定大小内存，如果分配成功，返回分配到的内存首地址；如果内存不足，或指定的大小为0,则输出error.
+</span></span><span style="display:flex;"><span>RELEASE=释放的内存首地址，
+</span></span><span style="display:flex;"><span>表示释放掉之前分配的内存，释放成功无需输出，如果释放不存在的首地址则输出error。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>注意：
+</span></span><span style="display:flex;"><span>1.内存池总大小为100字节。
+</span></span><span style="display:flex;"><span>2.内存池地址分配必须是连续内存，并优先从低地址分配。
+</span></span><span style="display:flex;"><span>3.内存释放后可被再次分配，已释放的内存在空闲时不能被二次释放
+</span></span><span style="display:flex;"><span>4.不会释放已申请的内存块的中间地址，
+</span></span><span style="display:flex;"><span>5.释放操作只是针对首地址所对应的单个内存块进行操作，不会影响其它内存块。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：
+</span></span><span style="display:flex;"><span>首行为整数N，表示操作命令的个数，取值范围：N≤100.
+</span></span><span style="display:flex;"><span>接下来的N行，每行将给出一个操作命令，操作命令和参数之间用等号分割。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输出描述：
+</span></span><span style="display:flex;"><span>根据操作命令返回输出
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：5
+</span></span><span style="display:flex;"><span>	 REQUEST=10
+</span></span><span style="display:flex;"><span>     REQUEST=20
+</span></span><span style="display:flex;"><span>     RELEASE=0
+</span></span><span style="display:flex;"><span>     REQUEST=15
+</span></span><span style="display:flex;"><span>     RELEASE=10
+</span></span><span style="display:flex;"><span>输出：0
+</span></span><span style="display:flex;"><span>     10
+</span></span><span style="display:flex;"><span>     10
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 0 表示未分配 1表示已经分配</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">final</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>RAM_ARR<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[100];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 存放分配过的内存的首地址及长度</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">final</span><span style="color:#bbb"> </span>HashMap&lt;Integer,<span style="color:#bbb"> </span>Integer&gt;<span style="color:#bbb"> </span>MAP<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>HashMap&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>num<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>List&lt;String&gt;<span style="color:#bbb"> </span>list<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>ArrayList&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>num;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String[]<span style="color:#bbb"> </span>strings<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">split</span>(<span style="color:#cd5555">&#34;=&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>answer<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>answer(strings[0],<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(strings[1]));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(answer<span style="color:#bbb"> </span>!=<span style="color:#bbb"> </span>-2)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>list.<span style="color:#658b00">add</span>(answer<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>-1<span style="color:#bbb"> </span>?<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;error&#34;</span><span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>answer<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>list.<span style="color:#658b00">forEach</span>(System.<span style="color:#658b00">out</span>::println);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">answer</span>(String<span style="color:#bbb"> </span>str,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>num)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(str.<span style="color:#658b00">equals</span>(<span style="color:#cd5555">&#34;REQUEST&#34;</span>))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(num<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>-1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>RAM_ARR.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(RAM_ARR[i]<span style="color:#bbb"> </span>!=<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">continue</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>RAM_ARR.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(RAM_ARR[j]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>len++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>len<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#8b008b;font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(len<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>num)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i;<span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>num;<span style="color:#bbb"> </span>k++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                        </span>RAM_ARR[k]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>MAP.<span style="color:#658b00">put</span>(i,<span style="color:#bbb"> </span>num);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>i;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>-1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(str.<span style="color:#658b00">equals</span>(<span style="color:#cd5555">&#34;RELEASE&#34;</span>))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(MAP.<span style="color:#658b00">containsKey</span>(num))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>Integer<span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>MAP.<span style="color:#658b00">get</span>(num);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>MAP.<span style="color:#658b00">remove</span>(num);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>num;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>num;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>RAM_ARR[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>-2;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>-1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>-1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="02-结队编程">
+  02. 结队编程
+  <a class="anchor" href="#02-%e7%bb%93%e9%98%9f%e7%bc%96%e7%a8%8b">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>某部门计划通过结队编程来进行项目开发，
+</span></span><span style="display:flex;"><span>已知该部门有 N 名员工，每个员工有独一无二的职级，每三个员工形成一个小组进行结队编程
+</span></span><span style="display:flex;"><span>请你按下述条件计算可能组合的小组数量。同一员工可以参加多个小组。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>结队分组规则如下：
+</span></span><span style="display:flex;"><span>从部门中选出序号分别为 i、j、k 的3名员工，他们的职级分贝为 level[i]，level[j]，level[k]，
+</span></span><span style="display:flex;"><span>结队小组满足 level[i] ＜ level[j] ＜ level[k] 或者 level[i] &gt; level[j] &gt; level[k]，
+</span></span><span style="display:flex;"><span>其中 0 ≤ i ＜ j ＜ k ＜ n。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：
+</span></span><span style="display:flex;"><span>第一行输入：员工总数 n，1 ≤ n ≤ 6000
+</span></span><span style="display:flex;"><span>第二行输入：按序号依次排列的员工的职级 level，中间用空格隔开，1 ≤ level[i] ≤ 10^5
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输出描述：
+</span></span><span style="display:flex;"><span>可能结队的小组数量
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：4
+</span></span><span style="display:flex;"><span>     1 2 3 4
+</span></span><span style="display:flex;"><span>输出：4
+</span></span><span style="display:flex;"><span>说明：可能结队成的组合(1,2,3)、(1,2,4)、(1,3,4)、(2,3,4)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：3
+</span></span><span style="display:flex;"><span>     5 4 7
+</span></span><span style="display:flex;"><span>输出：0
+</span></span><span style="display:flex;"><span>说明：根据结队条件，我们无法为该部门组建小组
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(sc.<span style="color:#658b00">nextLine</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String[]<span style="color:#bbb"> </span>split<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">split</span>(<span style="color:#cd5555">&#34; &#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>levels<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Arrays.<span style="color:#658b00">stream</span>(split).<span style="color:#658b00">mapToInt</span>(Integer::parseInt).<span style="color:#658b00">toArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(getResult(n,<span style="color:#bbb"> </span>levels));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">long</span><span style="color:#bbb"> </span><span style="color:#008b45">getResult</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>levels)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">long</span><span style="color:#bbb"> </span>ans<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>mid<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>levels[i];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">// 左边比自己小的元素的个数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">long</span><span style="color:#bbb"> </span>leftSmallerCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">// 左边比自己大的元素的个数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">long</span><span style="color:#bbb"> </span>leftBiggerCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>i;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(levels[j]<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>mid)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>leftBiggerCount++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>leftSmallerCount++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">// 右边比自己小的元素是的个数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">long</span><span style="color:#bbb"> </span>rightSmallerCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">// 右边比自己大的元素的个数</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">long</span><span style="color:#bbb"> </span>rightBiggerCount<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>k++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(levels[k]<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>mid)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>rightBiggerCount++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>rightSmallerCount++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>ans<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>leftSmallerCount<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>rightBiggerCount<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>leftBiggerCount<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>rightSmallerCount;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>ans;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="03-九宫格按键输入">
+  03. 九宫格按键输入
+  <a class="anchor" href="#03-%e4%b9%9d%e5%ae%ab%e6%a0%bc%e6%8c%89%e9%94%ae%e8%be%93%e5%85%a5">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>九宫格按键输入，输出显示内容，有英文和数字两个模式，默认是数字模式，数字模式直接输出数字，英文模式连续按同一个按键会依次出现这个按键上的字母，如果输入”/”或者其他字符，则循环中断。
+</span></span><span style="display:flex;"><span>字符对应关系如图
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入描述：
+</span></span><span style="display:flex;"><span>输入范围为数字 0~9 和字符’#’、’/’，输出屏幕显示，例如，
+</span></span><span style="display:flex;"><span>在数字模式下，输入 1234，显示 1234
+</span></span><span style="display:flex;"><span>在英文模式下，输入 1234，显示,adg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输出描述：
+</span></span><span style="display:flex;"><span>#用于切换模式，默认是数字模式，执行#后切换为英文模式；
+</span></span><span style="display:flex;"><span>/表示延迟，例如在英文模式下，输入 22/222，显示为 bc；
+</span></span><span style="display:flex;"><span>英文模式下，多次按同一键，例如输入 22222，显示为 b；
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：123#222235/56
+</span></span><span style="display:flex;"><span>输出：123adjjm
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="04">
+  04.
+  <a class="anchor" href="#04">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="05">
+  05.
+  <a class="anchor" href="#05">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="06">
+  06.
+  <a class="anchor" href="#06">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="07">
+  07.
+  <a class="anchor" href="#07">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="08">
+  08.
+  <a class="anchor" href="#08">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="09">
+  09.
+  <a class="anchor" href="#09">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="10">
+  10.
+  <a class="anchor" href="#10">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="11">
+  11.
+  <a class="anchor" href="#11">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="12">
+  12.
+  <a class="anchor" href="#12">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="13">
+  13.
+  <a class="anchor" href="#13">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="14">
+  14.
+  <a class="anchor" href="#14">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="15">
+  15.
+  <a class="anchor" href="#15">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="16">
+  16.
+  <a class="anchor" href="#16">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="17">
+  17.
+  <a class="anchor" href="#17">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="18">
+  18.
+  <a class="anchor" href="#18">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="19">
+  19.
+  <a class="anchor" href="#19">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="20">
+  20.
+  <a class="anchor" href="#20">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="21">
+  21.
+  <a class="anchor" href="#21">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="22">
+  22.
+  <a class="anchor" href="#22">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="23">
+  23.
+  <a class="anchor" href="#23">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="24">
+  24.
+  <a class="anchor" href="#24">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="25">
+  25.
+  <a class="anchor" href="#25">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    Copyright © 2024-2025
+    <br/>
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#01-简易内存池">01. 简易内存池</a></li>
+    <li><a href="#02-结队编程">02. 结队编程</a></li>
+    <li><a href="#03-九宫格按键输入">03. 九宫格按键输入</a></li>
+    <li><a href="#04">04.</a></li>
+    <li><a href="#05">05.</a></li>
+    <li><a href="#06">06.</a></li>
+    <li><a href="#07">07.</a></li>
+    <li><a href="#08">08.</a></li>
+    <li><a href="#09">09.</a></li>
+    <li><a href="#10">10.</a></li>
+    <li><a href="#11">11.</a></li>
+    <li><a href="#12">12.</a></li>
+    <li><a href="#13">13.</a></li>
+    <li><a href="#14">14.</a></li>
+    <li><a href="#15">15.</a></li>
+    <li><a href="#16">16.</a></li>
+    <li><a href="#17">17.</a></li>
+    <li><a href="#18">18.</a></li>
+    <li><a href="#19">19.</a></li>
+    <li><a href="#20">20.</a></li>
+    <li><a href="#21">21.</a></li>
+    <li><a href="#22">22.</a></li>
+    <li><a href="#23">23.</a></li>
+    <li><a href="#24">24.</a></li>
+    <li><a href="#25">25.</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

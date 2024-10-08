@@ -19,7 +19,7 @@
 <link rel="canonical" href="https://localhost:1313/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/interview.search.min.834e616a57785fe25d7b266ca827488b1f6af52f4fcd69416b822ca91af03eab.js" integrity="sha256-g05hald4X&#43;JdeyZsqCdIix9q9S9PzWlBa4IsqRrwPqs=" crossorigin="anonymous"></script>
+  <script defer src="/interview.search.min.cc1e8cf11c13dd148d8feaf0ca0cec9eb4124b5e67cfdf4f09c0ba1de00d77f3.js" integrity="sha256-zB6M8RwT3RSNj&#43;rwygzsnrQSS15nz99PCcC6HeANd/M=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -350,6 +350,84 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%934/" class="">机试题库 - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%935/" class="">机试题库 - 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9311/" class="">机试题库 - 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/" class="">机试题库 - 12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9313/" class="">机试题库 - 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9314/" class="">机试题库 - 14</a>
   
 
         </li>
@@ -1134,8 +1212,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>StringBuilder<span style="color:#bbb"> </span>sb<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder(str);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>sb.<span style="color:#658b00">reverse</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(sb);<span style="color:#bbb">
@@ -1184,8 +1262,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">throws</span><span style="color:#bbb"> </span>ScriptException<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ScriptEngine<span style="color:#bbb"> </span>engine<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>ScriptEngineManager().<span style="color:#658b00">getEngineByName</span>(<span style="color:#cd5555">&#34;js&#34;</span>);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(engine.<span style="color:#658b00">eval</span>(line));<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
@@ -1210,8 +1288,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args){<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>StringBuilder<span style="color:#bbb"> </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder(line);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(res.<span style="color:#658b00">reverse</span>());<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
@@ -1239,15 +1317,15 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>输入：6
 </span></span><span style="display:flex;"><span>输出：31+33+35+37+39+41
-</span></span></code></pre></div><img src="/images/2024Q3/img_2024-09-22_145216.png" width="500"/>
+</span></span></code></pre></div><img src="/img/2024Q3/img_2024-09-22_145216.png" width="500"/>
 </li>
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 由等差数列公式，公差d=2</span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 可得a1=m(m-1)+1</span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args){<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>a1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>(m<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>StringBuilder<span style="color:#bbb"> </span>sb<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder(Integer.<span style="color:#658b00">toString</span>(a1));<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>m;<span style="color:#bbb"> </span>i++){<span style="color:#bbb">
@@ -1280,9 +1358,9 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>maxLen<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>chs1.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
@@ -1366,8 +1444,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>line<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>maxLen<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>line.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>line.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
@@ -1403,14 +1481,14 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>输入：275
 </span></span><span style="display:flex;"><span>输出：113575
-</span></span></code></pre></div><img src="/images/2024Q3/img_2024-09-22_145216.png" width="500"/>
+</span></span></code></pre></div><img src="/img/2024Q3/img_2024-09-22_145216.png" width="500"/>
 </li>
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 等差数列求和公式</span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>2<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>(n<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>(n<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>3)<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(sum);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
@@ -1482,8 +1560,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>score<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//统计长度</span><span style="color:#bbb">
@@ -1553,8 +1631,8 @@ https://github.com/alex-shpak/hugo-book
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 数组下标不重复，且有序</span><span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">char</span>[]<span style="color:#bbb"> </span>chs<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">toCharArray</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>temArr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[128];<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>count<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">char</span><span style="color:#bbb"> </span>ch<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>chs)<span style="color:#bbb"> </span>{<span style="color:#bbb">
@@ -1587,9 +1665,9 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(in.<span style="color:#658b00">nextLine</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(sc.<span style="color:#658b00">nextLine</span>());<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(str.<span style="color:#658b00">substring</span>(0,<span style="color:#bbb"> </span>k));<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
 </span></span></span></code></pre></div></li>
@@ -1614,8 +1692,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2;<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!isPrime(m1)<span style="color:#bbb"> </span>||<span style="color:#bbb"> </span>!isPrime(m2))<span style="color:#bbb"> </span>{<span style="color:#bbb">
@@ -1658,8 +1736,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">replaceAll</span>(<span style="color:#cd5555">&#34;[^a-zA-Z]&#34;</span>,<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">replaceAll</span>(<span style="color:#cd5555">&#34;[^ ]&#34;</span>,<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str3<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">replaceAll</span>(<span style="color:#cd5555">&#34;[^0-9]&#34;</span>,<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&#34;</span>);<span style="color:#bbb">
@@ -1700,11 +1778,11 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(in.<span style="color:#658b00">nextLine</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(sc.<span style="color:#658b00">nextLine</span>());<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String[]<span style="color:#bbb"> </span>arr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>String[sum];<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>sum;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>arr[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>arr[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Arrays.<span style="color:#658b00">sort</span>(arr);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Arrays.<span style="color:#658b00">stream</span>(arr).<span style="color:#658b00">forEach</span>(System.<span style="color:#658b00">out</span>::println);<span style="color:#bbb">
@@ -1730,8 +1808,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">substring</span>(2);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>().<span style="color:#658b00">substring</span>(2);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">parseInt</span>(str,<span style="color:#bbb"> </span>16);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(val);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
@@ -1756,8 +1834,8 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>str.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">char</span><span style="color:#bbb"> </span>ch<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">charAt</span>(i);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(str.<span style="color:#658b00">indexOf</span>(ch)<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>str.<span style="color:#658b00">lastIndexOf</span>(ch))<span style="color:#bbb"> </span>{<span style="color:#bbb">
@@ -1790,13 +1868,13 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(in.<span style="color:#658b00">hasNext</span>())<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(sc.<span style="color:#658b00">hasNext</span>())<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>arr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[n];<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>arr[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>arr[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextInt</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Arrays.<span style="color:#658b00">sort</span>(arr);<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>StringBuilder<span style="color:#bbb"> </span>sb<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>StringBuilder();<span style="color:#bbb">
@@ -1830,10 +1908,10 @@ https://github.com/alex-shpak/hugo-book
 <li>
 <p>题解</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#008b45">main</span>(String[]<span style="color:#bbb"> </span>args)<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>in<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(in.<span style="color:#658b00">hasNext</span>())<span style="color:#bbb"> </span>{<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>shortStr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
-</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>longStr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>in.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Scanner<span style="color:#bbb"> </span>sc<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>Scanner(System.<span style="color:#658b00">in</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(sc.<span style="color:#658b00">hasNext</span>())<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>shortStr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>longStr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sc.<span style="color:#658b00">nextLine</span>();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Set&lt;Character&gt;<span style="color:#bbb"> </span>set<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>HashSet&lt;&gt;();<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>shortStr.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>++i)<span style="color:#bbb"> </span>{<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>set.<span style="color:#658b00">add</span>(shortStr.<span style="color:#658b00">charAt</span>(i));<span style="color:#bbb">

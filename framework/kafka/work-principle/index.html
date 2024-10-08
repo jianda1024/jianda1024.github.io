@@ -4713,7 +4713,7 @@ https://github.com/alex-shpak/hugo-book
 <li>segment：指 partition 的分段，每个 partition 包含多个 segment 段，每个 Segment 存着 message 信息。</li>
 <li>offset：指 Message 在 partition 中的偏移量，可理解为消息在 partition 中的索引</li>
 </ul>
-<img src="/images/2022Q2/img_2022-05-22_164440.png" width="650"/>
+<img src="/img/2022Q2/img_2022-05-22_164440.png" width="650"/>
 <h3 id="存储设计">
   存储设计
   <a class="anchor" href="#%e5%ad%98%e5%82%a8%e8%ae%be%e8%ae%a1">#</a>
@@ -4724,7 +4724,7 @@ https://github.com/alex-shpak/hugo-book
 <li>Kafka 并没有为每条 Message 建立索引，而是采用了<strong>稀疏存储</strong>的方式，每隔一定字节的数据建立一条索引。</li>
 <li>这样在查找指定 offset 的 Message 时，用<strong>二分查找</strong>就可以快速定位到该 Message</li>
 </ul>
-<img src="/images/2022Q2/img_2022-05-22_164441.png" width="650"/>
+<img src="/img/2022Q2/img_2022-05-22_164441.png" width="650"/>
 </article>
  
       

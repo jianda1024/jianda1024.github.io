@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>创建型 on IWiki</title>
+    <title>创建型 on Document</title>
     <link>https://localhost:1313/program-design/design-pattern/creational/</link>
-    <description>Recent content in 创建型 on IWiki</description>
+    <description>Recent content in 创建型 on Document</description>
     <generator>Hugo</generator>
-    <language>iwiki</language>
+    <language>doc</language>
     <atom:link href="https://localhost:1313/program-design/design-pattern/creational/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>单例模式</title>

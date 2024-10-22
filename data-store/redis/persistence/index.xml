@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>持久化 on IWiki</title>
-    <link>https://localhost:1313/data-store/redis/persistence/</link>
-    <description>Recent content in 持久化 on IWiki</description>
+    <title>持久化 on Document</title>
+    <link>http://localhost:1313/data-store/redis/persistence/</link>
+    <description>Recent content in 持久化 on Document</description>
     <generator>Hugo</generator>
-    <language>iwiki</language>
-    <atom:link href="https://localhost:1313/data-store/redis/persistence/index.xml" rel="self" type="application/rss+xml" />
+    <language>doc</language>
+    <atom:link href="http://localhost:1313/data-store/redis/persistence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RDB</title>
-      <link>https://localhost:1313/data-store/redis/persistence/RDB/</link>
+      <link>http://localhost:1313/data-store/redis/persistence/RDB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/data-store/redis/persistence/RDB/</guid>
+      <guid>http://localhost:1313/data-store/redis/persistence/RDB/</guid>
       <description>&lt;h1 id=&#34;rdb&#34;&gt;&#xD;&#xA;  RDB&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rdb&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;rdb-1&#34;&gt;&#xD;&#xA;  RDB&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#rdb-1&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Redis DataBase，在指定的时间间隔内将内存中的数据集快照写入磁盘。&lt;/li&gt;&#xA;&lt;li&gt;持久化文件：dump.rdb&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;过程&#34;&gt;&#xD;&#xA;  过程&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%87%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Redis 调用 fork() ，创建一个子进程。&lt;/li&gt;&#xA;&lt;li&gt;主进程继续处理client请求，且不进行任何IO操作，以保证性能。&lt;/li&gt;&#xA;&lt;li&gt;子进程会先将数据写入到一个临时文件中，待持久化过程都结束了，&#xA;再用这个临时文件替换上次持久化好的文件。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;触发&#34;&gt;&#xD;&#xA;  触发&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%a7%a6%e5%8f%91&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;自动触发&lt;/p&gt;</description>
     </item>
     <item>
       <title>AOF</title>
-      <link>https://localhost:1313/data-store/redis/persistence/AOF/</link>
+      <link>http://localhost:1313/data-store/redis/persistence/AOF/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/data-store/redis/persistence/AOF/</guid>
+      <guid>http://localhost:1313/data-store/redis/persistence/AOF/</guid>
       <description>&lt;h1 id=&#34;aof&#34;&gt;&#xD;&#xA;  AOF&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#aof&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;aof-1&#34;&gt;&#xD;&#xA;  AOF&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#aof-1&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Append Only File，以日志的形式来记录每个写操作，并追加到文件中。&lt;/li&gt;&#xA;&lt;li&gt;当Redis重启时，会通过重新执行文件中保存的写命令来在内存中重建整个数据库的内容。&lt;/li&gt;&#xA;&lt;li&gt;持久化文件：appendonly.aof&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;过程&#34;&gt;&#xD;&#xA;  过程&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%bf%87%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Redis 调用 fork() ，创建一个子进程。&lt;/li&gt;&#xA;&lt;li&gt;主进程处理client请求，把写命令写入到aof文件中，并把写命令缓存起来。&lt;/li&gt;&#xA;&lt;li&gt;子进程往临时文件中写入重建数据库状态的命令，之后通知主进程。&lt;/li&gt;&#xA;&lt;li&gt;主进程把缓存的写命令也写入到临时文件，然后用临时文件替换老aof文件。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;触发&#34;&gt;&#xD;&#xA;  触发&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%a7%a6%e5%8f%91&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;自动触发：根据配置规则自动触发；&lt;/li&gt;&#xA;&lt;li&gt;手动触发：bgrewriteaof&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;优点&#34;&gt;&#xD;&#xA;  优点&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e4%bc%98%e7%82%b9&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;数据安全&lt;/li&gt;&#xA;&lt;li&gt;解决了数据一致性问题&lt;/li&gt;&#xA;&lt;li&gt;AOF 机制的 rewrite 模式&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;缺点&#34;&gt;&#xD;&#xA;  缺点&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%bc%ba%e7%82%b9&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AOF 文件比 RDB 文件大，且恢复速度慢。&lt;/li&gt;&#xA;&lt;li&gt;数据集大的时候，比 rdb 启动效率低。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

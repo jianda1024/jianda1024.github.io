@@ -13,8 +13,6 @@ function isEmpty(param){
 
 // 切换内容
 function clickContent(param) {
-    console.log("log:")
-    console.log(param)
     element = $("#multi-content-list")
     if (element.hasClass('style-hide')) {
         element.removeClass('style-hide');
@@ -22,3 +20,12 @@ function clickContent(param) {
         element.addClass('style-hide');
     }
 }
+
+
+// var links=$('#TableOfContents ').find('a');
+// var txt;
+// for (var idx in links) {
+//     txt=txt+"\n"+links[idx].outerHTML+"<br/>"
+
+// } 
+// console.log(txt)

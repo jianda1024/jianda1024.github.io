@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web on IWiki</title>
+    <title>Web on Document</title>
     <link>https://localhost:1313/program-lang/web/</link>
-    <description>Recent content in Web on IWiki</description>
+    <description>Recent content in Web on Document</description>
     <generator>Hugo</generator>
-    <language>iwiki</language>
+    <language>doc</language>
     <atom:link href="https://localhost:1313/program-lang/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown</title>

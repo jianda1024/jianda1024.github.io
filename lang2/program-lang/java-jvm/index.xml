@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java虚拟机 on Interview</title>
+    <link>http://localhost:1313/lang2/program-lang/java-jvm/</link>
+    <description>Recent content in Java虚拟机 on Interview</description>
+    <generator>Hugo</generator>
+    <language>lang2</language>
+    <atom:link href="http://localhost:1313/lang2/program-lang/java-jvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Part.1</title>
+      <link>http://localhost:1313/lang2/program-lang/java-jvm/p1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lang2/program-lang/java-jvm/p1/</guid>
+      <description>&lt;h2 id=&#34;---jvm-结构&#34;&gt;&#xD;&#xA;  &amp;ndash; JVM 结构&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---jvm-%e7%bb%93%e6%9e%84&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;类加载器，Class Loader&lt;/li&gt;&#xA;&lt;li&gt;执行引擎，Execution Engine&lt;/li&gt;&#xA;&lt;li&gt;运行时数据区，Runtime Data Area&lt;/li&gt;&#xA;&lt;li&gt;本地方法接口，Native Interface&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;img src=&#34;http://localhost:1313/img/2022Q1/img_2022-03-22_110830.png&#34; width=&#34;650&#34;&gt;&#xD;&#xA;&lt;h2 id=&#34;---类加载过程&#34;&gt;&#xD;&#xA;  &amp;ndash; 类加载过程&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---%e7%b1%bb%e5%8a%a0%e8%bd%bd%e8%bf%87%e7%a8%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/img/2024Q3/img_2024-07-31_010006.png&#34; width=&#34;900&#34;/&gt;&#xD;&#xA;&lt;h2 id=&#34;---类加载机制&#34;&gt;&#xD;&#xA;  &amp;ndash; 类加载机制&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---%e7%b1%bb%e5%8a%a0%e8%bd%bd%e6%9c%ba%e5%88%b6&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;双亲委派模式&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Part.2</title>
+      <link>http://localhost:1313/lang2/program-lang/java-jvm/p2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lang2/program-lang/java-jvm/p2/</guid>
+      <description>&lt;h2 id=&#34;---jvm-调优工具&#34;&gt;&#xD;&#xA;  &amp;ndash; JVM 调优工具&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---jvm-%e8%b0%83%e4%bc%98%e5%b7%a5%e5%85%b7&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;jconsole&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;JDK中自带的java监控和管理控制台&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;用于对JVM中内存，线程和类等的监控&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;jvisualvm&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jdk自带全能工具&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;可以分析内存快照、线程快照；监控内存变化、GC变化等&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;MAT&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Memory Analyzer Tool&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;一个基于Eclipse的内存分析工具&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;可以帮助查找内存泄漏和减少内存消耗&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;GChisto&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;一款专业分析gc日志的工具&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
+    </item>
+  </channel>
+</rss>

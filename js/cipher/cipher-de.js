@@ -3,7 +3,7 @@
 var token = "";
 if (isEmpty(token)) {
     var html = '<div class="style-center" onclick="decryptHtml()" style="cursor:pointer">'
-        + '<img src="/images/000000/img_0000-00-00_000000.png" width="600">'
+        + '<img src="/img/000000/img_0000-00-00_000000.png" width="600">'
         + '</div>';
     $("article.markdown").prepend(html);
     $("nav#TableOfContents").prepend("<ul></ul>");

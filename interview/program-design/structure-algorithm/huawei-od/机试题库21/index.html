@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="机试题库 - 21">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://localhost:1313/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="机试题库 - 21">
+  <meta property="og:description" content="机试题库 - 21">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="program-design">
+<title>机试题库 - 21 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://localhost:1313/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.3baa99935d6e12f896a5c804bb4f4423cb3e82ebee08be4f99b9fc089bc7f4e6.js" integrity="sha256-O6qZk11uEviWpcgEu09EI8s&#43;guvuCL5Pmbn8CJvH9OY=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="clickContent('https:\/\/localhost:1313\/interview\/program-design\/structure-algorithm\/huawei-od\/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li>
+              <a href="https://localhost:1313/" class="flex align-center">
+                Document
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li>
+              <a href="https://localhost:1313/idata/" class="flex align-center">
+                IData
+              </a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7af54bb6384ef366b268a9438900490" class="toggle"  />
+    <label for="section-d7af54bb6384ef366b268a9438900490" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-base/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d368cfb348ae2c31b67bc0cd97524469" class="toggle" checked />
+    <label for="section-d368cfb348ae2c31b67bc0cd97524469" class="flex justify-between">
+      <a role="button" class="">程序设计</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-547eb2a955702a10f6a5115390900419" class="toggle" checked />
+    <label for="section-547eb2a955702a10f6a5115390900419" class="flex justify-between">
+      <a role="button" class="">数据结构与算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e1272beed7905527d0fba42083bdee40" class="toggle" checked />
+    <label for="section-e1272beed7905527d0fba42083bdee40" class="flex justify-between">
+      <a role="button" class="">华为OD</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/" class="">必会题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/" class="">必会题 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/" class="">参考题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/" class="">机试题库 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/" class="">机试题库 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%934/" class="">机试题库 - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%935/" class="">机试题库 - 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9311/" class="">机试题库 - 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/" class="">机试题库 - 12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9313/" class="">机试题库 - 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9314/" class="">机试题库 - 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/" class="">华为机试</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321/" class="active">机试题库 - 21</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9322/" class="">机试题库 - 22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/huawei-od/%E5%85%A8/" class="">索引</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7784697cbea516c63f36e08f8ea9b7b" class="toggle"  />
+    <label for="section-d7784697cbea516c63f36e08f8ea9b7b" class="flex justify-between">
+      <a role="button" class="">leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/" class="">哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/" class="">双指针</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="">滑动窗口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/" class="">子串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/structure-algorithm/dir/" class="">目录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="toggle"  />
+    <label for="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="flex justify-between">
+      <a role="button" class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-534b4c3b58152c7a029cbad8bcc9e467" class="toggle"  />
+    <label for="section-534b4c3b58152c7a029cbad8bcc9e467" class="flex justify-between">
+      <a role="button" class="">分布式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-design/distributed/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e3a1bbd5ca40b4023e33e48202fe092" class="toggle"  />
+    <label for="section-4e3a1bbd5ca40b4023e33e48202fe092" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b032946e6aac69e7d2bfca696347bd30" class="toggle"  />
+    <label for="section-b032946e6aac69e7d2bfca696347bd30" class="flex justify-between">
+      <a role="button" class="">程序语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62f00d6c6c4fc42ea6cda66313338d79" class="toggle"  />
+    <label for="section-62f00d6c6c4fc42ea6cda66313338d79" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="toggle"  />
+    <label for="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a42d8e26dc157dad91266007f615424" class="toggle"  />
+    <label for="section-2a42d8e26dc157dad91266007f615424" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/program-lang/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="toggle"  />
+    <label for="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="flex justify-between">
+      <a role="button" class="">数据存储</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="toggle"  />
+    <label for="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="flex justify-between">
+      <a role="button" class="">MySQL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/mysql/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd18413517cb0125b84955ad7966530" class="toggle"  />
+    <label for="section-bfd18413517cb0125b84955ad7966530" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/database/redis/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cd205a449ba65dd2a21212b6922546d" class="toggle"  />
+    <label for="section-3cd205a449ba65dd2a21212b6922546d" class="flex justify-between">
+      <a role="button" class="">开源框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d32f47fca6b34b56b534735afccc1729" class="toggle"  />
+    <label for="section-d32f47fca6b34b56b534735afccc1729" class="flex justify-between">
+      <a role="button" class="">MQ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mq/mq/" class="">MQ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f3f420fbf9c98b8554806eb25798e5a2" class="toggle"  />
+    <label for="section-f3f420fbf9c98b8554806eb25798e5a2" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/spring/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/framework/mybatis/" class="">MyBatis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cc51f608bfbc7068b8b058b45385b866" class="toggle"  />
+    <label for="section-cc51f608bfbc7068b8b058b45385b866" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-boot/" class="">SpringBoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/service-manage/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>机试题库 - 21</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#01-盛最多水的容器">01. 盛最多水的容器</a></li>
+    <li><a href="#02-接雨水">02. 接雨水</a></li>
+    <li><a href="#03-无重复字符的最长子串">03. 无重复字符的最长子串</a></li>
+    <li><a href="#04-岛屿数量">04. 岛屿数量</a></li>
+    <li><a href="#05-不同的二叉搜索树">05. 不同的二叉搜索树</a></li>
+    <li><a href="#06-买卖股票的最佳时机-ii">06. 买卖股票的最佳时机 II</a></li>
+    <li><a href="#07-买卖股票的最佳时机-iii">07. 买卖股票的最佳时机 III</a></li>
+    <li><a href="#08-打家劫舍ii">08. 打家劫舍II</a></li>
+    <li><a href="#09-爬楼梯">09. 爬楼梯</a></li>
+    <li><a href="#10-路径总和">10. 路径总和</a></li>
+    <li><a href="#11-斐波那契数">11. 斐波那契数</a></li>
+    <li><a href="#12-合并-k-个升序链表">12. 合并 K 个升序链表</a></li>
+    <li><a href="#13-多数元素">13. 多数元素</a></li>
+    <li><a href="#14-搜索二维矩阵-ii">14. 搜索二维矩阵 II</a></li>
+    <li><a href="#15-柱状图中最大的矩形">15. 柱状图中最大的矩形</a></li>
+    <li><a href="#16-最大矩形">16. 最大矩形</a></li>
+    <li><a href="#17-每日温度">17. 每日温度</a></li>
+    <li><a href="#18-下一个更大元素-ii">18. 下一个更大元素 II</a></li>
+    <li><a href="#19-和为-k-的子数组">19. 和为 K 的子数组</a></li>
+    <li><a href="#20-买卖股票的最佳时机">20. 买卖股票的最佳时机</a></li>
+    <li><a href="#21-课程表-ii">21. 课程表 II</a></li>
+    <li><a href="#22-单词替换">22. 单词替换</a></li>
+    <li><a href="#23">23.</a></li>
+    <li><a href="#24">24.</a></li>
+    <li><a href="#25">25.</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="01-盛最多水的容器">
+  01. 盛最多水的容器
+  <a class="anchor" href="#01-%e7%9b%9b%e6%9c%80%e5%a4%9a%e6%b0%b4%e7%9a%84%e5%ae%b9%e5%99%a8">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个长度为 n 的整数数组 height 。有 n 条垂线，第 i 条线的两个端点是 (i, 0) 和 (i, height[i]) 。
+</span></span><span style="display:flex;"><span>找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+</span></span><span style="display:flex;"><span>返回容器可以储存的最大水量。
+</span></span><span style="display:flex;"><span>说明：你不能倾斜容器。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：[1,8,6,2,5,4,8,3,7]
+</span></span><span style="display:flex;"><span>输出：49 
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">maxArea</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>height)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>height.<span style="color:#658b00">length</span><span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>j)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>area<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>(j<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>i)<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>Math.<span style="color:#658b00">min</span>(height[i],<span style="color:#bbb"> </span>height[j]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(res,<span style="color:#bbb"> </span>area);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(height[i]<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>height[j])<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>i++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>j--;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>res;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="02-接雨水">
+  02. 接雨水
+  <a class="anchor" href="#02-%e6%8e%a5%e9%9b%a8%e6%b0%b4">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]
+</span></span><span style="display:flex;"><span>输出：6
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">trap</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>height)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">//最两端的列不用考虑，因为一定不会有水。所以下标从 1 到 length - 2</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>height.<span style="color:#658b00">length</span><span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>max_left<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">//找出左边最高</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>j--)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(height[j]<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>max_left)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>max_left<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>height[j];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>max_right<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">//找出右边最高</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>height.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(height[j]<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>max_right)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>max_right<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>height[j];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">//找出两端较小的</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>min<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">min</span>(max_left,<span style="color:#bbb"> </span>max_right);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">//只有较小的一段大于当前列的高度才会有水，其他情况不会有水</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(min<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>height[i])<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>(min<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>height[i]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>sum;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="03-无重复字符的最长子串">
+  03. 无重复字符的最长子串
+  <a class="anchor" href="#03-%e6%97%a0%e9%87%8d%e5%a4%8d%e5%ad%97%e7%ac%a6%e7%9a%84%e6%9c%80%e9%95%bf%e5%ad%90%e4%b8%b2">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个字符串 s ，请你找出其中不含有重复字符的 最长 子串 的长度。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入: s = &#34;abcabcbb&#34;
+</span></span><span style="display:flex;"><span>输出: 3 
+</span></span><span style="display:flex;"><span>解释: 因为无重复字符的最长子串是 &#34;abc&#34;，所以其长度为 3。
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">lengthOfLongestSubstring</span>(String<span style="color:#bbb"> </span>s)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>s.<span style="color:#658b00">length</span>(),<span style="color:#bbb"> </span>ans<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Map&lt;Character,<span style="color:#bbb"> </span>Integer&gt;<span style="color:#bbb"> </span>map<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>HashMap&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>end<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0,<span style="color:#bbb"> </span>start<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>end<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>end++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">char</span><span style="color:#bbb"> </span>alpha<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>s.<span style="color:#658b00">charAt</span>(end);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(map.<span style="color:#658b00">containsKey</span>(alpha))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>start<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(map.<span style="color:#658b00">get</span>(alpha),<span style="color:#bbb"> </span>start);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>ans<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(ans,<span style="color:#bbb"> </span>end<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>start<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>map.<span style="color:#658b00">put</span>(s.<span style="color:#658b00">charAt</span>(end),<span style="color:#bbb"> </span>end<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>ans;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="04-岛屿数量">
+  04. 岛屿数量
+  <a class="anchor" href="#04-%e5%b2%9b%e5%b1%bf%e6%95%b0%e9%87%8f">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给你一个由 &#39;1&#39;（陆地）和 &#39;0&#39;（水）组成的的二维网格，请你计算网格中岛屿的数量。
+</span></span><span style="display:flex;"><span>岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。
+</span></span><span style="display:flex;"><span>此外，你可以假设该网格的四条边均被水包围。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：grid = [
+</span></span><span style="display:flex;"><span>  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;1&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>  [&#34;0&#34;,&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;1&#34;]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>输出：3
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">maxAreaOfIsland</span>(<span style="color:#00688b;font-weight:bold">int</span>[][]<span style="color:#bbb"> </span>grid)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>r<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>r<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>grid.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>r++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>c<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>c<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>grid[0].<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>c++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(grid[r][c]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>area(grid,<span style="color:#bbb"> </span>r,<span style="color:#bbb"> </span>c);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(res,<span style="color:#bbb"> </span>a);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>res;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">area</span>(<span style="color:#00688b;font-weight:bold">int</span>[][]<span style="color:#bbb"> </span>grid,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>r,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>c)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 判断 base case</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(!inArea(grid,<span style="color:#bbb"> </span>r,<span style="color:#bbb"> </span>c))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 如果这个格子不是岛屿，直接返回</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(grid[r][c]<span style="color:#bbb"> </span>!=<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 将格子标记为「已遍历过」</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>grid[r][c]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>2;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 访问上、下、左、右四个相邻结点</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>1<span style="color:#bbb"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>+<span style="color:#bbb"> </span>area(grid,<span style="color:#bbb"> </span>r<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1,<span style="color:#bbb"> </span>c)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>+<span style="color:#bbb"> </span>area(grid,<span style="color:#bbb"> </span>r<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1,<span style="color:#bbb"> </span>c)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>+<span style="color:#bbb"> </span>area(grid,<span style="color:#bbb"> </span>r,<span style="color:#bbb"> </span>c<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>+<span style="color:#bbb"> </span>area(grid,<span style="color:#bbb"> </span>r,<span style="color:#bbb"> </span>c<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 判断坐标 (r, c) 是否在网格中</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#00688b;font-weight:bold">boolean</span><span style="color:#bbb"> </span><span style="color:#008b45">inArea</span>(<span style="color:#00688b;font-weight:bold">int</span>[][]<span style="color:#bbb"> </span>grid,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>r,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>c)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>r<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>r<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>grid.<span style="color:#658b00">length</span><span style="color:#bbb"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        	</span>&amp;&amp;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>c<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>c<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>grid[0].<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="05-不同的二叉搜索树">
+  05. 不同的二叉搜索树
+  <a class="anchor" href="#05-%e4%b8%8d%e5%90%8c%e7%9a%84%e4%ba%8c%e5%8f%89%e6%90%9c%e7%b4%a2%e6%a0%91">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给你一个整数 n ，求恰由 n 个节点组成且节点值从 1 到 n 互不相同的 二叉搜索树 有多少种？返回满足题意的二叉搜索树的种数。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：n = 3
+</span></span><span style="display:flex;"><span>输出：5
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">numTrees</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 提示：我们在这里需要用 long 类型防止计算过程中的溢出</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">long</span><span style="color:#bbb"> </span>C<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>++i)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>C<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>C<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>2<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>(2<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>(i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>2);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span>)<span style="color:#bbb"> </span>C;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">dp[i] = i个不同的数组成的二叉搜索数的个数
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">假设 i = 5
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">当根节点等于 1 时 ，其余数字都比1大，只能在右边 dp[i] += dp[4]
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">当根节点等于 2 时，左边有一个1比2小，右边有三个比2大的数字 dp[i] += dp[1] * dp[3]
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">当根节点等于 3 时，左边有两个数比3小，右边有两个数比3大的数字 dp[i] += dp[2] * dp[2]
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">...
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22">知道根节点等于5，左边有4个数字比5小，只能放在5的左边,dp[i] += dp[4]
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"> */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">numTrees</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>dp<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[n<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>dp[0]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>dp[1]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>2;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>i;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>leftNum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>dp[j<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>rightNum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>dp[i<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>j];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>dp[i]<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>leftNum<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>rightNum;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>dp[n];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="06-买卖股票的最佳时机-ii">
+  06. 买卖股票的最佳时机 II
+  <a class="anchor" href="#06-%e4%b9%b0%e5%8d%96%e8%82%a1%e7%a5%a8%e7%9a%84%e6%9c%80%e4%bd%b3%e6%97%b6%e6%9c%ba-ii">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给你一个整数数组 prices ，其中 prices[i] 表示某支股票第 i 天的价格。
+</span></span><span style="display:flex;"><span>在每一天，你可以决定是否购买和/或出售股票。你在任何时候 最多 只能持有 一股 股票。你也可以先购买，然后在 同一天 出售。
+</span></span><span style="display:flex;"><span>返回 你能获得的 最大 利润 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：prices = [7,1,5,3,6,4]
+</span></span><span style="display:flex;"><span>输出：7
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">maxProfit</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>prices)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>profit<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>prices.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>tmp<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>prices[i]<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>prices[i<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(tmp<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>profit<span style="color:#bbb"> </span>+=<span style="color:#bbb"> </span>tmp;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>profit;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="07-买卖股票的最佳时机-iii">
+  07. 买卖股票的最佳时机 III
+  <a class="anchor" href="#07-%e4%b9%b0%e5%8d%96%e8%82%a1%e7%a5%a8%e7%9a%84%e6%9c%80%e4%bd%b3%e6%97%b6%e6%9c%ba-iii">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。
+</span></span><span style="display:flex;"><span>设计一个算法来计算你所能获取的最大利润。你最多可以完成 两笔 交易。
+</span></span><span style="display:flex;"><span>注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：prices = [3,3,5,0,0,3,1,4]
+</span></span><span style="display:flex;"><span>输出：6
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">maxProfit</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>prices)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 第一次买入，第一次卖出，第二次买入，第二次卖出</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>f1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>-prices[0],<span style="color:#bbb"> </span>f2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0,<span style="color:#bbb"> </span>f3<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>-prices[0],<span style="color:#bbb"> </span>f4<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>prices.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>++i)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>f1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(f1,<span style="color:#bbb"> </span>-prices[i]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>f2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(f2,<span style="color:#bbb"> </span>f1<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>prices[i]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>f3<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(f3,<span style="color:#bbb"> </span>f2<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>prices[i]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>f4<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(f4,<span style="color:#bbb"> </span>f3<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>prices[i]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>f4;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="08-打家劫舍ii">
+  08. 打家劫舍II
+  <a class="anchor" href="#08-%e6%89%93%e5%ae%b6%e5%8a%ab%e8%88%8dii">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都 围成一圈 ，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警 。
+</span></span><span style="display:flex;"><span>给定一个代表每个房屋存放金额的非负整数数组，计算你 在不触动警报装置的情况下 ，今晚能够偷窃到的最高金额。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：nums = [2,3,2]
+</span></span><span style="display:flex;"><span>输出：3
+</span></span><span style="display:flex;"><span>解释：你不能先偷窃 1 号房屋（金额 = 2），然后偷窃 3 号房屋（金额 = 2）, 因为他们是相邻的。
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">rob</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>nums)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>length<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>nums.<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(length<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>1)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>nums[0];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(length<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>2)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(nums[0],<span style="color:#bbb"> </span>nums[1]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(robRange(nums,<span style="color:#bbb"> </span>0,<span style="color:#bbb"> </span>length<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>2),<span style="color:#bbb"> </span>robRange(nums,<span style="color:#bbb"> </span>1,<span style="color:#bbb"> </span>length<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">robRange</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>nums,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>start,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>end)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>first<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>nums[start];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>second<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(nums[start],<span style="color:#bbb"> </span>nums[start<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>start<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>2;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;=<span style="color:#bbb"> </span>end;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>temp<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>second;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>second<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(first<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>nums[i],<span style="color:#bbb"> </span>second);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>first<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>temp;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>second;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="09-爬楼梯">
+  09. 爬楼梯
+  <a class="anchor" href="#09-%e7%88%ac%e6%a5%bc%e6%a2%af">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
+</span></span><span style="display:flex;"><span>每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：n = 3
+</span></span><span style="display:flex;"><span>输出：3
+</span></span><span style="display:flex;"><span>解释：有三种方法可以爬到楼顶。
+</span></span><span style="display:flex;"><span>1. 1 阶 + 1 阶 + 1 阶
+</span></span><span style="display:flex;"><span>2. 1 阶 + 2 阶
+</span></span><span style="display:flex;"><span>3. 2 阶 + 1 阶
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 状态定义： 设 dp 为一维数组，其中 dp[i] 的值代表斐波那契数列的第 i 个数字。</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 转移方程： dp[i+1]=dp[i]+dp[i−1] ，即对应数列定义 f(n+1)=f(n)+f(n−1) 。</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 初始状态： dp[0]=1, dp[1]=1 ，即初始化前两个数字。</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 返回值： dp[n] ，即斐波那契数列的第 n 个数字。</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">climbStairs</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1,<span style="color:#bbb"> </span>b<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1,<span style="color:#bbb"> </span>sum;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i++){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>b;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>a<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>b;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>b<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sum;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>b;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="10-路径总和">
+  10. 路径总和
+  <a class="anchor" href="#10-%e8%b7%af%e5%be%84%e6%80%bb%e5%92%8c">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给你二叉树的根节点 root 和一个表示目标和的整数 targetSum 。判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和 targetSum 。如果存在，返回 true ；否则，返回 false 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>叶子节点 是指没有子节点的节点。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
+</span></span><span style="display:flex;"><span>输出：true
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">boolean</span><span style="color:#bbb"> </span><span style="color:#008b45">hasPathSum</span>(TreeNode<span style="color:#bbb"> </span>root,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>sum)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(root<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">null</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">false</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(root.<span style="color:#658b00">left</span><span style="color:#bbb"> </span>==<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">null</span><span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>root.<span style="color:#658b00">right</span><span style="color:#bbb"> </span>==<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">null</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>root.<span style="color:#658b00">val</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>hasPathSum(root.<span style="color:#658b00">left</span>,<span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>root.<span style="color:#658b00">val</span>)<span style="color:#bbb"> </span>||<span style="color:#bbb"> </span>hasPathSum(root.<span style="color:#658b00">right</span>,<span style="color:#bbb"> </span>sum<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>root.<span style="color:#658b00">val</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">TreeNode</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>TreeNode<span style="color:#bbb"> </span>left;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>TreeNode<span style="color:#bbb"> </span>right;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>TreeNode()<span style="color:#bbb"> </span>{}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>TreeNode(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val)<span style="color:#bbb"> </span>{<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">val</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>val;<span style="color:#bbb"> </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>TreeNode(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val,<span style="color:#bbb"> </span>TreeNode<span style="color:#bbb"> </span>left,<span style="color:#bbb"> </span>TreeNode<span style="color:#bbb"> </span>right)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">val</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>val;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">left</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>left;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">right</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>right;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="11-斐波那契数">
+  11. 斐波那契数
+  <a class="anchor" href="#11-%e6%96%90%e6%b3%a2%e9%82%a3%e5%a5%91%e6%95%b0">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>斐波那契数 （通常用 F(n) 表示）形成的序列称为 斐波那契数列 。
+</span></span><span style="display:flex;"><span>该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：
+</span></span><span style="display:flex;"><span>F(0) = 0，F(1) = 1
+</span></span><span style="display:flex;"><span>F(n) = F(n - 1) + F(n - 2)，其中 n &gt; 1
+</span></span><span style="display:flex;"><span>给定 n ，请计算 F(n) 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：n = 4
+</span></span><span style="display:flex;"><span>输出：3
+</span></span><span style="display:flex;"><span>解释：F(4) = F(3) + F(2) = 2 + 1 = 3
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">fib</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0,<span style="color:#bbb"> </span>b<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>1,<span style="color:#bbb"> </span>sum;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>i++){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>sum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>a<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>b;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>a<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>b;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>b<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sum;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>a;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="12-合并-k-个升序链表">
+  12. 合并 K 个升序链表
+  <a class="anchor" href="#12-%e5%90%88%e5%b9%b6-k-%e4%b8%aa%e5%8d%87%e5%ba%8f%e9%93%be%e8%a1%a8">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给你一个链表数组，每个链表都已经按升序排列。
+</span></span><span style="display:flex;"><span>请你将所有链表合并到一个升序链表中，返回合并后的链表。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：lists = [[1,4,5],[1,3,4],[2,6]]
+</span></span><span style="display:flex;"><span>输出：[1,1,2,3,4,4,5,6]
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">class</span> <span style="color:#008b45;font-weight:bold">ListNode</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ListNode<span style="color:#bbb"> </span>next;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ListNode()<span style="color:#bbb"> </span>{}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ListNode(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val)<span style="color:#bbb"> </span>{<span style="color:#bbb"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">val</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>val;<span style="color:#bbb"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ListNode(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val,<span style="color:#bbb"> </span>ListNode<span style="color:#bbb"> </span>next)<span style="color:#bbb"> </span>{<span style="color:#bbb"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">val</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>val;<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">this</span>.<span style="color:#658b00">next</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>next;<span style="color:#bbb"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span>ListNode<span style="color:#bbb"> </span><span style="color:#008b45">mergeKLists</span>(ListNode[]<span style="color:#bbb"> </span>lists)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(lists.<span style="color:#658b00">length</span><span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">null</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 将所有链表的所有节点加入列表</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>List&lt;Integer&gt;<span style="color:#bbb"> </span>list<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>ArrayList();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span>(ListNode<span style="color:#bbb"> </span>node<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>lists){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">while</span>(node<span style="color:#bbb"> </span>!=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">null</span>){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>list.<span style="color:#658b00">add</span>(node.<span style="color:#658b00">val</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>node<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>node.<span style="color:#658b00">next</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 列表排序</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>list<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>list.<span style="color:#658b00">stream</span>().<span style="color:#658b00">sorted</span>().<span style="color:#658b00">collect</span>(Collectors.<span style="color:#658b00">toList</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 列表转链表</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ListNode<span style="color:#bbb"> </span>head<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>ListNode(0);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>ListNode<span style="color:#bbb"> </span>cur<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>head;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>val<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>list){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>cur.<span style="color:#658b00">next</span><span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>ListNode(val);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>cur<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>cur.<span style="color:#658b00">next</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>head.<span style="color:#658b00">next</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="13-多数元素">
+  13. 多数元素
+  <a class="anchor" href="#13-%e5%a4%9a%e6%95%b0%e5%85%83%e7%b4%a0">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个大小为 n 的数组 nums ，返回其中的多数元素。多数元素是指在数组中出现次数 大于 ⌊ n/2 ⌋ 的元素。
+</span></span><span style="display:flex;"><span>你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：nums = [3,2,3]
+</span></span><span style="display:flex;"><span>输出：3
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">majorityElement</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>nums)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Arrays.<span style="color:#658b00">sort</span>(nums);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>nums[nums.<span style="color:#658b00">length</span><span style="color:#bbb"> </span>/<span style="color:#bbb"> </span>2];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="14-搜索二维矩阵-ii">
+  14. 搜索二维矩阵 II
+  <a class="anchor" href="#14-%e6%90%9c%e7%b4%a2%e4%ba%8c%e7%bb%b4%e7%9f%a9%e9%98%b5-ii">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>编写一个高效的算法来搜索 m * n 矩阵 matrix 中的一个目标值 target 。该矩阵具有以下特性：
+</span></span><span style="display:flex;"><span>每行的元素从左到右升序排列。
+</span></span><span style="display:flex;"><span>每列的元素从上到下升序排列。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5
+</span></span><span style="display:flex;"><span>输出：true
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">boolean</span><span style="color:#bbb"> </span><span style="color:#008b45">searchMatrix</span>(<span style="color:#00688b;font-weight:bold">int</span>[][]<span style="color:#bbb"> </span>matrix,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>target)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>matrix.<span style="color:#658b00">length</span><span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1,<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(i<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>matrix[0].<span style="color:#658b00">length</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(matrix[i][j]<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>target)<span style="color:#bbb"> </span>i--;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(matrix[i][j]<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>target)<span style="color:#bbb"> </span>j++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">else</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">true</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">false</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="15-柱状图中最大的矩形">
+  15. 柱状图中最大的矩形
+  <a class="anchor" href="#15-%e6%9f%b1%e7%8a%b6%e5%9b%be%e4%b8%ad%e6%9c%80%e5%a4%a7%e7%9a%84%e7%9f%a9%e5%bd%a2">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定 n 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。
+</span></span><span style="display:flex;"><span>求在该柱状图中，能够勾勒出来的矩形的最大面积。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：heights = [2,1,5,6,2,3]
+</span></span><span style="display:flex;"><span>输出：10
+</span></span><span style="display:flex;"><span>解释：最大的矩形为图中红色区域，面积为 10
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">largestRectangleArea</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>heights)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>heights.<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 特判</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(len<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>len;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">// 找左边最后 1 个大于等于 heights[i] 的下标</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>left<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>curHeight<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>heights[i];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(left<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>heights[left<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1]<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>curHeight)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>left--;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#228b22">// 找右边最后 1 个大于等于 heights[i] 的索引</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>right<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(right<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>heights[right<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1]<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>curHeight)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>right++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>width<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>right<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>left<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(res,<span style="color:#bbb"> </span>width<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>curHeight);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>res;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="16-最大矩形">
+  16. 最大矩形
+  <a class="anchor" href="#16-%e6%9c%80%e5%a4%a7%e7%9f%a9%e5%bd%a2">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个仅包含 0 和 1 、大小为 rows * cols 的二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：matrix = [
+</span></span><span style="display:flex;"><span>[&#34;1&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;,&#34;0&#34;],
+</span></span><span style="display:flex;"><span>[&#34;1&#34;,&#34;0&#34;,&#34;1&#34;,&#34;1&#34;,&#34;1&#34;],
+</span></span><span style="display:flex;"><span>[&#34;1&#34;,&#34;1&#34;,&#34;1&#34;,&#34;1&#34;,&#34;1&#34;],
+</span></span><span style="display:flex;"><span>[&#34;1&#34;,&#34;0&#34;,&#34;0&#34;,&#34;1&#34;,&#34;0&#34;]]
+</span></span><span style="display:flex;"><span>输出：6
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">maximalRectangle</span>(<span style="color:#00688b;font-weight:bold">char</span>[][]<span style="color:#bbb"> </span>matrix)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>matrix.<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(m<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>matrix[0].<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[][]<span style="color:#bbb"> </span>left<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[m][n];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>m;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(matrix[i][j]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span><span style="color:#cd5555">&#39;1&#39;</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>left[i][j]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>(j<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>?<span style="color:#bbb"> </span>0<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>left[i][j<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1])<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>ret<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb"> </span><span style="color:#228b22">// 对于每一列，使用基于柱状图的方法</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>up<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[m];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>down<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[m];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>Deque&lt;Integer&gt;<span style="color:#bbb"> </span>stack<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>LinkedList&lt;Integer&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>m;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>left[stack.<span style="color:#658b00">peek</span>()][j]<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>left[i][j])<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>stack.<span style="color:#658b00">pop</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>up[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>?<span style="color:#bbb"> </span>-1<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>stack.<span style="color:#658b00">peek</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>stack.<span style="color:#658b00">push</span>(i);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>stack.<span style="color:#658b00">clear</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i--)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>left[stack.<span style="color:#658b00">peek</span>()][j]<span style="color:#bbb"> </span>&gt;=<span style="color:#bbb"> </span>left[i][j])<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>stack.<span style="color:#658b00">pop</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>down[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>?<span style="color:#bbb"> </span>m<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>stack.<span style="color:#658b00">peek</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>stack.<span style="color:#658b00">push</span>(i);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>m;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>height<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>down[i]<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>up[i]<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>area<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>height<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>left[i][j];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>ret<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(ret,<span style="color:#bbb"> </span>area);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>ret;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="17-每日温度">
+  17. 每日温度
+  <a class="anchor" href="#17-%e6%af%8f%e6%97%a5%e6%b8%a9%e5%ba%a6">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个整数数组 temperatures ，表示每天的温度，返回一个数组 answer ，其中 answer[i] 是指对于第 i 天，下一个更高温度出现在几天后。如果气温在这之后都不会升高，请在该位置用 0 来代替。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入: temperatures = [73,74,75,71,69,72,76,73]
+</span></span><span style="display:flex;"><span>输出: [1,1,4,2,1,1,0,0]
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span><span style="color:#008b45">dailyTemperatures</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>T)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>length<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>T.<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>result<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[length];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>length;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>current<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>T[i];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(current<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>100)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>length;<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(T[j]<span style="color:#bbb"> </span>&gt;<span style="color:#bbb"> </span>current)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>result[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>i;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#8b008b;font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>result;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="18-下一个更大元素-ii">
+  18. 下一个更大元素 II
+  <a class="anchor" href="#18-%e4%b8%8b%e4%b8%80%e4%b8%aa%e6%9b%b4%e5%a4%a7%e5%85%83%e7%b4%a0-ii">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给定一个循环数组 nums （ nums[nums.length - 1] 的下一个元素是 nums[0] ），返回 nums 中每个元素的 下一个更大元素 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数字 x 的 下一个更大的元素 是按数组遍历顺序，这个数字之后的第一个比它更大的数，这意味着你应该循环地搜索它的下一个更大的数。如果不存在，则输出 -1 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入: nums = [1,2,3,4,3]
+</span></span><span style="display:flex;"><span>输出: [2,3,4,-1,4]
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span><span style="color:#008b45">nextGreaterElements</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>nums)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>nums.<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>ret<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[n];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Arrays.<span style="color:#658b00">fill</span>(ret,<span style="color:#bbb"> </span>-1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Deque&lt;Integer&gt;<span style="color:#bbb"> </span>stack<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>LinkedList&lt;Integer&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>n<span style="color:#bbb"> </span>*<span style="color:#bbb"> </span>2<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>1;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!stack.<span style="color:#658b00">isEmpty</span>()<span style="color:#bbb"> </span>&amp;&amp;<span style="color:#bbb"> </span>nums[stack.<span style="color:#658b00">peek</span>()]<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>nums[i<span style="color:#bbb"> </span>%<span style="color:#bbb"> </span>n])<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>ret[stack.<span style="color:#658b00">pop</span>()]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>nums[i<span style="color:#bbb"> </span>%<span style="color:#bbb"> </span>n];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>stack.<span style="color:#658b00">push</span>(i<span style="color:#bbb"> </span>%<span style="color:#bbb"> </span>n);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>ret;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="19-和为-k-的子数组">
+  19. 和为 K 的子数组
+  <a class="anchor" href="#19-%e5%92%8c%e4%b8%ba-k-%e7%9a%84%e5%ad%90%e6%95%b0%e7%bb%84">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>给你一个整数数组 nums 和一个整数 k ，请你统计并返回 该数组中和为 k 的子数组的个数 。
+</span></span><span style="display:flex;"><span>子数组是数组中元素的连续非空序列。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：nums = [1,1,1], k = 2
+</span></span><span style="display:flex;"><span>输出：2
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">subarraySum</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>nums,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>k)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>len<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>nums.<span style="color:#658b00">length</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 计算前缀和数组</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>preSum<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[len<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>preSum[0]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>len;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>preSum[i<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>preSum[i]<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>nums[i];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>count<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>left<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>left<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>len;<span style="color:#bbb"> </span>left++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>right<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>left;<span style="color:#bbb"> </span>right<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>len;<span style="color:#bbb"> </span>right++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#228b22">// 区间和 [left..right]，注意下标偏移</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(preSum[right<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>1]<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>preSum[left]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>k)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>count++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>count;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="20-买卖股票的最佳时机">
+  20. 买卖股票的最佳时机
+  <a class="anchor" href="#20-%e4%b9%b0%e5%8d%96%e8%82%a1%e7%a5%a8%e7%9a%84%e6%9c%80%e4%bd%b3%e6%97%b6%e6%9c%ba">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+</span></span><span style="display:flex;"><span>你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+</span></span><span style="display:flex;"><span>返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：[7,1,5,3,6,4]
+</span></span><span style="display:flex;"><span>输出：5
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span><span style="color:#008b45">maxProfit</span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>prices)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>cost<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Integer.<span style="color:#658b00">MAX_VALUE</span>,<span style="color:#bbb"> </span>profit<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>price<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>prices)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>cost<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">min</span>(cost,<span style="color:#bbb"> </span>price);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>profit<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Math.<span style="color:#658b00">max</span>(profit,<span style="color:#bbb"> </span>price<span style="color:#bbb"> </span>-<span style="color:#bbb"> </span>cost);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>profit;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="21-课程表-ii">
+  21. 课程表 II
+  <a class="anchor" href="#21-%e8%af%be%e7%a8%8b%e8%a1%a8-ii">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>现在你总共有 numCourses 门课需要选，记为 0 到 numCourses - 1。给你一个数组 prerequisites ，其中 prerequisites[i] = [ai, bi] ，表示在选修课程 ai 前 必须 先选修 bi 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示：[0,1] 。
+</span></span><span style="display:flex;"><span>返回你为了学完所有课程所安排的学习顺序。可能会有多个正确的顺序，你只要返回 任意一种 就可以了。如果不可能完成所有课程，返回 一个空数组 。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：numCourses = 2, prerequisites = [[1,0]]
+</span></span><span style="display:flex;"><span>输出：[0,1]
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 简单的 BFS</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span><span style="color:#008b45">findOrder</span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>numCourses,<span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[][]<span style="color:#bbb"> </span>prerequisites)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(numCourses<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[0];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>inDegrees<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[numCourses];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 建立入度表</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>p<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>prerequisites)<span style="color:#bbb"> </span>{<span style="color:#bbb"> </span><span style="color:#228b22">// 对于有先修课的课程，计算有几门先修课</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>inDegrees[p[0]]++;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 入度为0的节点队列</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Queue&lt;Integer&gt;<span style="color:#bbb"> </span>queue<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>LinkedList&lt;&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>inDegrees.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(inDegrees[i]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>queue.<span style="color:#658b00">offer</span>(i);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>count<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb">  </span><span style="color:#228b22">// 记录可以学完的课程数量</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>res<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[numCourses];<span style="color:#bbb">  </span><span style="color:#228b22">// 可以学完的课程</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#228b22">// 根据提供的先修课列表，删除入度为 0 的节点</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">while</span><span style="color:#bbb"> </span>(!queue.<span style="color:#658b00">isEmpty</span>()){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>curr<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>queue.<span style="color:#658b00">poll</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>res[count++]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>curr;<span style="color:#bbb">   </span><span style="color:#228b22">// 将可以学完的课程加入结果当中</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span>[]<span style="color:#bbb"> </span>p<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>prerequisites)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(p[1]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>curr){<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>inDegrees[p[0]]--;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(inDegrees[p[0]]<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>0)<span style="color:#bbb"> </span>queue.<span style="color:#658b00">offer</span>(p[0]);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(count<span style="color:#bbb"> </span>==<span style="color:#bbb"> </span>numCourses)<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>res;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span><span style="color:#00688b;font-weight:bold">int</span>[0];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="22-单词替换">
+  22. 单词替换
+  <a class="anchor" href="#22-%e5%8d%95%e8%af%8d%e6%9b%bf%e6%8d%a2">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>在英语中，我们有一个叫做 词根(root) 的概念，可以词根 后面 添加其他一些词组成另一个较长的单词——我们称这个词为 衍生词 (derivative)。例如，词根 help，跟随着 继承词 &#34;ful&#34;，可以形成新的单词 &#34;helpful&#34;。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>现在，给定一个由许多 词根 组成的词典 dictionary 和一个用空格分隔单词形成的句子 sentence。你需要将句子中的所有 衍生词 用 词根 替换掉。如果 衍生词 有许多可以形成它的 词根，则用 最短 的 词根 替换它。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>你需要输出替换之后的句子。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>输入：dictionary = [&#34;cat&#34;,&#34;bat&#34;,&#34;rat&#34;], sentence = &#34;the cattle was rattled by the battery&#34;
+</span></span><span style="display:flex;"><span>输出：&#34;the cat was rat by the bat&#34;
+</span></span></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">public</span><span style="color:#bbb"> </span>String<span style="color:#bbb"> </span><span style="color:#008b45">replaceWords</span>(List&lt;String&gt;<span style="color:#bbb"> </span>dictionary,<span style="color:#bbb"> </span>String<span style="color:#bbb"> </span>sentence)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Set&lt;String&gt;<span style="color:#bbb"> </span>dictionarySet<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>HashSet&lt;String&gt;();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(String<span style="color:#bbb"> </span>root<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>dictionary)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>dictionarySet.<span style="color:#658b00">add</span>(root);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>String[]<span style="color:#bbb"> </span>words<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>sentence.<span style="color:#658b00">split</span>(<span style="color:#cd5555">&#34; &#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>i<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>words.<span style="color:#658b00">length</span>;<span style="color:#bbb"> </span>i++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>word<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>words[i];<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#8b008b;font-weight:bold">for</span><span style="color:#bbb"> </span>(<span style="color:#00688b;font-weight:bold">int</span><span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>0;<span style="color:#bbb"> </span>j<span style="color:#bbb"> </span>&lt;<span style="color:#bbb"> </span>word.<span style="color:#658b00">length</span>();<span style="color:#bbb"> </span>j++)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span>(dictionarySet.<span style="color:#658b00">contains</span>(word.<span style="color:#658b00">substring</span>(0,<span style="color:#bbb"> </span>1<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>j)))<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>words[i]<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>word.<span style="color:#658b00">substring</span>(0,<span style="color:#bbb"> </span>1<span style="color:#bbb"> </span>+<span style="color:#bbb"> </span>j);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#8b008b;font-weight:bold">break</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#8b008b;font-weight:bold">return</span><span style="color:#bbb"> </span>String.<span style="color:#658b00">join</span>(<span style="color:#cd5555">&#34; &#34;</span>,<span style="color:#bbb"> </span>words);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<h2 id="23">
+  23.
+  <a class="anchor" href="#23">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="24">
+  24.
+  <a class="anchor" href="#24">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+<h2 id="25">
+  25.
+  <a class="anchor" href="#25">#</a>
+</h2>
+<ul>
+<li>
+<p>描述</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"></code></pre></div></li>
+<li>
+<p>题解</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"></code></pre></div></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    Copyright © 2024-2025
+    <br/>
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#01-盛最多水的容器">01. 盛最多水的容器</a></li>
+    <li><a href="#02-接雨水">02. 接雨水</a></li>
+    <li><a href="#03-无重复字符的最长子串">03. 无重复字符的最长子串</a></li>
+    <li><a href="#04-岛屿数量">04. 岛屿数量</a></li>
+    <li><a href="#05-不同的二叉搜索树">05. 不同的二叉搜索树</a></li>
+    <li><a href="#06-买卖股票的最佳时机-ii">06. 买卖股票的最佳时机 II</a></li>
+    <li><a href="#07-买卖股票的最佳时机-iii">07. 买卖股票的最佳时机 III</a></li>
+    <li><a href="#08-打家劫舍ii">08. 打家劫舍II</a></li>
+    <li><a href="#09-爬楼梯">09. 爬楼梯</a></li>
+    <li><a href="#10-路径总和">10. 路径总和</a></li>
+    <li><a href="#11-斐波那契数">11. 斐波那契数</a></li>
+    <li><a href="#12-合并-k-个升序链表">12. 合并 K 个升序链表</a></li>
+    <li><a href="#13-多数元素">13. 多数元素</a></li>
+    <li><a href="#14-搜索二维矩阵-ii">14. 搜索二维矩阵 II</a></li>
+    <li><a href="#15-柱状图中最大的矩形">15. 柱状图中最大的矩形</a></li>
+    <li><a href="#16-最大矩形">16. 最大矩形</a></li>
+    <li><a href="#17-每日温度">17. 每日温度</a></li>
+    <li><a href="#18-下一个更大元素-ii">18. 下一个更大元素 II</a></li>
+    <li><a href="#19-和为-k-的子数组">19. 和为 K 的子数组</a></li>
+    <li><a href="#20-买卖股票的最佳时机">20. 买卖股票的最佳时机</a></li>
+    <li><a href="#21-课程表-ii">21. 课程表 II</a></li>
+    <li><a href="#22-单词替换">22. 单词替换</a></li>
+    <li><a href="#23">23.</a></li>
+    <li><a href="#24">24.</a></li>
+    <li><a href="#25">25.</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

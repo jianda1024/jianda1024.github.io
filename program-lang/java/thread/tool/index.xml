@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>并发工具 on IWiki</title>
+    <title>并发工具 on Document</title>
     <link>https://localhost:1313/program-lang/java/thread/tool/</link>
-    <description>Recent content in 并发工具 on IWiki</description>
+    <description>Recent content in 并发工具 on Document</description>
     <generator>Hugo</generator>
-    <language>iwiki</language>
+    <language>doc</language>
     <atom:link href="https://localhost:1313/program-lang/java/thread/tool/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CountDownLatch</title>

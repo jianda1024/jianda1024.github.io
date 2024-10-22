@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="lang2" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Part.1">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/lang2/program-lang/java-jvm/p1/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Part.1">
+  <meta property="og:description" content="Part.1">
+  <meta property="og:locale" content="lang2">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="program-lang">
+<title>Part.1 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/lang2/program-lang/java-jvm/p1/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/lang2.search.min.8f82e37824b797ee951d0d236de223052e11208ca9447d9bc7efa3728a1f27d1.js" integrity="sha256-j4LjeCS3l&#43;6VHQ0jbeIjBS4RIIypRH2bx&#43;&#43;jcoofJ9E=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/lang2"><span>Interview</span>
+    </a>
+    <a href="#" onclick="clickContent('http:\/\/localhost:1313\/lang2\/program-lang\/java-jvm\/p1\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li>
+              <a href="http://localhost:1313/" class="flex align-center">
+                INote
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7af54bb6384ef366b268a9438900490" class="toggle"  />
+    <label for="section-d7af54bb6384ef366b268a9438900490" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-base/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-base/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d368cfb348ae2c31b67bc0cd97524469" class="toggle"  />
+    <label for="section-d368cfb348ae2c31b67bc0cd97524469" class="flex justify-between">
+      <a role="button" class="">程序设计</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-547eb2a955702a10f6a5115390900419" class="toggle"  />
+    <label for="section-547eb2a955702a10f6a5115390900419" class="flex justify-between">
+      <a role="button" class="">数据结构与算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e1272beed7905527d0fba42083bdee40" class="toggle"  />
+    <label for="section-e1272beed7905527d0fba42083bdee40" class="flex justify-between">
+      <a role="button" class="">华为OD</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/" class="">必会题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/" class="">必会题 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/" class="">参考题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/" class="">机试题库 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/" class="">机试题库 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%934/" class="">机试题库 - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%935/" class="">机试题库 - 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9311/" class="">机试题库 - 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/" class="">机试题库 - 12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9313/" class="">机试题库 - 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9314/" class="">机试题库 - 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/" class="">华为机试</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321/" class="">机试题库 - 21</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9322/" class="">机试题库 - 22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%85%A8/" class="">索引</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7784697cbea516c63f36e08f8ea9b7b" class="toggle"  />
+    <label for="section-d7784697cbea516c63f36e08f8ea9b7b" class="flex justify-between">
+      <a role="button" class="">leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/" class="">哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/" class="">双指针</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="">滑动窗口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/" class="">子串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/dir/" class="">目录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="toggle"  />
+    <label for="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="flex justify-between">
+      <a role="button" class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-534b4c3b58152c7a029cbad8bcc9e467" class="toggle"  />
+    <label for="section-534b4c3b58152c7a029cbad8bcc9e467" class="flex justify-between">
+      <a role="button" class="">分布式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/distributed/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b032946e6aac69e7d2bfca696347bd30" class="toggle" checked />
+    <label for="section-b032946e6aac69e7d2bfca696347bd30" class="flex justify-between">
+      <a role="button" class="">程序语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62f00d6c6c4fc42ea6cda66313338d79" class="toggle"  />
+    <label for="section-62f00d6c6c4fc42ea6cda66313338d79" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="toggle" checked />
+    <label for="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-jvm/p1/" class="active">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a42d8e26dc157dad91266007f615424" class="toggle"  />
+    <label for="section-2a42d8e26dc157dad91266007f615424" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="toggle"  />
+    <label for="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="flex justify-between">
+      <a role="button" class="">数据存储</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="toggle"  />
+    <label for="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="flex justify-between">
+      <a role="button" class="">MySQL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/database/mysql/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd18413517cb0125b84955ad7966530" class="toggle"  />
+    <label for="section-bfd18413517cb0125b84955ad7966530" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/database/redis/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cd205a449ba65dd2a21212b6922546d" class="toggle"  />
+    <label for="section-3cd205a449ba65dd2a21212b6922546d" class="flex justify-between">
+      <a role="button" class="">开源框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d32f47fca6b34b56b534735afccc1729" class="toggle"  />
+    <label for="section-d32f47fca6b34b56b534735afccc1729" class="flex justify-between">
+      <a role="button" class="">MQ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/mq/mq/" class="">MQ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f3f420fbf9c98b8554806eb25798e5a2" class="toggle"  />
+    <label for="section-f3f420fbf9c98b8554806eb25798e5a2" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/spring/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/mybatis/" class="">MyBatis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cc51f608bfbc7068b8b058b45385b866" class="toggle"  />
+    <label for="section-cc51f608bfbc7068b8b058b45385b866" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/spring-boot/" class="">SpringBoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e3a1bbd5ca40b4023e33e48202fe092" class="toggle"  />
+    <label for="section-4e3a1bbd5ca40b4023e33e48202fe092" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b7dab53cbc67c8e99988c8e69645e1ca" class="toggle"  />
+    <label for="section-b7dab53cbc67c8e99988c8e69645e1ca" class="flex justify-between">
+      <a role="button" class="">Jianda</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Part.1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---jvm-结构">&ndash; JVM 结构</a></li>
+    <li><a href="#---类加载过程">&ndash; 类加载过程</a></li>
+    <li><a href="#---类加载机制">&ndash; 类加载机制</a></li>
+    <li><a href="#---jvm-内存模型">&ndash; JVM 内存模型</a></li>
+    <li><a href="#---内存区域分代">&ndash; 内存区域分代</a></li>
+    <li><a href="#---堆和栈的区别">&ndash; 堆和栈的区别</a></li>
+    <li><a href="#---垃圾收集算法">&ndash; 垃圾收集算法</a></li>
+    <li><a href="#---垃圾判定算法">&ndash; 垃圾判定算法</a></li>
+    <li><a href="#---垃圾回收方式">&ndash; 垃圾回收方式</a></li>
+    <li><a href="#---jvm-垃圾收集器">&ndash; JVM 垃圾收集器</a></li>
+    <li><a href="#---触发fullgc执行的场景">&ndash; 触发FullGC执行的场景</a></li>
+    <li><a href="#---永久代中会发生垃圾回收吗">&ndash; 永久代中会发生垃圾回收吗</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---jvm-结构">
+  &ndash; JVM 结构
+  <a class="anchor" href="#---jvm-%e7%bb%93%e6%9e%84">#</a>
+</h2>
+<ul>
+<li>类加载器，Class Loader</li>
+<li>执行引擎，Execution Engine</li>
+<li>运行时数据区，Runtime Data Area</li>
+<li>本地方法接口，Native Interface</li>
+</ul>
+<img src="/img/2022Q1/img_2022-03-22_110830.png" width="650">
+<h2 id="---类加载过程">
+  &ndash; 类加载过程
+  <a class="anchor" href="#---%e7%b1%bb%e5%8a%a0%e8%bd%bd%e8%bf%87%e7%a8%8b">#</a>
+</h2>
+<img src="/img/2024Q3/img_2024-07-31_010006.png" width="900"/>
+<h2 id="---类加载机制">
+  &ndash; 类加载机制
+  <a class="anchor" href="#---%e7%b1%bb%e5%8a%a0%e8%bd%bd%e6%9c%ba%e5%88%b6">#</a>
+</h2>
+<ul>
+<li>
+<p>双亲委派模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 当类加载器需要加载某一个 .class 字节码文件时，它会首先将这个任务委托给其父类加载器。
+</span></span><span style="display:flex;"><span>2. 递归这个操作，直至传递到顶层的启动类加载器。
+</span></span><span style="display:flex;"><span>3. 只有当父类加载器无法完成此加载任务时，子类加载器才会自己去加载。
+</span></span></code></pre></div></li>
+<li>
+<p>优点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 避免类的重复加载
+</span></span><span style="display:flex;"><span>2. 避免Java的核心API被篡改
+</span></span><span style="display:flex;"><span>3. Java类随着类加载器一起具备了带有优先级的层级关系
+</span></span></code></pre></div></li>
+</ul>
+<img src="/img/2022Q1/img_2022-03-28_092100.png" width="650">
+<h2 id="---jvm-内存模型">
+  &ndash; JVM 内存模型
+  <a class="anchor" href="#---jvm-%e5%86%85%e5%ad%98%e6%a8%a1%e5%9e%8b">#</a>
+</h2>
+<img src="/img/2022Q1/img_2022-03-28_104000.png" width="600">
+<ul>
+<li>
+<p>方法区</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>即永久代
+</span></span><span style="display:flex;"><span>用于存储类信息、常量、静态常量、即时编译后的代码
+</span></span><span style="display:flex;"><span>运行时常量池，也是方法区的一部分，用于存放编译期生成的各种字面量和符号引用
+</span></span></code></pre></div></li>
+<li>
+<p>堆内存</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>用于存储对象实例、数组
+</span></span><span style="display:flex;"><span>是垃圾收集器管理的主要区域
+</span></span><span style="display:flex;"><span>堆内存采用分代收集算法，又细分为：新生代（Eden区、SurvivorFrom区、SurvivorTo区）、老年代
+</span></span></code></pre></div></li>
+<li>
+<p>虚拟机栈</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>栈内存，是Java方法执行的内存模型 
+</span></span><span style="display:flex;"><span>每个方法被执行时，都会创建一个栈帧来存储局部变量表、操作数栈、动态链接、方法出口等信息
+</span></span><span style="display:flex;"><span>方法从被调用到执行完成的过程，就对应着栈帧在虚拟机栈中从入栈到出栈的过程
+</span></span></code></pre></div></li>
+<li>
+<p>本地方法栈</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>与虚拟机栈相同，区别是虚拟机栈为执行 Java 方法服务，而本地方法栈则为 Native 方法服务
+</span></span></code></pre></div></li>
+<li>
+<p>程序计算器</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>在 Java 虚拟机中，唯一没有 OOM 的区域
+</span></span><span style="display:flex;"><span>是一小块内存空间，用于存储当前线程正在执行字节码指令的地址值
+</span></span><span style="display:flex;"><span>正在执行 Java 方法时，记录的是当前指令的地址
+</span></span><span style="display:flex;"><span>正在执行 Native 方法时，则为 Undefined
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---内存区域分代">
+  &ndash; 内存区域分代
+  <a class="anchor" href="#---%e5%86%85%e5%ad%98%e5%8c%ba%e5%9f%9f%e5%88%86%e4%bb%a3">#</a>
+</h2>
+<img src="/img/2022Q1/img_2022-03-28_104001.png" width="850">
+<ul>
+<li>
+<p>新生代</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>由于频繁创建对象，所以新生代会频繁触发 MinorGC 进行垃圾回收
+</span></span><span style="display:flex;"><span>分为：Eden区、ServivorFrom区、ServivorTo区
+</span></span></code></pre></div></li>
+<li>
+<p>老年代</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>主要存放应用程序中生命周期长的内存对象，老年代的对象比较稳定，所以 MajorGC 不会频繁执行
+</span></span></code></pre></div></li>
+<li>
+<p>永久代</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>指内存的永久保存区域，主要存放 Class 和 Meta（元数据）的信息
+</span></span><span style="display:flex;"><span>GC 不会在主程序运行期对永久区域进行清理
+</span></span><span style="display:flex;"><span>在JDK1.8中，永久代被元空间取代，元空间并不在虚拟机中，而是使用本地内存
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---堆和栈的区别">
+  &ndash; 堆和栈的区别
+  <a class="anchor" href="#---%e5%a0%86%e5%92%8c%e6%a0%88%e7%9a%84%e5%8c%ba%e5%88%ab">#</a>
+</h2>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>堆内存</th>
+            <th>栈内存</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>功能不同</strong></td>
+            <td>存储Java中的对象</td>
+            <td>存储局部变量和方法调用</td>
+        </tr>
+        <tr>
+            <td><strong>共享性不同</strong></td>
+            <td>是线程共有的</td>
+            <td>是线程私有的</td>
+        </tr>
+        <tr>
+            <td><strong>异常错误不同</strong></td>
+            <td>堆空间不足：java.lang.OutOfMemoryError</td>
+            <td>栈空间不足：java.lang.StackOverFlowError</td>
+        </tr>
+        <tr>
+            <td><strong>空间大小</strong></td>
+            <td colspan="2" align="center">堆内存远远大于栈内存</td>
+        </tr>
+    </tbody>
+</table>
+<h2 id="---垃圾收集算法">
+  &ndash; 垃圾收集算法
+  <a class="anchor" href="#---%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e7%ae%97%e6%b3%95">#</a>
+</h2>
+<ul>
+<li>
+<p>标记-清除</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>标记：扫描内存空间，对存活的对象进行标记
+</span></span><span style="display:flex;"><span>清除：扫描内存空间，回收未标记的对象。
+</span></span></code></pre></div><img src="/img/2022Q2/img_2022-04-01_111150.png" width="650"/>
+</li>
+<li>
+<p>标记-压缩</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>标记：扫描内存空间，对存活的对象进行标记
+</span></span><span style="display:flex;"><span>压缩：再次扫描，并整理存活的对象
+</span></span></code></pre></div><img src="/img/2022Q2/img_2022-04-01_111344.png" width="650"/>
+</li>
+<li>
+<p>复制算法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>从 From 区找到存活的对象，复制到 To 区。
+</span></span><span style="display:flex;"><span>From、To区交互身份，进行下一轮垃圾收集。
+</span></span></code></pre></div><img src="/img/2022Q2/img_2022-04-01_110657.png" width="650"/>
+</li>
+</ul>
+<h2 id="---垃圾判定算法">
+  &ndash; 垃圾判定算法
+  <a class="anchor" href="#---%e5%9e%83%e5%9c%be%e5%88%a4%e5%ae%9a%e7%ae%97%e6%b3%95">#</a>
+</h2>
+<ul>
+<li>
+<p>引用计数法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、给对象添加一个引用计数器，记录引用该对象的次数
+</span></span><span style="display:flex;"><span>2、新增一个引用时计数加1，引用释放时计数减1，计数为0时可以回收
+</span></span><span style="display:flex;"><span>3、缺陷：无法解决对象间循环引用的问题
+</span></span></code></pre></div></li>
+<li>
+<p>可达性分析法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、从GC Roots开始向下搜索，搜索所走过的路径称为引用链。
+</span></span><span style="display:flex;"><span>2、当一个对象到GC Roots没有任何引用链相连时，则证明此对象是不可用的，即垃圾对象
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---垃圾回收方式">
+  &ndash; 垃圾回收方式
+  <a class="anchor" href="#---%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e6%96%b9%e5%bc%8f">#</a>
+</h2>
+<ul>
+<li>串行（Serial）、并行（Parallel）、并发（Concurrent）、STW</li>
+</ul>
+<img src="/img/2022Q2/img_2022-04-02_123436.png" width="650">
+<h2 id="---jvm-垃圾收集器">
+  &ndash; JVM 垃圾收集器
+  <a class="anchor" href="#---jvm-%e5%9e%83%e5%9c%be%e6%94%b6%e9%9b%86%e5%99%a8">#</a>
+</h2>
+<img src="/img/2022Q2/img_2022-04-02_123516.png" width="650">
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">垃圾收集器</th>
+          <th style="text-align: left">作用区域</th>
+          <th style="text-align: left">收集算法</th>
+          <th style="text-align: left">收集方式</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Serial</td>
+          <td style="text-align: left">新生代</td>
+          <td style="text-align: left">复制算法</td>
+          <td style="text-align: left">串行</td>
+          <td style="text-align: left">优点：简单高效</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ParNew</td>
+          <td style="text-align: left">新生代</td>
+          <td style="text-align: left">复制算法</td>
+          <td style="text-align: left">并行</td>
+          <td style="text-align: left">Serial的多线程版本</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Serial Old</td>
+          <td style="text-align: left">老年代</td>
+          <td style="text-align: left">标记-整理算法</td>
+          <td style="text-align: left">串行</td>
+          <td style="text-align: left">Serial的老年代版本</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">.</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Parallel Scavenge</td>
+          <td style="text-align: left">新生代</td>
+          <td style="text-align: left">复制算法</td>
+          <td style="text-align: left">并行</td>
+          <td style="text-align: left">追求高吞吐量，高效利用 CPU</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Parallel Old</td>
+          <td style="text-align: left">老年代</td>
+          <td style="text-align: left">标记-整理算法</td>
+          <td style="text-align: left">并行</td>
+          <td style="text-align: left">Parallel Scavenge的老年代版本</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">.</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CMS</td>
+          <td style="text-align: left">老年代</td>
+          <td style="text-align: left">标记-清除算法</td>
+          <td style="text-align: left">并行</td>
+          <td style="text-align: left">优点：高并发、低停顿</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">G1</td>
+          <td style="text-align: left">新生代、老年代</td>
+          <td style="text-align: left">标记-整理算法</td>
+          <td style="text-align: left">并行</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---触发fullgc执行的场景">
+  &ndash; 触发FullGC执行的场景
+  <a class="anchor" href="#---%e8%a7%a6%e5%8f%91fullgc%e6%89%a7%e8%a1%8c%e7%9a%84%e5%9c%ba%e6%99%af">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、直接触发
+</span></span><span style="display:flex;"><span>直接调用System.gc
+</span></span><span style="display:flex;"><span>jvm参数显式地触发
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2、内存区域已满
+</span></span><span style="display:flex;"><span>永久代或元空间内存不足
+</span></span><span style="display:flex;"><span>老年代内存不足
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>3、CMS垃圾回收失败
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>4、内存分配失败
+</span></span><span style="display:flex;"><span>当JVM尝试分配对象时，如果堆内存中没有足够的空间来容纳新的对象
+</span></span></code></pre></div><h2 id="---永久代中会发生垃圾回收吗">
+  &ndash; 永久代中会发生垃圾回收吗
+  <a class="anchor" href="#---%e6%b0%b8%e4%b9%85%e4%bb%a3%e4%b8%ad%e4%bc%9a%e5%8f%91%e7%94%9f%e5%9e%83%e5%9c%be%e5%9b%9e%e6%94%b6%e5%90%97">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>垃圾回收不会发生在永久代，如果永久代满了或者是超过了临界值，会触发完全垃圾回收(FullGC)
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    Copyright © 2024-2025
+    <br/>
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---jvm-结构">&ndash; JVM 结构</a></li>
+    <li><a href="#---类加载过程">&ndash; 类加载过程</a></li>
+    <li><a href="#---类加载机制">&ndash; 类加载机制</a></li>
+    <li><a href="#---jvm-内存模型">&ndash; JVM 内存模型</a></li>
+    <li><a href="#---内存区域分代">&ndash; 内存区域分代</a></li>
+    <li><a href="#---堆和栈的区别">&ndash; 堆和栈的区别</a></li>
+    <li><a href="#---垃圾收集算法">&ndash; 垃圾收集算法</a></li>
+    <li><a href="#---垃圾判定算法">&ndash; 垃圾判定算法</a></li>
+    <li><a href="#---垃圾回收方式">&ndash; 垃圾回收方式</a></li>
+    <li><a href="#---jvm-垃圾收集器">&ndash; JVM 垃圾收集器</a></li>
+    <li><a href="#---触发fullgc执行的场景">&ndash; 触发FullGC执行的场景</a></li>
+    <li><a href="#---永久代中会发生垃圾回收吗">&ndash; 永久代中会发生垃圾回收吗</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

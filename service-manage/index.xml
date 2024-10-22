@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>服务治理 on IWiki</title>
+    <title>服务治理 on Document</title>
     <link>https://localhost:1313/service-manage/</link>
-    <description>Recent content in 服务治理 on IWiki</description>
+    <description>Recent content in 服务治理 on Document</description>
     <generator>Hugo</generator>
-    <language>iwiki</language>
+    <language>doc</language>
     <atom:link href="https://localhost:1313/service-manage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Cloud</title>

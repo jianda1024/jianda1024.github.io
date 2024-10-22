@@ -1,6 +1,6 @@
 {
-  "name": "IWiki",
-  "short_name": "IWiki",
+  "name": "Document",
+  "short_name": "Document",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Redis on IWiki</title>
-    <link>https://localhost:1313/data-store/redis/</link>
-    <description>Recent content in Redis on IWiki</description>
+    <title>Redis on Document</title>
+    <link>http://localhost:1313/data-store/redis/</link>
+    <description>Recent content in Redis on Document</description>
     <generator>Hugo</generator>
-    <language>iwiki</language>
-    <atom:link href="https://localhost:1313/data-store/redis/index.xml" rel="self" type="application/rss+xml" />
+    <language>doc</language>
+    <atom:link href="http://localhost:1313/data-store/redis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数据类型</title>
-      <link>https://localhost:1313/data-store/redis/data-type/</link>
+      <link>http://localhost:1313/data-store/redis/data-type/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/data-store/redis/data-type/</guid>
+      <guid>http://localhost:1313/data-store/redis/data-type/</guid>
       <description>&lt;h1 id=&#34;数据类型&#34;&gt;&#xD;&#xA;  数据类型&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;字符串string&#34;&gt;&#xD;&#xA;  字符串：String&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%ad%97%e7%ac%a6%e4%b8%b2string&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是Redis最基本的数据类型，最大能存储512MB。&lt;/li&gt;&#xA;&lt;li&gt;是二进制安全的，可以包含任何数据。&lt;/li&gt;&#xA;&lt;li&gt;应用：计数功能&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;哈希hash&#34;&gt;&#xD;&#xA;  哈希：Hash&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%93%88%e5%b8%8chash&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是一个键值对集合。&lt;/li&gt;&#xA;&lt;li&gt;是一个string类型的field和value的映射表&lt;/li&gt;&#xA;&lt;li&gt;应用：存储用户信息。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;列表list&#34;&gt;&#xD;&#xA;  列表：List&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%88%97%e8%a1%a8list&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是简单的字符串列表，按照插入顺序排序。&lt;/li&gt;&#xA;&lt;li&gt;你可以添加一个元素到列表的头部（左边）或者尾部（右边）。&lt;/li&gt;&#xA;&lt;li&gt;应用：做简单的消息队列的功能&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;集合set&#34;&gt;&#xD;&#xA;  集合：Set&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e9%9b%86%e5%90%88set&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是string类型的无序集合，通过HashTable实现&lt;/li&gt;&#xA;&lt;li&gt;应用：全局去重功能&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;有序集合zset&#34;&gt;&#xD;&#xA;  有序集合：Zset&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%9c%89%e5%ba%8f%e9%9b%86%e5%90%88zset&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是string类型元素的集合，且不允许重复的成员。&lt;/li&gt;&#xA;&lt;li&gt;其每个元素都会关联一个double类型的分数，Redis通过此分数来排序&lt;/li&gt;&#xA;&lt;li&gt;应用：排行榜&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

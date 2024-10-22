@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="lang2" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="网络">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/lang2/program-base/network/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="网络">
+  <meta property="og:description" content="网络">
+  <meta property="og:locale" content="lang2">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="program-base">
+<title>网络 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/lang2/program-base/network/">
+  <link rel="alternate" hreflang="lang1" href="http://localhost:1313/program-base/network/" title="网络">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/lang2.search.min.8f82e37824b797ee951d0d236de223052e11208ca9447d9bc7efa3728a1f27d1.js" integrity="sha256-j4LjeCS3l&#43;6VHQ0jbeIjBS4RIIypRH2bx&#43;&#43;jcoofJ9E=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+
+
+  
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/lang2"><span>Interview</span>
+    </a>
+    <a href="#" onclick="clickContent('http:\/\/localhost:1313\/lang2\/program-base\/network\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li>
+              <a href="http://localhost:1313/program-base/network/" class="flex align-center">
+                INote
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7af54bb6384ef366b268a9438900490" class="toggle" checked />
+    <label for="section-d7af54bb6384ef366b268a9438900490" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-base/network/" class="active">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-base/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d368cfb348ae2c31b67bc0cd97524469" class="toggle"  />
+    <label for="section-d368cfb348ae2c31b67bc0cd97524469" class="flex justify-between">
+      <a role="button" class="">程序设计</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-547eb2a955702a10f6a5115390900419" class="toggle"  />
+    <label for="section-547eb2a955702a10f6a5115390900419" class="flex justify-between">
+      <a role="button" class="">数据结构与算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e1272beed7905527d0fba42083bdee40" class="toggle"  />
+    <label for="section-e1272beed7905527d0fba42083bdee40" class="flex justify-between">
+      <a role="button" class="">华为OD</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/" class="">必会题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/" class="">必会题 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/" class="">参考题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/" class="">机试题库 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/" class="">机试题库 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%934/" class="">机试题库 - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%935/" class="">机试题库 - 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9311/" class="">机试题库 - 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/" class="">机试题库 - 12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9313/" class="">机试题库 - 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9314/" class="">机试题库 - 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/" class="">华为机试</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321/" class="">机试题库 - 21</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9322/" class="">机试题库 - 22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%85%A8/" class="">索引</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7784697cbea516c63f36e08f8ea9b7b" class="toggle"  />
+    <label for="section-d7784697cbea516c63f36e08f8ea9b7b" class="flex justify-between">
+      <a role="button" class="">leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/" class="">哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/" class="">双指针</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="">滑动窗口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/" class="">子串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/dir/" class="">目录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="toggle"  />
+    <label for="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="flex justify-between">
+      <a role="button" class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-534b4c3b58152c7a029cbad8bcc9e467" class="toggle"  />
+    <label for="section-534b4c3b58152c7a029cbad8bcc9e467" class="flex justify-between">
+      <a role="button" class="">分布式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/distributed/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b032946e6aac69e7d2bfca696347bd30" class="toggle"  />
+    <label for="section-b032946e6aac69e7d2bfca696347bd30" class="flex justify-between">
+      <a role="button" class="">程序语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62f00d6c6c4fc42ea6cda66313338d79" class="toggle"  />
+    <label for="section-62f00d6c6c4fc42ea6cda66313338d79" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="toggle"  />
+    <label for="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a42d8e26dc157dad91266007f615424" class="toggle"  />
+    <label for="section-2a42d8e26dc157dad91266007f615424" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="toggle"  />
+    <label for="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="flex justify-between">
+      <a role="button" class="">数据存储</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="toggle"  />
+    <label for="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="flex justify-between">
+      <a role="button" class="">MySQL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/database/mysql/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd18413517cb0125b84955ad7966530" class="toggle"  />
+    <label for="section-bfd18413517cb0125b84955ad7966530" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/database/redis/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cd205a449ba65dd2a21212b6922546d" class="toggle"  />
+    <label for="section-3cd205a449ba65dd2a21212b6922546d" class="flex justify-between">
+      <a role="button" class="">开源框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d32f47fca6b34b56b534735afccc1729" class="toggle"  />
+    <label for="section-d32f47fca6b34b56b534735afccc1729" class="flex justify-between">
+      <a role="button" class="">MQ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/mq/mq/" class="">MQ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f3f420fbf9c98b8554806eb25798e5a2" class="toggle"  />
+    <label for="section-f3f420fbf9c98b8554806eb25798e5a2" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/spring/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/mybatis/" class="">MyBatis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cc51f608bfbc7068b8b058b45385b866" class="toggle"  />
+    <label for="section-cc51f608bfbc7068b8b058b45385b866" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/spring-boot/" class="">SpringBoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e3a1bbd5ca40b4023e33e48202fe092" class="toggle"  />
+    <label for="section-4e3a1bbd5ca40b4023e33e48202fe092" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b7dab53cbc67c8e99988c8e69645e1ca" class="toggle"  />
+    <label for="section-b7dab53cbc67c8e99988c8e69645e1ca" class="flex justify-between">
+      <a role="button" class="">Jianda</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>网络</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---网络模型">&ndash; 网络模型</a></li>
+    <li><a href="#---tcp-协议">&ndash; TCP 协议</a></li>
+    <li><a href="#---tcp-三次握手">&ndash; TCP 三次握手</a></li>
+    <li><a href="#---tcp-四次挥手">&ndash; TCP 四次挥手</a></li>
+    <li><a href="#---tcpudp">&ndash; TCP、UDP</a></li>
+    <li><a href="#---http-协议">&ndash; HTTP 协议</a></li>
+    <li><a href="#---http-状态码">&ndash; HTTP 状态码</a></li>
+    <li><a href="#---http-请求步骤">&ndash; HTTP 请求步骤</a></li>
+    <li><a href="#---httphttps">&ndash; HTTP、HTTPS</a></li>
+    <li><a href="#---uriurl">&ndash; URI、URL</a></li>
+    <li><a href="#---getpost">&ndash; GET、POST</a></li>
+    <li><a href="#---cookiesession">&ndash; Cookie、Session</a></li>
+    <li><a href="#---forwardredirect">&ndash; Forward、Redirect</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---网络模型">
+  &ndash; 网络模型
+  <a class="anchor" href="#---%e7%bd%91%e7%bb%9c%e6%a8%a1%e5%9e%8b">#</a>
+</h2>
+<img src="/img/2024Q1/img_2024-03-18_223615.png" width="650">
+<h2 id="---tcp-协议">
+  &ndash; TCP 协议
+  <a class="anchor" href="#---tcp-%e5%8d%8f%e8%ae%ae">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Transmission Control Protocol，传输控制协议
+</span></span><span style="display:flex;"><span>2. 是面向连接的协议，在收发数据前，必须和对方建立可靠的连接。
+</span></span><span style="display:flex;"><span>3. 一个TCP连接必须有三次握手、四次挥手
+</span></span></code></pre></div><h2 id="---tcp-三次握手">
+  &ndash; TCP 三次握手
+  <a class="anchor" href="#---tcp-%e4%b8%89%e6%ac%a1%e6%8f%a1%e6%89%8b">#</a>
+</h2>
+<ul>
+<li>
+<p>三次握手：Three-way Handshake，是指建立一个 TCP 连接时，需要客户端和服务器总共发送3个包</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>第一次握手：客户端发出报文（SYN），请求建立连接
+</span></span><span style="display:flex;"><span>第二次握手：服务器收到报文（SYN），如果同意连接，则发出确认报文（SYN+ASK）
+</span></span><span style="display:flex;"><span>第三次握手：客户端收到确认报文（SYN+ASK）后，再发出确认报文（ASK）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>过程简述：
+</span></span><span style="display:flex;"><span>第一次握手：A请求建立连接
+</span></span><span style="display:flex;"><span>第二次握手：A发送正常，B接收正常
+</span></span><span style="display:flex;"><span>第三次握手：B发送正常，A接收正常
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>类比打电话：
+</span></span><span style="display:flex;"><span>A：你听清楚么？
+</span></span><span style="display:flex;"><span>B：能听清楚，你呢？
+</span></span><span style="display:flex;"><span>A：也能听清楚。
+</span></span></code></pre></div><img src="/img/2024Q1/img_2024-03-18_231647.png" width="650"/>
+</li>
+</ul>
+<h2 id="---tcp-四次挥手">
+  &ndash; TCP 四次挥手
+  <a class="anchor" href="#---tcp-%e5%9b%9b%e6%ac%a1%e6%8c%a5%e6%89%8b">#</a>
+</h2>
+<ul>
+<li>
+<p>四次挥手：Four-way handshake，即TCP 的连接的拆除需要发送四个包</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>第一次挥手：客户端发出报文（FIN），请求释放连接，停止发送数据
+</span></span><span style="display:flex;"><span>第二次挥手：服务器收到报文（FIN），发出确认报文（ASK），停止接收数据
+</span></span><span style="display:flex;"><span>第三次挥手：服务器发出报文（FIN），停止发送数据
+</span></span><span style="display:flex;"><span>第四次挥手：客户端收到报文（FIN），发出确认报文（ASK），停止接收数据
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>过程简述：
+</span></span><span style="display:flex;"><span>第一次挥手：A请求断开连接
+</span></span><span style="display:flex;"><span>第二次挥手：B收到请求，同意断开连接
+</span></span><span style="display:flex;"><span>第三次挥手：B确认断开连接
+</span></span><span style="display:flex;"><span>第四次挥手：A收到确认，断开连接
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>类比打电话：
+</span></span><span style="display:flex;"><span>A：我要挂电话了？
+</span></span><span style="display:flex;"><span>B：收到，挂吧。
+</span></span><span style="display:flex;"><span>B：我也没有话要说了。
+</span></span><span style="display:flex;"><span>A：挂断电话。
+</span></span></code></pre></div><img src="/img/2024Q1/img_2024-03-18_231725.png" width="650"/>
+</li>
+</ul>
+<h2 id="---tcpudp">
+  &ndash; TCP、UDP
+  <a class="anchor" href="#---tcpudp">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">TCP</th>
+          <th style="text-align: left">UDP</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">连接性</td>
+          <td style="text-align: left">面向字节流，需要建立连接</td>
+          <td style="text-align: left">面向报文，不需建立连接</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">可靠性</td>
+          <td style="text-align: left">可靠，不丢包</td>
+          <td style="text-align: left">不可靠，会丢包</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">传输效率</td>
+          <td style="text-align: left">传输效率低，速度慢</td>
+          <td style="text-align: left">传输效率高，速度快</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">流量控制</td>
+          <td style="text-align: left">滑动窗口</td>
+          <td style="text-align: left">无</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">拥塞控制</td>
+          <td style="text-align: left">慢开始、拥塞避免、快重传、快恢复</td>
+          <td style="text-align: left">无</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">应用场合</td>
+          <td style="text-align: left">对效率要求低，对准确性要求高或要求有连接的场景</td>
+          <td style="text-align: left">对效率要求高，对准确性要求低</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">连接方式</td>
+          <td style="text-align: left">只支持点到点</td>
+          <td style="text-align: left">支持一对一、一对多、多对多</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">首部开销</td>
+          <td style="text-align: left">开销20字节</td>
+          <td style="text-align: left">开销8字节</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---http-协议">
+  &ndash; HTTP 协议
+  <a class="anchor" href="#---http-%e5%8d%8f%e8%ae%ae">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Hyper Text Transfer Protocol，超文本传输协议，是一种网络通信协议
+</span></span><span style="display:flex;"><span>2. 用于将超文本标记语言（HTML）文档从Web服务器传送到本地浏览器
+</span></span><span style="display:flex;"><span>3. 基于客户端/服务端（C/S）模型，将浏览器为客户端，通过URL向服务端发送所有请求
+</span></span></code></pre></div><h2 id="---http-状态码">
+  &ndash; HTTP 状态码
+  <a class="anchor" href="#---http-%e7%8a%b6%e6%80%81%e7%a0%81">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">状态码</th>
+          <th style="text-align: left">含义</th>
+          <th style="text-align: left">描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">1xx</td>
+          <td style="text-align: left">消息响应</td>
+          <td style="text-align: left">服务器收到请求，需要请求者继续执行操作</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">2xx</td>
+          <td style="text-align: left">成功响应</td>
+          <td style="text-align: left">操作被成功接收并处理</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">3xx</td>
+          <td style="text-align: left">重定向</td>
+          <td style="text-align: left">需要进一步的操作以完成请求</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4xx</td>
+          <td style="text-align: left">客户端错误</td>
+          <td style="text-align: left">请求包含语法错误或无法完成请求</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">5xx</td>
+          <td style="text-align: left">服务器错误</td>
+          <td style="text-align: left">服务器在处理请求的过程中发生了错误</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---http-请求步骤">
+  &ndash; HTTP 请求步骤
+  <a class="anchor" href="#---http-%e8%af%b7%e6%b1%82%e6%ad%a5%e9%aa%a4">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、DNS 解析
+</span></span><span style="display:flex;"><span>2、HTTP 请求，当输入一个请求时，建立一个 Socket 连接发起 TCP的 3 次握手
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>3.1、客户端向服务器发送请求命令
+</span></span><span style="display:flex;"><span>3.2、客户端发送请求头信息和数据。
+</span></span><span style="display:flex;"><span>4.1、服务器发送应答头信息。
+</span></span><span style="display:flex;"><span>4.2、服务器向客户端发送数据。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>5、服务器关闭 TCP 连接（4次挥手）。
+</span></span><span style="display:flex;"><span>6、客户端根据返回的 HTML 、 CSS 、 JS 进行渲染。
+</span></span></code></pre></div><h2 id="---httphttps">
+  &ndash; HTTP、HTTPS
+  <a class="anchor" href="#---httphttps">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。
+</span></span><span style="display:flex;"><span>2. http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。
+</span></span><span style="display:flex;"><span>3. http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。
+</span></span><span style="display:flex;"><span>4. http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。
+</span></span></code></pre></div><h2 id="---uriurl">
+  &ndash; URI、URL
+  <a class="anchor" href="#---uriurl">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>URI：
+</span></span><span style="display:flex;"><span>Uniform Resource Identifier，统一资源标识符
+</span></span><span style="display:flex;"><span>是一种语义上的抽象概念
+</span></span><span style="display:flex;"><span>唯一标识了资源
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>URL：
+</span></span><span style="display:flex;"><span>Uniform Resource Location，统一资源定位符
+</span></span><span style="display:flex;"><span>是URI的一个子集，一种具体的URI
+</span></span><span style="display:flex;"><span>唯一标识并定位了资源
+</span></span></code></pre></div><h2 id="---getpost">
+  &ndash; GET、POST
+  <a class="anchor" href="#---getpost">#</a>
+</h2>
+<ul>
+<li>
+<p>数据传输方式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>GET:  数据通过URL传递，数据以 key=value 的形式拼接在URL后面。
+</span></span><span style="display:flex;"><span>POST: 数据通过请求体传递，可以包含大量数据，格式灵活。
+</span></span></code></pre></div></li>
+<li>
+<p>数据长度限制</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>GET:  受到URL长度的限制，一般为2048字符。
+</span></span><span style="display:flex;"><span>POST: 请求体数据长度不受限制，可以传输大量数据。
+</span></span></code></pre></div></li>
+<li>
+<p>安全性</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>GET:  数据明文传输，容易被截取和篡改，适合传输少量不敏感数据。
+</span></span><span style="display:flex;"><span>POST: 数据在请求体中传输，经多重编码安全性较高，适合传输敏感数据。
+</span></span></code></pre></div></li>
+<li>
+<p>缓存</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>GET:  请求可以被浏览器缓存，可以被收藏为标签
+</span></span><span style="display:flex;"><span>POST: 请求不能被浏览器缓存，不能被收藏为标签
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---cookiesession">
+  &ndash; Cookie、Session
+  <a class="anchor" href="#---cookiesession">#</a>
+</h2>
+<ul>
+<li>Cookie、Session 都是一种用于维持客户端与服务端之间会话的机制</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Cookie</th>
+          <th style="text-align: left">Session</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">数据存放位置</td>
+          <td style="text-align: left">客户的浏览器</td>
+          <td style="text-align: left">服务器</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">安全程度</td>
+          <td style="text-align: left">可能会被篡改</td>
+          <td style="text-align: left">安全</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">性能方面</td>
+          <td style="text-align: left">只影响客户的浏览器</td>
+          <td style="text-align: left">占用服务器性能</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">存储数据量</td>
+          <td style="text-align: left">客户的浏览器对其有限制</td>
+          <td style="text-align: left">不影响</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">存储结构</td>
+          <td style="text-align: left">键值对形式的文本</td>
+          <td style="text-align: left">哈希表结构</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---forwardredirect">
+  &ndash; Forward、Redirect
+  <a class="anchor" href="#---forwardredirect">#</a>
+</h2>
+<ul>
+<li>转发是服务器行为，重定向是客户端行为</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">请求转发</th>
+          <th style="text-align: left">请求重定向</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">服务器内部跳转，所有地址栏上的路径不会改变</td>
+          <td style="text-align: left">是浏览器再次发送请求，地址栏上的路径会发生改变</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">只发送一次请求</td>
+          <td style="text-align: left">会发送两次请求</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">只能在当前应用内部跳转</td>
+          <td style="text-align: left">可以在内部跳转，也可以跳出当前应用</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">可以共享reqeust</td>
+          <td style="text-align: left">不能可以共享reqeust</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">request.getRequestDispatcher().forward();</td>
+          <td style="text-align: left">response.sendRedirect();</td>
+      </tr>
+  </tbody>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    Copyright © 2024-2025
+    <br/>
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---网络模型">&ndash; 网络模型</a></li>
+    <li><a href="#---tcp-协议">&ndash; TCP 协议</a></li>
+    <li><a href="#---tcp-三次握手">&ndash; TCP 三次握手</a></li>
+    <li><a href="#---tcp-四次挥手">&ndash; TCP 四次挥手</a></li>
+    <li><a href="#---tcpudp">&ndash; TCP、UDP</a></li>
+    <li><a href="#---http-协议">&ndash; HTTP 协议</a></li>
+    <li><a href="#---http-状态码">&ndash; HTTP 状态码</a></li>
+    <li><a href="#---http-请求步骤">&ndash; HTTP 请求步骤</a></li>
+    <li><a href="#---httphttps">&ndash; HTTP、HTTPS</a></li>
+    <li><a href="#---uriurl">&ndash; URI、URL</a></li>
+    <li><a href="#---getpost">&ndash; GET、POST</a></li>
+    <li><a href="#---cookiesession">&ndash; Cookie、Session</a></li>
+    <li><a href="#---forwardredirect">&ndash; Forward、Redirect</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

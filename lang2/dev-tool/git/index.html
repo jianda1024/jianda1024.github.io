@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="lang2" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Git">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/lang2/dev-tool/git/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Git">
+  <meta property="og:description" content="Git">
+  <meta property="og:locale" content="lang2">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="dev-tool">
+<title>Git | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/lang2/dev-tool/git/">
+  <link rel="alternate" hreflang="lang1" href="http://localhost:1313/dev-tool/git/" title="Git">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/lang2.search.min.8f82e37824b797ee951d0d236de223052e11208ca9447d9bc7efa3728a1f27d1.js" integrity="sha256-j4LjeCS3l&#43;6VHQ0jbeIjBS4RIIypRH2bx&#43;&#43;jcoofJ9E=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+
+
+  
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/lang2"><span>Interview</span>
+    </a>
+    <a href="#" onclick="clickContent('http:\/\/localhost:1313\/lang2\/dev-tool\/git\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li>
+              <a href="http://localhost:1313/dev-tool/git/" class="flex align-center">
+                INote
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7af54bb6384ef366b268a9438900490" class="toggle"  />
+    <label for="section-d7af54bb6384ef366b268a9438900490" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-base/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-base/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d368cfb348ae2c31b67bc0cd97524469" class="toggle"  />
+    <label for="section-d368cfb348ae2c31b67bc0cd97524469" class="flex justify-between">
+      <a role="button" class="">程序设计</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-547eb2a955702a10f6a5115390900419" class="toggle"  />
+    <label for="section-547eb2a955702a10f6a5115390900419" class="flex justify-between">
+      <a role="button" class="">数据结构与算法</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e1272beed7905527d0fba42083bdee40" class="toggle"  />
+    <label for="section-e1272beed7905527d0fba42083bdee40" class="flex justify-between">
+      <a role="button" class="">华为OD</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/" class="">必会题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/" class="">必会题 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/" class="">参考题 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/" class="">机试题库 - 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/" class="">机试题库 - 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/" class="">机试题库 - 3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%934/" class="">机试题库 - 4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%935/" class="">机试题库 - 5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9311/" class="">机试题库 - 11</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/" class="">机试题库 - 12</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9313/" class="">机试题库 - 13</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9314/" class="">机试题库 - 14</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/" class="">华为机试</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321/" class="">机试题库 - 21</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9322/" class="">机试题库 - 22</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/huawei-od/%E5%85%A8/" class="">索引</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d7784697cbea516c63f36e08f8ea9b7b" class="toggle"  />
+    <label for="section-d7784697cbea516c63f36e08f8ea9b7b" class="flex justify-between">
+      <a role="button" class="">leetcode</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/" class="">哈希</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/" class="">双指针</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/" class="">滑动窗口</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/" class="">子串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/structure-algorithm/dir/" class="">目录</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="toggle"  />
+    <label for="section-1d60455ab7836bb2a3a56b8bde54f5b9" class="flex justify-between">
+      <a role="button" class="">设计模式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-534b4c3b58152c7a029cbad8bcc9e467" class="toggle"  />
+    <label for="section-534b4c3b58152c7a029cbad8bcc9e467" class="flex justify-between">
+      <a role="button" class="">分布式</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-design/distributed/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b032946e6aac69e7d2bfca696347bd30" class="toggle"  />
+    <label for="section-b032946e6aac69e7d2bfca696347bd30" class="flex justify-between">
+      <a role="button" class="">程序语言</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-62f00d6c6c4fc42ea6cda66313338d79" class="toggle"  />
+    <label for="section-62f00d6c6c4fc42ea6cda66313338d79" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="toggle"  />
+    <label for="section-c0ce084c2514d6bd2b2c3467a1929a3d" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2a42d8e26dc157dad91266007f615424" class="toggle"  />
+    <label for="section-2a42d8e26dc157dad91266007f615424" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/program-lang/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="toggle"  />
+    <label for="section-fe10a5803fcd991eeb3fa98ee3172a4f" class="flex justify-between">
+      <a role="button" class="">数据存储</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="toggle"  />
+    <label for="section-5c53985597fa4a4175f4c1a5cffc2e9c" class="flex justify-between">
+      <a role="button" class="">MySQL</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/database/mysql/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bfd18413517cb0125b84955ad7966530" class="toggle"  />
+    <label for="section-bfd18413517cb0125b84955ad7966530" class="flex justify-between">
+      <a role="button" class="">Redis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/database/redis/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3cd205a449ba65dd2a21212b6922546d" class="toggle"  />
+    <label for="section-3cd205a449ba65dd2a21212b6922546d" class="flex justify-between">
+      <a role="button" class="">开源框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d32f47fca6b34b56b534735afccc1729" class="toggle"  />
+    <label for="section-d32f47fca6b34b56b534735afccc1729" class="flex justify-between">
+      <a role="button" class="">MQ</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/mq/mq/" class="">MQ</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f3f420fbf9c98b8554806eb25798e5a2" class="toggle"  />
+    <label for="section-f3f420fbf9c98b8554806eb25798e5a2" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/spring/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/framework/mybatis/" class="">MyBatis</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cc51f608bfbc7068b8b058b45385b866" class="toggle"  />
+    <label for="section-cc51f608bfbc7068b8b058b45385b866" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/spring-boot/" class="">SpringBoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/service-manage/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e3a1bbd5ca40b4023e33e48202fe092" class="toggle" checked />
+    <label for="section-4e3a1bbd5ca40b4023e33e48202fe092" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/git/" class="active">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/lang2/dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b7dab53cbc67c8e99988c8e69645e1ca" class="toggle"  />
+    <label for="section-b7dab53cbc67c8e99988c8e69645e1ca" class="flex justify-between">
+      <a role="button" class="">Jianda</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Git</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---版本控制">&ndash; 版本控制</a></li>
+    <li><a href="#---git-工作流程">&ndash; Git 工作流程</a></li>
+    <li><a href="#---git-基本命令">&ndash; Git 基本命令</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---版本控制">
+  &ndash; 版本控制
+  <a class="anchor" href="#---%e7%89%88%e6%9c%ac%e6%8e%a7%e5%88%b6">#</a>
+</h2>
+<ul>
+<li>
+<p>SVN：是基于<strong>差异</strong>的版本控制，存储的是一组基本文件和每个文件随时间逐步累积的差异</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>优缺点：节省磁盘空间，耗时、效率低。
+</span></span><span style="display:flex;"><span>不适合的领域：跨地域的协同开发、追求高质量代码和代码门禁
+</span></span></code></pre></div></li>
+</ul>
+<img src="/img/2024Q2/img_2024-04-02_000538.png" width="650">
+<br/>
+<ul>
+<li>
+<p>Git：是基于<strong>快照</strong>的版本控制，存储的是文件的一系列快照</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>优缺点：版本切换时非常快，占用磁盘空间较大
+</span></span><span style="display:flex;"><span>不适合的领域：目录级别的读授权、word等二进制文档的版本控制
+</span></span></code></pre></div></li>
+</ul>
+<img src="/img/2024Q2/img_2024-04-02_000633.png" width="650">
+<h2 id="---git-工作流程">
+  &ndash; Git 工作流程
+  <a class="anchor" href="#---git-%e5%b7%a5%e4%bd%9c%e6%b5%81%e7%a8%8b">#</a>
+</h2>
+<ul>
+<li>
+<p>工作区：日常工作的工程目录</p>
+</li>
+<li>
+<p>暂存区：又称索引，工程根目录.git/index 文件夹</p>
+</li>
+<li>
+<p>版本区：又称本地仓库，工程根目录.git文件夹</p>
+</li>
+</ul>
+<img src="/img/2024Q2/img_2024-04-02_001212.png" width="650">
+<h2 id="---git-基本命令">
+  &ndash; Git 基本命令
+  <a class="anchor" href="#---git-%e5%9f%ba%e6%9c%ac%e5%91%bd%e4%bb%a4">#</a>
+</h2>
+<img src="/img/2024Q3/img_2024-08-23_180218.png" width="900"/>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    Copyright © 2024-2025
+    <br/>
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---版本控制">&ndash; 版本控制</a></li>
+    <li><a href="#---git-工作流程">&ndash; Git 工作流程</a></li>
+    <li><a href="#---git-基本命令">&ndash; Git 基本命令</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

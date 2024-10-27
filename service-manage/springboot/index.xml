@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spring Boot on Document</title>
-    <link>https://localhost:1313/service-manage/springboot/</link>
+    <link>https://jianda1024.github.io/service-manage/springboot/</link>
     <description>Recent content in Spring Boot on Document</description>
     <generator>Hugo</generator>
     <language>doc</language>
-    <atom:link href="https://localhost:1313/service-manage/springboot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/service-manage/springboot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>工作原理</title>
-      <link>https://localhost:1313/service-manage/springboot/work-principle/</link>
+      <link>https://jianda1024.github.io/service-manage/springboot/work-principle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/service-manage/springboot/work-principle/</guid>
+      <guid>https://jianda1024.github.io/service-manage/springboot/work-principle/</guid>
       <description>&lt;h1 id=&#34;工作原理&#34;&gt;&#xD;&#xA;  工作原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;h3 id=&#34;核心注解&#34;&gt;&#xD;&#xA;  核心注解&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%a0%b8%e5%bf%83%e6%b3%a8%e8%a7%a3&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;@SpringBootApplication，组合以下注解&lt;/li&gt;&#xA;&lt;li&gt;@SpringBootConfiguration：Spring Boot 项目的配置注解&lt;/li&gt;&#xA;&lt;li&gt;@EnableAutoConfiguration：启用自动配置&lt;/li&gt;&#xA;&lt;li&gt;@ComponentScan：默认扫描 @SpringBootApplication 所在类的同级目录以及它的子目录&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;自动配置原理&#34;&gt;&#xD;&#xA;  自动配置原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e8%87%aa%e5%8a%a8%e9%85%8d%e7%bd%ae%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在 spring 程序 main 方法中，添加 @SpringBootApplication 或者 @EnableAutoConfiguration 后，&lt;/li&gt;&#xA;&lt;li&gt;框架会自动去 maven 中读取每个 starter 中的 spring.factories 文件。&lt;/li&gt;&#xA;&lt;li&gt;该文件里配置了所有需要被创建的 spring bean。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

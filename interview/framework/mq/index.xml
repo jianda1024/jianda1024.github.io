@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MQ on Interview</title>
-    <link>https://localhost:1313/interview/framework/mq/</link>
+    <link>https://jianda1024.github.io/interview/framework/mq/</link>
     <description>Recent content in MQ on Interview</description>
     <generator>Hugo</generator>
     <language>interview</language>
-    <atom:link href="https://localhost:1313/interview/framework/mq/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/interview/framework/mq/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MQ</title>
-      <link>https://localhost:1313/interview/framework/mq/mq/</link>
+      <link>https://jianda1024.github.io/interview/framework/mq/mq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/interview/framework/mq/mq/</guid>
+      <guid>https://jianda1024.github.io/interview/framework/mq/mq/</guid>
       <description>&lt;h2 id=&#34;---mq&#34;&gt;&#xD;&#xA;  &amp;ndash; MQ&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---mq&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Message Queue，消息队列&lt;/li&gt;&#xA;&lt;li&gt;是一种面向消息的中间件，用于实现不同系统之间的异步通信&lt;/li&gt;&#xA;&lt;li&gt;优点：解耦、异步、削峰&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;---mq-原理&#34;&gt;&#xD;&#xA;  &amp;ndash; MQ 原理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---mq-%e5%8e%9f%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1. 生产者（Producer）将消息发送到消息队列中，而不是直接发送给消费者（Consumer）。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2. 消息队列将接收到的消息存储在内部的消息存储区（Message Store）中。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;3. 消费者从消息队列中拉取消息，并进行处理。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;4. 消费者处理完消息后，可以发送确认消息给消息队列，表示消息已经成功处理。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;5. 消息队列根据消费者的确认消息，决定是否将消息从消息存储区中删除。&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;---mq-消息传递模式&#34;&gt;&#xD;&#xA;  &amp;ndash; MQ 消息传递模式&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---mq-%e6%b6%88%e6%81%af%e4%bc%a0%e9%80%92%e6%a8%a1%e5%bc%8f&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1. 点对点模式&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;一对一，消费者主动拉取数据，消息收到后消息清除&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2. 发布/订阅模式&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;一对多，数据生产后，推送给所有订阅者&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pr</description>
     </item>
   </channel>

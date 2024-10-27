@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Document</title>
-    <link>https://localhost:1313/program-base/linux/</link>
+    <link>https://jianda1024.github.io/program-base/linux/</link>
     <description>Recent content in Linux on Document</description>
     <generator>Hugo</generator>
     <language>doc</language>
-    <atom:link href="https://localhost:1313/program-base/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/program-base/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>目录结构</title>
-      <link>https://localhost:1313/program-base/linux/dir/</link>
+      <link>https://jianda1024.github.io/program-base/linux/dir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/program-base/linux/dir/</guid>
-      <description>&lt;h2 id=&#34;linux-目录结构&#34;&gt;&#xD;&#xA;  Linux 目录结构&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#linux-%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;img src=&#34;https://localhost:1313/img/2024Q1/img_2024-03-21_220231.png&#34; width=&#34;800&#34;/&gt;</description>
+      <guid>https://jianda1024.github.io/program-base/linux/dir/</guid>
+      <description>&lt;h2 id=&#34;linux-目录结构&#34;&gt;&#xD;&#xA;  Linux 目录结构&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#linux-%e7%9b%ae%e5%bd%95%e7%bb%93%e6%9e%84&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;img src=&#34;https://jianda1024.github.io/img/2024Q1/img_2024-03-21_220231.png&#34; width=&#34;800&#34;/&gt;</description>
     </item>
   </channel>
 </rss>

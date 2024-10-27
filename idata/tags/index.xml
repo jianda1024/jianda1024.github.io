@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on IData</title>
-    <link>https://localhost:1313/idata/tags/</link>
+    <link>https://jianda1024.github.io/idata/tags/</link>
     <description>Recent content in Tags on IData</description>
     <generator>Hugo</generator>
     <language>idata</language>
-    <atom:link href="https://localhost:1313/idata/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/idata/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

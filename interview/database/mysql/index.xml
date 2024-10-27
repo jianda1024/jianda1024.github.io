@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MySQL on Interview</title>
-    <link>https://localhost:1313/interview/database/mysql/</link>
+    <link>https://jianda1024.github.io/interview/database/mysql/</link>
     <description>Recent content in MySQL on Interview</description>
     <generator>Hugo</generator>
     <language>interview</language>
-    <atom:link href="https://localhost:1313/interview/database/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/interview/database/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Part.1</title>
-      <link>https://localhost:1313/interview/database/mysql/p1/</link>
+      <link>https://jianda1024.github.io/interview/database/mysql/p1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/interview/database/mysql/p1/</guid>
+      <guid>https://jianda1024.github.io/interview/database/mysql/p1/</guid>
       <description>&lt;h2 id=&#34;---数据库三范式&#34;&gt;&#xD;&#xA;  &amp;ndash; 数据库三范式&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---%e6%95%b0%e6%8d%ae%e5%ba%93%e4%b8%89%e8%8c%83%e5%bc%8f&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;第一范式：&lt;strong&gt;原子性&lt;/strong&gt;，字段是最小数据单元&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;员工表，姓名字段仅包含员工的正式名称，就符合第一范式，&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;反之包含中文名、英文名、别名等，则意味着姓名字段是再拆分的&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;第二范式：&lt;strong&gt;唯一性&lt;/strong&gt;，每一行都有唯一标识&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;员工表，定义工号作为主键&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;第三范式：&lt;strong&gt;独立性&lt;/strong&gt;，非主键字段完全依赖于主键字段&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;员工表包含了部门编码，它引用到部门表中的部门编号这个主键，此时符合第三范式&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;如果在员工表中又包含一个部门名称，则造成了数据的冗余，不符合第三范式&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;---innodbmyisam&#34;&gt;&#xD;&#xA;  &amp;ndash; InnoDB、MyISAM&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---innodbmyisam&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;区别&lt;/p&gt;</description>
     </item>
   </channel>

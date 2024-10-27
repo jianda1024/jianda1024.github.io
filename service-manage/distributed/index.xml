@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>分布式 on Document</title>
-    <link>https://localhost:1313/service-manage/distributed/</link>
+    <link>https://jianda1024.github.io/service-manage/distributed/</link>
     <description>Recent content in 分布式 on Document</description>
     <generator>Hugo</generator>
     <language>doc</language>
-    <atom:link href="https://localhost:1313/service-manage/distributed/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/service-manage/distributed/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

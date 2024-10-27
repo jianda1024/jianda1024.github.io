@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>分布式 on Interview</title>
-    <link>https://localhost:1313/interview/program-design/distributed/</link>
+    <link>https://jianda1024.github.io/interview/program-design/distributed/</link>
     <description>Recent content in 分布式 on Interview</description>
     <generator>Hugo</generator>
     <language>interview</language>
-    <atom:link href="https://localhost:1313/interview/program-design/distributed/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/interview/program-design/distributed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Part.1</title>
-      <link>https://localhost:1313/interview/program-design/distributed/p1/</link>
+      <link>https://jianda1024.github.io/interview/program-design/distributed/p1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/interview/program-design/distributed/p1/</guid>
+      <guid>https://jianda1024.github.io/interview/program-design/distributed/p1/</guid>
       <description>&lt;h2 id=&#34;---分布式幂等性&#34;&gt;&#xD;&#xA;  &amp;ndash; 分布式幂等性&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---%e5%88%86%e5%b8%83%e5%bc%8f%e5%b9%82%e7%ad%89%e6%80%a7&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;幂等性&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;幂等性：对于同一操作，不论该操作被执行多少次，产生的影响都是相同的&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;例如：支付功能，用户多点了几次，不做幂等校验就可能重复支付了&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;解决方案&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1. 分布式锁&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2. 数据表唯一索引&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;3. token机制&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;---cap-原则&#34;&gt;&#xD;&#xA;  &amp;ndash; CAP 原则&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#---cap-%e5%8e%9f%e5%88%99&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;CAP&lt;/p&gt;</description>
     </item>
   </channel>

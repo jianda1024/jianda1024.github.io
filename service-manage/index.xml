@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>服务治理 on Document</title>
-    <link>https://localhost:1313/service-manage/</link>
+    <link>https://jianda1024.github.io/service-manage/</link>
     <description>Recent content in 服务治理 on Document</description>
     <generator>Hugo</generator>
     <language>doc</language>
-    <atom:link href="https://localhost:1313/service-manage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/service-manage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spring Cloud</title>
-      <link>https://localhost:1313/service-manage/springcloud/</link>
+      <link>https://jianda1024.github.io/service-manage/springcloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/service-manage/springcloud/</guid>
-      <description>&lt;h3 id=&#34;spring-cloud&#34;&gt;&#xD;&#xA;  Spring Cloud&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#spring-cloud&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;分布式微服务架构下的一站式解决方案，是各个微服务架构落地技术的集合体，俗称微服务全家桶&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://springcloud.cc/&#34; target=&#34;_blank&#34;&gt;中文参考文档&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;img src=&#34;https://localhost:1313/img/2022Q2/img_2022-05-20_202442.png&#34; width=&#34;650&#34;/&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;推荐：Nacos、LoadBalancer、OpenFeign、sentienl、gateway&lt;/li&gt;&#xA;&lt;li&gt;停更：Eureka、Feign、Hystrix、Zuul、Config、Bus&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;spring-cloud--spring-boot&#34;&gt;&#xD;&#xA;  Spring Cloud &amp;amp; Spring Boot&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#spring-cloud--spring-boot&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SpringBoot 专注于快速、方便的开发单个微服务个体&lt;/li&gt;&#xA;&lt;li&gt;SpringCloud 是关注全局的微服务协调治理框架，它将 SpringBoot 开发的一个个单体微服务整合并管理起来。&lt;/li&gt;&#xA;&lt;li&gt;SpringBoot 可以离开 SpringCloud 独立使用开发项目，但是 SpringCloud 离不开 SpringBoot，属于依赖的关系。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://jianda1024.github.io/service-manage/springcloud/</guid>
+      <description>&lt;h3 id=&#34;spring-cloud&#34;&gt;&#xD;&#xA;  Spring Cloud&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#spring-cloud&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;分布式微服务架构下的一站式解决方案，是各个微服务架构落地技术的集合体，俗称微服务全家桶&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://springcloud.cc/&#34; target=&#34;_blank&#34;&gt;中文参考文档&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;img src=&#34;https://jianda1024.github.io/img/2022Q2/img_2022-05-20_202442.png&#34; width=&#34;650&#34;/&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;推荐：Nacos、LoadBalancer、OpenFeign、sentienl、gateway&lt;/li&gt;&#xA;&lt;li&gt;停更：Eureka、Feign、Hystrix、Zuul、Config、Bus&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;spring-cloud--spring-boot&#34;&gt;&#xD;&#xA;  Spring Cloud &amp;amp; Spring Boot&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#spring-cloud--spring-boot&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SpringBoot 专注于快速、方便的开发单个微服务个体&lt;/li&gt;&#xA;&lt;li&gt;SpringCloud 是关注全局的微服务协调治理框架，它将 SpringBoot 开发的一个个单体微服务整合并管理起来。&lt;/li&gt;&#xA;&lt;li&gt;SpringBoot 可以离开 SpringCloud 独立使用开发项目，但是 SpringCloud 离不开 SpringBoot，属于依赖的关系。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

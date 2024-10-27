@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>常用命令 on Document</title>
-    <link>https://localhost:1313/program-base/linux/cmd/</link>
+    <link>https://jianda1024.github.io/program-base/linux/cmd/</link>
     <description>Recent content in 常用命令 on Document</description>
     <generator>Hugo</generator>
     <language>doc</language>
-    <atom:link href="https://localhost:1313/program-base/linux/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/program-base/linux/cmd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文件管理</title>
-      <link>https://localhost:1313/program-base/linux/cmd/flie-manage/</link>
+      <link>https://jianda1024.github.io/program-base/linux/cmd/flie-manage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/program-base/linux/cmd/flie-manage/</guid>
+      <guid>https://jianda1024.github.io/program-base/linux/cmd/flie-manage/</guid>
       <description>&lt;h1 id=&#34;文件管理&#34;&gt;&#xD;&#xA;  文件管理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%96%87%e4%bb%b6%e7%ae%a1%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;ls - 列出目录内容&lt;/p&gt;&#xA;&lt;p&gt;cd - 改变目录&lt;/p&gt;&#xA;&lt;p&gt;cp - 复制文件或目录&lt;/p&gt;&#xA;&lt;p&gt;mv - 移动或重命名文件或目录&lt;/p&gt;&#xA;&lt;p&gt;rm - 删除文件或目录&lt;/p&gt;&#xA;&lt;p&gt;cat - 连接文件并打印到标准输出&lt;/p&gt;&#xA;&lt;p&gt;more / less - 分页显示文件内容&lt;/p&gt;&#xA;&lt;p&gt;head / tail - 显示文件开头或结尾的内容&lt;/p&gt;</description>
     </item>
     <item>
       <title>文件查看</title>
-      <link>https://localhost:1313/program-base/linux/cmd/flie-view/</link>
+      <link>https://jianda1024.github.io/program-base/linux/cmd/flie-view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/program-base/linux/cmd/flie-view/</guid>
+      <guid>https://jianda1024.github.io/program-base/linux/cmd/flie-view/</guid>
       <description>&lt;h1 id=&#34;文件查看&#34;&gt;&#xD;&#xA;  文件查看&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%96%87%e4%bb%b6%e6%9f%a5%e7%9c%8b&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;grep - 文本搜索工具&lt;/p&gt;&#xA;&lt;p&gt;sed - 流编辑器，用于过滤和转换文本&lt;/p&gt;&#xA;&lt;p&gt;awk - 强大的文本分析工具&lt;/p&gt;&#xA;&lt;p&gt;vi / vim - 文本编辑器&lt;/p&gt;</description>
     </item>
     <item>
       <title>系统管理</title>
-      <link>https://localhost:1313/program-base/linux/cmd/sys/</link>
+      <link>https://jianda1024.github.io/program-base/linux/cmd/sys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/program-base/linux/cmd/sys/</guid>
+      <guid>https://jianda1024.github.io/program-base/linux/cmd/sys/</guid>
       <description>&lt;h1 id=&#34;系统管理&#34;&gt;&#xD;&#xA;  系统管理&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%b3%bb%e7%bb%9f%e7%ae%a1%e7%90%86&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;top / htop - 显示当前运行的进程&lt;/p&gt;&#xA;&lt;p&gt;free - 显示内存和交换区的使用情况&lt;/p&gt;&#xA;&lt;p&gt;df - 报告文件系统磁盘空间使用情况&lt;/p&gt;&#xA;&lt;p&gt;du - 估计文件空间使用量&lt;/p&gt;&#xA;&lt;p&gt;ps - 报告当前进程状态&lt;/p&gt;&#xA;&lt;p&gt;kill - 发送信号到进程&lt;/p&gt;&#xA;&lt;p&gt;ifconfig / ip - 网络接口配置&lt;/p&gt;&#xA;&lt;p&gt;ping - 检测主机是否在网络中&lt;/p&gt;&#xA;&lt;p&gt;netstat - 显示网络状态信息&lt;/p&gt;</description>
     </item>
     <item>
       <title>用户权限</title>
-      <link>https://localhost:1313/program-base/linux/cmd/user/</link>
+      <link>https://jianda1024.github.io/program-base/linux/cmd/user/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/program-base/linux/cmd/user/</guid>
+      <guid>https://jianda1024.github.io/program-base/linux/cmd/user/</guid>
       <description>&lt;h1 id=&#34;用户权限&#34;&gt;&#xD;&#xA;  用户权限&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e7%94%a8%e6%88%b7%e6%9d%83%e9%99%90&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;useradd - 添加用户&lt;/p&gt;&#xA;&lt;p&gt;usermod - 修改用户属性&lt;/p&gt;&#xA;&lt;p&gt;userdel - 删除用户&lt;/p&gt;&#xA;&lt;p&gt;groupadd - 添加用户组&lt;/p&gt;&#xA;&lt;p&gt;passwd - 更改用户密码&lt;/p&gt;&#xA;&lt;p&gt;su - 切换用户身份&lt;/p&gt;&#xA;&lt;p&gt;chmod - 改变文件或目录权限&lt;/p&gt;&#xA;&lt;p&gt;chown - 改变文件或目录的所有者&lt;/p&gt;</description>
     </item>
     <item>
       <title>压缩</title>
-      <link>https://localhost:1313/program-base/linux/cmd/file-zip/</link>
+      <link>https://jianda1024.github.io/program-base/linux/cmd/file-zip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/program-base/linux/cmd/file-zip/</guid>
+      <guid>https://jianda1024.github.io/program-base/linux/cmd/file-zip/</guid>
       <description>&lt;h1 id=&#34;压缩&#34;&gt;&#xD;&#xA;  压缩&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%8e%8b%e7%bc%a9&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;tar - 文件压缩与解压缩&lt;/p&gt;&#xA;&lt;p&gt;gzip / gunzip - 压缩或解压缩文件&lt;/p&gt;&#xA;&lt;p&gt;bzip2 / bunzip2 - 压缩或解压缩文件&lt;/p&gt;</description>
     </item>
     <item>
       <title>其他</title>
-      <link>https://localhost:1313/program-base/linux/cmd/other/</link>
+      <link>https://jianda1024.github.io/program-base/linux/cmd/other/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://localhost:1313/program-base/linux/cmd/other/</guid>
+      <guid>https://jianda1024.github.io/program-base/linux/cmd/other/</guid>
       <description>&lt;h1 id=&#34;其他&#34;&gt;&#xD;&#xA;  其他&#xD;&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e5%85%b6%e4%bb%96&#34;&gt;#&lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;</description>
     </item>
   </channel>

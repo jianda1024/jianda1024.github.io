@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maven on Document</title>
-    <link>https://localhost:1313/dev-tool/maven/</link>
+    <link>https://jianda1024.github.io/dev-tool/maven/</link>
     <description>Recent content in Maven on Document</description>
     <generator>Hugo</generator>
     <language>doc</language>
-    <atom:link href="https://localhost:1313/dev-tool/maven/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jianda1024.github.io/dev-tool/maven/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

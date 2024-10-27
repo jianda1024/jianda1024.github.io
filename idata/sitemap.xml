@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://localhost:1313/idata/employment/resume-edit/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/resume-edit/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/self-introduction/</loc>
+    <loc>https://jianda1024.github.io/idata/self-introduction/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/employment/interview/interview-question/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/interview/interview-question/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/employment/interview/interview-before/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/interview/interview-before/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/employment/salary/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/salary/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/project-experience/</loc>
+    <loc>https://jianda1024.github.io/idata/project-experience/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/</loc>
+    <loc>https://jianda1024.github.io/idata/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="doc"
-                href="https://localhost:1313/"
+                href="https://jianda1024.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="interview"
-                href="https://localhost:1313/interview/"
+                href="https://jianda1024.github.io/interview/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="idata"
-                href="https://localhost:1313/idata/"
+                href="https://jianda1024.github.io/idata/"
                 />
   </url><url>
-    <loc>https://localhost:1313/idata/employment/offer/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/offer/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/employment/interview/interview-in/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/interview/interview-in/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/employment/interview/interview-after/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/interview/interview-after/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/employment/interview/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/interview/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/employment/</loc>
+    <loc>https://jianda1024.github.io/idata/employment/</loc>
   </url><url>
-    <loc>https://localhost:1313/idata/categories/</loc>
+    <loc>https://jianda1024.github.io/idata/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="doc"
-                href="https://localhost:1313/categories/"
+                href="https://jianda1024.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="interview"
-                href="https://localhost:1313/interview/categories/"
+                href="https://jianda1024.github.io/interview/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="idata"
-                href="https://localhost:1313/idata/categories/"
+                href="https://jianda1024.github.io/idata/categories/"
                 />
   </url><url>
-    <loc>https://localhost:1313/idata/tags/</loc>
+    <loc>https://jianda1024.github.io/idata/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="doc"
-                href="https://localhost:1313/tags/"
+                href="https://jianda1024.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="interview"
-                href="https://localhost:1313/interview/tags/"
+                href="https://jianda1024.github.io/interview/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="idata"
-                href="https://localhost:1313/idata/tags/"
+                href="https://jianda1024.github.io/idata/tags/"
                 />
   </url>
 </urlset>

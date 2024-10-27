@@ -4,7 +4,7 @@ var author="ruanjianda";
 function getSecretKey() {
     var secretKeyAes = "S/CFX1OWDaRI+Soe+kv3ooeO2bod/0bxgoyyG8kWkVdIBK9MY41YJLiRt+93/YAU";
     var tokenKey = "Blog.IWiki.token";
-    var token = $.cookie(tokenKey);
+    var token = sessionStorage.getItem(tokenKey);
 
     // 如果未缓存token, 提示用户输入token
     if (isEmpty(token)) {
@@ -25,12 +25,10 @@ function getSecretKey() {
 
     // 缓存token
     if (isEmpty(secretKey)) {
-        $.removeCookie(tokenKey);
+        sessionStorage.removeItem(tokenKey);
         alert("无效口令！");
     } else {
-        var date = new Date();
-        date.setTime(date.getTime() + (5 * 60 * 1000));
-        $.cookie(tokenKey, token, { expires: date, path: '/' });
+        sessionStorage.setItem(tokenKey,token);
     }
 
     return secretKey;

@@ -58,7 +58,7 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex justify-between">
     <a href="/"><span>Document</span>
     </a>
-    <a href="#" onclick="clickContent('https:\/\/localhost:1313\/program-lang\/java\/thread\/problem\/deadlock\/')">
+    <a href="#" onclick="multiContent('https:\/\/localhost:1313\/program-lang\/java\/thread\/problem\/deadlock\/')">
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span style="font-size: 1rem;font-weight: bolder;">☰</span>
     </a>
@@ -72,7 +72,7 @@ https://github.com/alex-shpak/hugo-book
       
         
           
-            <li>
+            <li id="interview">
               <a href="https://localhost:1313/interview/" class="flex align-center">
                 Interview
               </a>
@@ -82,7 +82,7 @@ https://github.com/alex-shpak/hugo-book
       
         
           
-            <li>
+            <li id="idata">
               <a href="https://localhost:1313/idata/" class="flex align-center">
                 IData
               </a>
@@ -4599,9 +4599,11 @@ https://github.com/alex-shpak/hugo-book
 <div class="flex flex-wrap justify-center">
   
   <div class="copyright">
-    Copyright © 2024-2025
-    <br/>
     <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      Copyright © 2024-2025
+    </a>
+    <br/>
+    <a class="copyright" href="#" onclick="showIData()" title='Jianda'>
       <strong>Jianda</strong>
     </a>
   </div>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>排序算法 on Document</title>
+    <title>排序 on Document</title>
     <link>https://jianda1024.github.io/program-design/data-algorithm/sort/</link>
-    <description>Recent content in 排序算法 on Document</description>
+    <description>Recent content in 排序 on Document</description>
     <generator>Hugo</generator>
     <language>doc</language>
     <atom:link href="https://jianda1024.github.io/program-design/data-algorithm/sort/index.xml" rel="self" type="application/rss+xml" />

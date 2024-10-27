@@ -665,7 +665,7 @@
                 href="https://jianda1024.github.io/database/redis/"
                 />
   </url><url>
-    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E5%89%8D%E7%BC%80%E5%92%8C/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/database/oracle/plsql/package/</loc>
   </url><url>
@@ -689,7 +689,7 @@
   </url><url>
     <loc>https://jianda1024.github.io/framework/kafka/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/program-design/data-algorithm/binary/</loc>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/database/</loc>
     <xhtml:link
@@ -718,6 +718,8 @@
                 hreflang="doc"
                 href="https://jianda1024.github.io/dev-tool/maven/"
                 />
+  </url><url>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/program-design/design-pattern/behavioural/13-state/</loc>
   </url><url>
@@ -749,6 +751,8 @@
   </url><url>
     <loc>https://jianda1024.github.io/program-design/design-pattern/behavioural/21-mediator/</loc>
   </url><url>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</loc>
+  </url><url>
     <loc>https://jianda1024.github.io/framework/</loc>
     <xhtml:link
                 rel="alternate"
@@ -775,7 +779,15 @@
                 href="https://jianda1024.github.io/service-manage/"
                 />
   </url><url>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</loc>
+  </url><url>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
+  </url><url>
     <loc>https://jianda1024.github.io/program-design/design-pattern/behavioural/23-chainOfResponsibility/</loc>
+  </url><url>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95/</loc>
+  </url><url>
+    <loc>https://jianda1024.github.io/program-design/data-algorithm/DFS-BFS%E6%90%9C%E7%B4%A2/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/categories/</loc>
     <xhtml:link

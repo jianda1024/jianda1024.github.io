@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zookeeper">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://jianda1024.github.io/interview/09_service/zookeeper/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Zookeeper">
+  <meta property="og:description" content="Zookeeper">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="09_service">
+<title>Zookeeper | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://jianda1024.github.io/interview/09_service/zookeeper/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.0fdf8641acbb3fdec8dc97c60315234b5f07e734f57857a0e9386ffeb5e63fc9.js" integrity="sha256-D9&#43;GQay7P97I3JfGAxUjS18H5zT1eFeg6Thv/rXmP8k=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="multiContent('https:\/\/jianda1024.github.io\/interview\/09_service\/zookeeper\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li id="idata">
+              <a href="https://jianda1024.github.io/idata/" class="flex align-center">
+                IData
+              </a>
+            </li>
+          
+        
+      
+        
+          
+            <li id="iwiki">
+              <a href="https://jianda1024.github.io/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-661fd25597bcfc1e85911c0831fb992a" class="toggle"  />
+    <label for="section-661fd25597bcfc1e85911c0831fb992a" class="flex justify-between">
+      <a role="button" class="">虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="toggle"  />
+    <label for="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87ebcf05b2c26e281354bbc3c0253da2" class="toggle"  />
+    <label for="section-87ebcf05b2c26e281354bbc3c0253da2" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="toggle"  />
+    <label for="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbede05a034232accf8c4193c4e4a300" class="toggle"  />
+    <label for="section-bbede05a034232accf8c4193c4e4a300" class="flex justify-between">
+      <a role="button" class="">并发编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fadcf338a56044aec2f296cad8db79cc" class="toggle"  />
+    <label for="section-fadcf338a56044aec2f296cad8db79cc" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0d91623c892730f3e4776d912b2150a" class="toggle"  />
+    <label for="section-e0d91623c892730f3e4776d912b2150a" class="flex justify-between">
+      <a role="button" class="">基础框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="toggle"  />
+    <label for="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/08_framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f5c33a1527236dde615925dab5e470a" class="toggle" checked />
+    <label for="section-5f5c33a1527236dde615925dab5e470a" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/zookeeper/" class="active">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e6b99453e092c6ae1fdce69d1bcca576" class="toggle"  />
+    <label for="section-e6b99453e092c6ae1fdce69d1bcca576" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Zookeeper</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---zookeeper">&ndash; Zookeeper</a></li>
+    <li><a href="#---zookeeper-角色">&ndash; Zookeeper 角色</a></li>
+    <li><a href="#---zookeeper-应用场景">&ndash; Zookeeper 应用场景</a></li>
+    <li><a href="#---zookeeper-工作原理">&ndash; Zookeeper 工作原理</a></li>
+    <li><a href="#---zookeeper-通知机制">&ndash; Zookeeper 通知机制</a></li>
+    <li><a href="#---zookeeper-选举原则">&ndash; Zookeeper 选举原则</a></li>
+    <li><a href="#---zookeeper-选举过程">&ndash; Zookeeper 选举过程</a></li>
+    <li><a href="#---zookeeper-监听原理">&ndash; Zookeeper 监听原理</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---zookeeper">
+  &ndash; Zookeeper
+  <a class="anchor" href="#---zookeeper">#</a>
+</h2>
+<ul>
+<li>是一个开源的分布式的服务协调框架
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">特点</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">数据一致性</td>
+          <td style="text-align: left">每个server都保存了一份相同的数据副本，client无论连接到哪个server，数据都是一致的</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">请求顺序性</td>
+          <td style="text-align: left">来自同一个client的更新请求，其发送顺序和最后的执行顺序是一致的</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">可靠性</td>
+          <td style="text-align: left">当一个消息被成功更新后，不会因为网络波动或其他原因而回滚</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">原子性</td>
+          <td style="text-align: left">更新要不成功要不失败，没有第三个状态</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">独立性</td>
+          <td style="text-align: left">不同的client之间互不影响</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">实时性</td>
+          <td style="text-align: left">在一定时间范围内，client能读到最新数据</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<h2 id="---zookeeper-角色">
+  &ndash; Zookeeper 角色
+  <a class="anchor" href="#---zookeeper-%e8%a7%92%e8%89%b2">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">角色</th>
+          <th style="text-align: left">角色</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Leader</td>
+          <td style="text-align: left">领导者</td>
+          <td style="text-align: left">为客户端提供读服务和写服务。管理集群内的所有事务的顺序，以及维护集群状态的同步</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Follower</td>
+          <td style="text-align: left">跟随者</td>
+          <td style="text-align: left">为客户端提供读服务，参与Leader选举过程</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Observer</td>
+          <td style="text-align: left">观察者</td>
+          <td style="text-align: left">为客户端提供读服务，不参与Leader选举过程</td>
+      </tr>
+  </tbody>
+</table>
+<img src="/img/2024Q3/img_2024-08-21_024737.png" width="850"/>
+<h2 id="---zookeeper-应用场景">
+  &ndash; Zookeeper 应用场景
+  <a class="anchor" href="#---zookeeper-%e5%ba%94%e7%94%a8%e5%9c%ba%e6%99%af">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 数据发布与订阅
+</span></span><span style="display:flex;"><span>2. 命名服务
+</span></span><span style="display:flex;"><span>3. 配置管理
+</span></span><span style="display:flex;"><span>4. 集群管理
+</span></span><span style="display:flex;"><span>5. 分布式通知与协调
+</span></span><span style="display:flex;"><span>6. 分布式锁
+</span></span><span style="display:flex;"><span>7. 分布式队列
+</span></span></code></pre></div><h2 id="---zookeeper-工作原理">
+  &ndash; Zookeeper 工作原理
+  <a class="anchor" href="#---zookeeper-%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Zookeeper是基于观察者模式设计，接受观察者的注册
+</span></span><span style="display:flex;"><span>2. Zookeeper上存储和管理着大家都关心的数据
+</span></span><span style="display:flex;"><span>3. 当这些数据发生变化时，Zookeeper将会通知已注册的观察者做出相应的回应
+</span></span></code></pre></div><h2 id="---zookeeper-通知机制">
+  &ndash; Zookeeper 通知机制
+  <a class="anchor" href="#---zookeeper-%e9%80%9a%e7%9f%a5%e6%9c%ba%e5%88%b6">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Zookeeper允许客户端向服务端的某个znode注册一个Watcher监听
+</span></span><span style="display:flex;"><span>2. 当服务端的一些指定事件触发了这个Watcher，服务端会向指定客户端发送一个事件通知
+</span></span><span style="display:flex;"><span>3. 客户端根据Watcher通知状态和事件类型做出业务上的改变
+</span></span></code></pre></div><h2 id="---zookeeper-选举原则">
+  &ndash; Zookeeper 选举原则
+  <a class="anchor" href="#---zookeeper-%e9%80%89%e4%b8%be%e5%8e%9f%e5%88%99">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Zookeeper 集群中只有超过半数以上的服务器启动，集群才能正常工作；
+</span></span><span style="display:flex;"><span>2. 在集群正常工作之前，myid 小的服务器给 myid 大的服务器投票，直到集群正常工作，选出 Leader；
+</span></span><span style="display:flex;"><span>3. 选出Leader之后，之前的服务器状态由 Looking 改变为 Following，以后的服务器都是 Follower。
+</span></span></code></pre></div><h2 id="---zookeeper-选举过程">
+  &ndash; Zookeeper 选举过程
+  <a class="anchor" href="#---zookeeper-%e9%80%89%e4%b8%be%e8%bf%87%e7%a8%8b">#</a>
+</h2>
+<ul>
+<li>
+<p>假设：有五台服务器，从S1-S5 依序启动</p>
+</li>
+<li>
+<p>S1启动，发起选举</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>S1投自己一票
+</span></span><span style="display:flex;"><span>此时S1为1票，不够半数以上，选举无法完成；
+</span></span></code></pre></div></li>
+<li>
+<p>S2启动，发起选举</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>S2投自己一票，然后与S1交换选票，因为S2的ServerID大于S1，S1更改投S2
+</span></span><span style="display:flex;"><span>此时S1为0票，S2为2票，不够半数以上，选举无法完成；
+</span></span></code></pre></div></li>
+<li>
+<p>S3启动，发起选举</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>S3投自己一票，然后与S1、S2交换选票，因为S3的ServerID最大，S1、S2更改投S3
+</span></span><span style="display:flex;"><span>此时S1、S2为0票，S3为3票，S3票数已经超过半数当选Leader；
+</span></span></code></pre></div></li>
+<li>
+<p>S4启动，发起选举</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>S4投自己一票，然后相互交换选票，因为S1、S2、S3已经不是LOOKING状态，不会更改选票信息。
+</span></span><span style="display:flex;"><span>此时S3为3票，S4为1票，S4服从多数改投S3
+</span></span></code></pre></div></li>
+<li>
+<p>S5启动，发起选举</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>同4一样，S5改投S3，
+</span></span><span style="display:flex;"><span>最终S3是Leader，状态为LEADING；
+</span></span><span style="display:flex;"><span>其余服务器是Follower，状态为FOLLOWING。
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---zookeeper-监听原理">
+  &ndash; Zookeeper 监听原理
+  <a class="anchor" href="#---zookeeper-%e7%9b%91%e5%90%ac%e5%8e%9f%e7%90%86">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 在Main()主线程中创建zkClient客户端。
+</span></span><span style="display:flex;"><span>2. zkClient会创建两个线程，一个负责网络连接通信（connet），一个负责监听（listener）。
+</span></span><span style="display:flex;"><span>3. zkClient通过connet线程，将监听事件注册到Zookeeper的监听列表。
+</span></span><span style="display:flex;"><span>4. 当数据或路径发生改变时，Zookeeper会将消息发送给listener线程。
+</span></span><span style="display:flex;"><span>5. listener线程调用process()方法，执行相应的操作。
+</span></span></code></pre></div><img src="/img/2022Q2/img_2022-05-22_133945.png" width="800">
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      Copyright © 2024-2025
+    </a>
+    <br/>
+    <a class="copyright" href="#" onclick="showIData()" title='Jianda'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---zookeeper">&ndash; Zookeeper</a></li>
+    <li><a href="#---zookeeper-角色">&ndash; Zookeeper 角色</a></li>
+    <li><a href="#---zookeeper-应用场景">&ndash; Zookeeper 应用场景</a></li>
+    <li><a href="#---zookeeper-工作原理">&ndash; Zookeeper 工作原理</a></li>
+    <li><a href="#---zookeeper-通知机制">&ndash; Zookeeper 通知机制</a></li>
+    <li><a href="#---zookeeper-选举原则">&ndash; Zookeeper 选举原则</a></li>
+    <li><a href="#---zookeeper-选举过程">&ndash; Zookeeper 选举过程</a></li>
+    <li><a href="#---zookeeper-监听原理">&ndash; Zookeeper 监听原理</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

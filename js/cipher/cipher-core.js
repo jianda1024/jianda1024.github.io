@@ -1,9 +1,9 @@
-var author="ruanjianda";
+var author = "ruanjianda";
 
 // 获取秘钥
 function getSecretKey() {
-    var secretKeyAes = "S/CFX1OWDaRI+Soe+kv3ooeO2bod/0bxgoyyG8kWkVdIBK9MY41YJLiRt+93/YAU";
-    var tokenKey = "Blog.IWiki.token";
+    var secretKeyText = $('meta[name="secretKeyText"]').attr('content');;
+    var tokenKey = "Blog.IWiki.Page.Token";
     var token = sessionStorage.getItem(tokenKey);
 
     // 如果未缓存token, 提示用户输入token
@@ -18,7 +18,7 @@ function getSecretKey() {
     // 解密secretKey
     var secretKey;
     try {
-        secretKey = decryptByAes(token, secretKeyAes);
+        secretKey = decryptByAes(token, decodeBase64(secretKeyText));
     } catch (error) {
         console.log("获取秘钥失败！")
     }
@@ -28,7 +28,7 @@ function getSecretKey() {
         sessionStorage.removeItem(tokenKey);
         alert("无效口令！");
     } else {
-        sessionStorage.setItem(tokenKey,token);
+        sessionStorage.setItem(tokenKey, token);
     }
 
     return secretKey;
@@ -70,14 +70,4 @@ function decryptByAes(pwd, src) {
         padding: CryptoJS.pad.Pkcs7
     });
     return data.toString(CryptoJS.enc.Utf8);
-}
-
-// 临时加密
-function encryptText() {
-    var pwd = "*****";
-    var md5 = CryptoJS.MD5(pwd).toString().toUpperCase();
-    console.log("MD5: " + md5);
-    var ciphertext = encryptByAes(pwd, md5);
-    console.log("AES: " + ciphertext);
-    console.log("解密：" + decryptByAes(pwd, ciphertext));
 }

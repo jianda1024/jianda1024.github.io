@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Part.1">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://jianda1024.github.io/interview/05_programming/java-base/p1/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Part.1">
+  <meta property="og:description" content="Part.1">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="05_programming">
+<title>Part.1 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://jianda1024.github.io/interview/05_programming/java-base/p1/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.0fdf8641acbb3fdec8dc97c60315234b5f07e734f57857a0e9386ffeb5e63fc9.js" integrity="sha256-D9&#43;GQay7P97I3JfGAxUjS18H5zT1eFeg6Thv/rXmP8k=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="multiContent('https:\/\/jianda1024.github.io\/interview\/05_programming\/java-base\/p1\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li id="idata">
+              <a href="https://jianda1024.github.io/idata/" class="flex align-center">
+                IData
+              </a>
+            </li>
+          
+        
+      
+        
+          
+            <li id="iwiki">
+              <a href="https://jianda1024.github.io/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-661fd25597bcfc1e85911c0831fb992a" class="toggle"  />
+    <label for="section-661fd25597bcfc1e85911c0831fb992a" class="flex justify-between">
+      <a role="button" class="">虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="toggle"  />
+    <label for="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87ebcf05b2c26e281354bbc3c0253da2" class="toggle" checked />
+    <label for="section-87ebcf05b2c26e281354bbc3c0253da2" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="toggle" checked />
+    <label for="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p1/" class="active">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbede05a034232accf8c4193c4e4a300" class="toggle"  />
+    <label for="section-bbede05a034232accf8c4193c4e4a300" class="flex justify-between">
+      <a role="button" class="">并发编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fadcf338a56044aec2f296cad8db79cc" class="toggle"  />
+    <label for="section-fadcf338a56044aec2f296cad8db79cc" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0d91623c892730f3e4776d912b2150a" class="toggle"  />
+    <label for="section-e0d91623c892730f3e4776d912b2150a" class="flex justify-between">
+      <a role="button" class="">基础框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="toggle"  />
+    <label for="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/08_framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f5c33a1527236dde615925dab5e470a" class="toggle"  />
+    <label for="section-5f5c33a1527236dde615925dab5e470a" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e6b99453e092c6ae1fdce69d1bcca576" class="toggle"  />
+    <label for="section-e6b99453e092c6ae1fdce69d1bcca576" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Part.1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---面向过程面向对象">&ndash; 面向过程、面向对象</a></li>
+    <li><a href="#---四种引用类型">&ndash; 四种引用类型</a></li>
+    <li><a href="#---访问修饰符">&ndash; 访问修饰符</a></li>
+    <li><a href="#---数据类型">&ndash; 数据类型</a></li>
+    <li><a href="#---创建对象的方式">&ndash; 创建对象的方式</a></li>
+    <li><a href="#---获取class对象的方式">&ndash; 获取Class对象的方式</a></li>
+    <li><a href="#---浅拷贝深拷贝">&ndash; 浅拷贝、深拷贝</a></li>
+    <li><a href="#---自动装箱自动拆箱">&ndash; 自动装箱、自动拆箱</a></li>
+    <li><a href="#---方法重载方法重写">&ndash; 方法重载、方法重写</a></li>
+    <li><a href="#---红黑树的特征">&ndash; 红黑树的特征</a></li>
+    <li><a href="#---switch-能作用的类型">&ndash; switch 能作用的类型</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---面向过程面向对象">
+  &ndash; 面向过程、面向对象
+  <a class="anchor" href="#---%e9%9d%a2%e5%90%91%e8%bf%87%e7%a8%8b%e9%9d%a2%e5%90%91%e5%af%b9%e8%b1%a1">#</a>
+</h2>
+<ul>
+<li>
+<p>面向过程</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>是一种以过程为中心的编程思想
+</span></span><span style="display:flex;"><span>分析出解决问题所需要的步骤，然后用函数把这些步骤一步一步实现
+</span></span></code></pre></div></li>
+<li>
+<p>面向对象</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>是一种以对象为中心的编程思想
+</span></span><span style="display:flex;"><span>把构成问题的事务分解成各个对象，建立对象，来描述某个事物在解决整个问题的过程中所发生的行为
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---四种引用类型">
+  &ndash; 四种引用类型
+  <a class="anchor" href="#---%e5%9b%9b%e7%a7%8d%e5%bc%95%e7%94%a8%e7%b1%bb%e5%9e%8b">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">引用类型</th>
+          <th style="text-align: left">说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">强引用</td>
+          <td style="text-align: left">最常见的引用类型，引用存在时，对象不会被回收</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">软引用</td>
+          <td style="text-align: left">适用于内存敏感的缓存，当内存不足时，对象才会被回收</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">弱引用</td>
+          <td style="text-align: left">适用于非重要对象，当垃圾收集器运行时，对象就可能被回收</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">虚引用</td>
+          <td style="text-align: left">适用于对象回收跟踪，就和没有引用一样，在任何时候都可能被回收</td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 强引用</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>String<span style="color:#bbb"> </span>strongRef<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>String(<span style="color:#cd5555">&#34;abc&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 软引用</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>SoftReference&lt;String&gt;<span style="color:#bbb"> </span>softRef<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>SoftReference&lt;&gt;(<span style="color:#cd5555">&#34;abc&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 弱引用</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>WeakReference&lt;String&gt;<span style="color:#bbb"> </span>weakRef<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>WeakReference&lt;&gt;(<span style="color:#cd5555">&#34;abc&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 虚引用</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>ReferenceQueue<span style="color:#bbb"> </span>queue<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>ReferenceQueue();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>PhantomReference<span style="color:#bbb"> </span>phantomRef<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>PhantomReference(<span style="color:#cd5555">&#34;abc&#34;</span>,<span style="color:#bbb"> </span>queue);<span style="color:#bbb">
+</span></span></span></code></pre></div><h2 id="---访问修饰符">
+  &ndash; 访问修饰符
+  <a class="anchor" href="#---%e8%ae%bf%e9%97%ae%e4%bf%ae%e9%a5%b0%e7%ac%a6">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">修饰符</th>
+          <th style="text-align: left">当前类</th>
+          <th style="text-align: left">同包</th>
+          <th style="text-align: left">子类</th>
+          <th style="text-align: left">其他包</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">public</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left">OK</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">protected</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">default</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">private</td>
+          <td style="text-align: left">OK</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---数据类型">
+  &ndash; 数据类型
+  <a class="anchor" href="#---%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b">#</a>
+</h2>
+<ul>
+<li>
+<p>基本数据类型</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>字符型：char
+</span></span><span style="display:flex;"><span>布尔型：boolean
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>数值型：
+</span></span><span style="display:flex;"><span>整数类型：byte, short, int, long
+</span></span><span style="display:flex;"><span>浮点类型：float, double
+</span></span></code></pre></div></li>
+<li>
+<p>引用数据类型</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>类：   class
+</span></span><span style="display:flex;"><span>接口： interface
+</span></span><span style="display:flex;"><span>数组： []
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---创建对象的方式">
+  &ndash; 创建对象的方式
+  <a class="anchor" href="#---%e5%88%9b%e5%bb%ba%e5%af%b9%e8%b1%a1%e7%9a%84%e6%96%b9%e5%bc%8f">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. new创建新对象
+</span></span><span style="display:flex;"><span>2. 通过反射机制
+</span></span><span style="display:flex;"><span>3. 采用clone机制
+</span></span><span style="display:flex;"><span>4. 通过序列化机制
+</span></span></code></pre></div><h2 id="---获取class对象的方式">
+  &ndash; 获取Class对象的方式
+  <a class="anchor" href="#---%e8%8e%b7%e5%8f%96class%e5%af%b9%e8%b1%a1%e7%9a%84%e6%96%b9%e5%bc%8f">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String<span style="color:#bbb"> </span>str<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">new</span><span style="color:#bbb"> </span>String(<span style="color:#cd5555">&#34;abc&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 方式一：通过类对象的 getClass()</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Class&lt;?&gt;<span style="color:#bbb"> </span>clazz<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>str.<span style="color:#658b00">getClass</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 方式二：通过类的静态成员</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Class&lt;?&gt;<span style="color:#bbb"> </span>clazz<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>String.<span style="color:#658b00">class</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#228b22">// 方式三：通过Class 类的静态方法 forName() </span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Class&lt;?&gt;<span style="color:#bbb"> </span>clazz<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>Class.<span style="color:#658b00">forName</span>(<span style="color:#cd5555">&#34;java.lang.String&#34;</span>);<span style="color:#bbb"> 
+</span></span></span></code></pre></div><h2 id="---浅拷贝深拷贝">
+  &ndash; 浅拷贝、深拷贝
+  <a class="anchor" href="#---%e6%b5%85%e6%8b%b7%e8%b4%9d%e6%b7%b1%e6%8b%b7%e8%b4%9d">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>浅拷贝：
+</span></span><span style="display:flex;"><span>在拷贝一个对象时，对基本数据类型的成员变量进行拷贝，对引用类型的成员变量只进行引用的传递
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>深拷贝：
+</span></span><span style="display:flex;"><span>在拷贝一个对象时，对基本数据类型的成员变量进行拷贝，对引用类型的成员变量，创建一个新的对象，并复制其内容。
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>实现深拷贝的方式：
+</span></span><span style="display:flex;"><span>1. 将对象序列化为字节流，然后再反序列化为新的对象
+</span></span><span style="display:flex;"><span>2. 逐个复制引用类型属性
+</span></span></code></pre></div><h2 id="---自动装箱自动拆箱">
+  &ndash; 自动装箱、自动拆箱
+  <a class="anchor" href="#---%e8%87%aa%e5%8a%a8%e8%a3%85%e7%ae%b1%e8%87%aa%e5%8a%a8%e6%8b%86%e7%ae%b1">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>自动装箱：
+</span></span><span style="display:flex;"><span>自动将基本数据类型转换为包装器类型（int--&gt;Integer），调用Integer的valueOf(int)方法
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>自动拆箱：
+</span></span><span style="display:flex;"><span>自动将包装器类型转换为基本数据类型（Integer--&gt;int），调用Integer的intValue()方法
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#228b22">// 试题</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Integer<span style="color:#bbb"> </span>i1<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>100;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Integer<span style="color:#bbb"> </span>i2<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>100;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Integer<span style="color:#bbb"> </span>i3<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>200;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Integer<span style="color:#bbb"> </span>i4<span style="color:#bbb"> </span>=<span style="color:#bbb"> </span>200;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(i1==i2);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#658b00">out</span>.<span style="color:#658b00">println</span>(i3==i4);<span style="color:#bbb">
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>运行结果：
+</span></span><span style="display:flex;"><span>true
+</span></span><span style="display:flex;"><span>false
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>在通过valueOf方法创建Integer对象的时候，
+</span></span><span style="display:flex;"><span>如果数值在[-128,127]之间，便返回指向IntegerCache.cache中已经存在的对象的引用；
+</span></span><span style="display:flex;"><span>否则创建一个新的Integer对象
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ps：在某个范围内的整型数值的个数是有限的，而浮点数不是
+</span></span></code></pre></div><h2 id="---方法重载方法重写">
+  &ndash; 方法重载、方法重写
+  <a class="anchor" href="#---%e6%96%b9%e6%b3%95%e9%87%8d%e8%bd%bd%e6%96%b9%e6%b3%95%e9%87%8d%e5%86%99">#</a>
+</h2>
+<ul>
+<li>
+<p>重载 overload</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>在一个类里面，方法名字相同，而参数不同
+</span></span><span style="display:flex;"><span>每个重载的方法都必须有独一无二的参数类型列表（参数个数、参数类型、参数顺序）
+</span></span></code></pre></div></li>
+<li>
+<p>重写 override</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>是子类对父类方法的实现进行重新编写
+</span></span><span style="display:flex;"><span>方法名、参数列表均相同
+</span></span><span style="display:flex;"><span>重写方法抛出的异常，需宽于被重写方法
+</span></span><span style="display:flex;"><span>构造方法不能被重写
+</span></span></code></pre></div></li>
+<li>
+<p>区别</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">区别点</th>
+          <th style="text-align: left">重载方法</th>
+          <th style="text-align: left">重写方法</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">参数列表</td>
+          <td style="text-align: left">必须修改</td>
+          <td style="text-align: left">一定不能修改</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">返回类型</td>
+          <td style="text-align: left">可以修改</td>
+          <td style="text-align: left">一定不能修改</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">异常捕获</td>
+          <td style="text-align: left">可以修改</td>
+          <td style="text-align: left">可以减少或删除，一定不能抛出新的或者更广的异常</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">访问限制</td>
+          <td style="text-align: left">可以修改</td>
+          <td style="text-align: left">一定不能做更严格的限制（可以降低限制）</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<h2 id="---红黑树的特征">
+  &ndash; 红黑树的特征
+  <a class="anchor" href="#---%e7%ba%a2%e9%bb%91%e6%a0%91%e7%9a%84%e7%89%b9%e5%be%81">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 节点颜色：每个节点被标记为红色或黑色
+</span></span><span style="display:flex;"><span>2. 根节和叶子节点都是黑色的
+</span></span><span style="display:flex;"><span>3. 红色节点的子节点不能是红色，即红色节点不能连续存在
+</span></span><span style="display:flex;"><span>4. 从任意节点到其每个叶子节点的路径包含相同数量的黑色节点
+</span></span></code></pre></div><h2 id="---switch-能作用的类型">
+  &ndash; switch 能作用的类型
+  <a class="anchor" href="#---switch-%e8%83%bd%e4%bd%9c%e7%94%a8%e7%9a%84%e7%b1%bb%e5%9e%8b">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>switch可以作用于 byte、short、char、int 类型
+</span></span><span style="display:flex;"><span>从Java5开始，可以作用于 enum 类型
+</span></span><span style="display:flex;"><span>从Java7开始，可以作用于 String 类型
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      Copyright © 2024-2025
+    </a>
+    <br/>
+    <a class="copyright" href="#" onclick="showIData()" title='Jianda'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---面向过程面向对象">&ndash; 面向过程、面向对象</a></li>
+    <li><a href="#---四种引用类型">&ndash; 四种引用类型</a></li>
+    <li><a href="#---访问修饰符">&ndash; 访问修饰符</a></li>
+    <li><a href="#---数据类型">&ndash; 数据类型</a></li>
+    <li><a href="#---创建对象的方式">&ndash; 创建对象的方式</a></li>
+    <li><a href="#---获取class对象的方式">&ndash; 获取Class对象的方式</a></li>
+    <li><a href="#---浅拷贝深拷贝">&ndash; 浅拷贝、深拷贝</a></li>
+    <li><a href="#---自动装箱自动拆箱">&ndash; 自动装箱、自动拆箱</a></li>
+    <li><a href="#---方法重载方法重写">&ndash; 方法重载、方法重写</a></li>
+    <li><a href="#---红黑树的特征">&ndash; 红黑树的特征</a></li>
+    <li><a href="#---switch-能作用的类型">&ndash; switch 能作用的类型</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

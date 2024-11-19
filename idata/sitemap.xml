@@ -2,22 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jianda1024.github.io/idata/employment/resume-edit/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/self-introduction/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/interview/interview-question/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/interview/interview-before/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/salary/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/project-experience/</loc>
+    <loc>https://jianda1024.github.io/idata/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/idata/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="doc"
+                hreflang="iwiki"
                 href="https://jianda1024.github.io/"
                 />
     <xhtml:link
@@ -31,20 +21,14 @@
                 href="https://jianda1024.github.io/idata/"
                 />
   </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/offer/</loc>
+    <loc>https://jianda1024.github.io/idata/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/interview/interview-in/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/interview/interview-after/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/interview/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/idata/employment/</loc>
+    <loc>https://jianda1024.github.io/idata/%E7%B4%A2%E5%BC%95/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/idata/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="doc"
+                hreflang="iwiki"
                 href="https://jianda1024.github.io/categories/"
                 />
     <xhtml:link
@@ -61,7 +45,7 @@
     <loc>https://jianda1024.github.io/idata/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="doc"
+                hreflang="iwiki"
                 href="https://jianda1024.github.io/tags/"
                 />
     <xhtml:link
@@ -74,5 +58,7 @@
                 hreflang="idata"
                 href="https://jianda1024.github.io/idata/tags/"
                 />
+  </url><url>
+    <loc>https://jianda1024.github.io/idata/%E9%9D%A2%E8%AF%95%E5%B0%8F%E6%8A%84/</loc>
   </url>
 </urlset>

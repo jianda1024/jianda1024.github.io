@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Part.1">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://jianda1024.github.io/interview/08_framework/spring/p1/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Part.1">
+  <meta property="og:description" content="Part.1">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="08_framework">
+<title>Part.1 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://jianda1024.github.io/interview/08_framework/spring/p1/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.0fdf8641acbb3fdec8dc97c60315234b5f07e734f57857a0e9386ffeb5e63fc9.js" integrity="sha256-D9&#43;GQay7P97I3JfGAxUjS18H5zT1eFeg6Thv/rXmP8k=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="multiContent('https:\/\/jianda1024.github.io\/interview\/08_framework\/spring\/p1\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li id="idata">
+              <a href="https://jianda1024.github.io/idata/" class="flex align-center">
+                IData
+              </a>
+            </li>
+          
+        
+      
+        
+          
+            <li id="iwiki">
+              <a href="https://jianda1024.github.io/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-661fd25597bcfc1e85911c0831fb992a" class="toggle"  />
+    <label for="section-661fd25597bcfc1e85911c0831fb992a" class="flex justify-between">
+      <a role="button" class="">虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="toggle"  />
+    <label for="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87ebcf05b2c26e281354bbc3c0253da2" class="toggle"  />
+    <label for="section-87ebcf05b2c26e281354bbc3c0253da2" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="toggle"  />
+    <label for="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbede05a034232accf8c4193c4e4a300" class="toggle"  />
+    <label for="section-bbede05a034232accf8c4193c4e4a300" class="flex justify-between">
+      <a role="button" class="">并发编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fadcf338a56044aec2f296cad8db79cc" class="toggle"  />
+    <label for="section-fadcf338a56044aec2f296cad8db79cc" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0d91623c892730f3e4776d912b2150a" class="toggle" checked />
+    <label for="section-e0d91623c892730f3e4776d912b2150a" class="flex justify-between">
+      <a role="button" class="">基础框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="toggle" checked />
+    <label for="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/08_framework/spring/p1/" class="active">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f5c33a1527236dde615925dab5e470a" class="toggle"  />
+    <label for="section-5f5c33a1527236dde615925dab5e470a" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e6b99453e092c6ae1fdce69d1bcca576" class="toggle"  />
+    <label for="section-e6b99453e092c6ae1fdce69d1bcca576" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Part.1</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---spring">&ndash; Spring</a></li>
+    <li><a href="#---spring-优点">&ndash; Spring 优点</a></li>
+    <li><a href="#---ioc">&ndash; IoC</a></li>
+    <li><a href="#---ioc-容器">&ndash; IoC 容器</a></li>
+    <li><a href="#---iocdi">&ndash; IoC、DI</a></li>
+    <li><a href="#---aop">&ndash; AOP</a></li>
+    <li><a href="#---aop-术语">&ndash; AOP 术语</a></li>
+    <li><a href="#---aop-通知类型">&ndash; AOP 通知类型</a></li>
+    <li><a href="#---bean">&ndash; Bean</a></li>
+    <li><a href="#---bean-作用域">&ndash; Bean 作用域</a></li>
+    <li><a href="#---bean-生命周期">&ndash; Bean 生命周期</a></li>
+    <li><a href="#---spring-用到的设计模式">&ndash; Spring 用到的设计模式</a></li>
+    <li><a href="#---spring-中的单例-bean-是否线程安全">&ndash; Spring 中的单例 Bean 是否线程安全</a></li>
+    <li><a href="#---autowiredresource">&ndash; @Autowired、@Resource</a></li>
+    <li><a href="#---transactional">&ndash; @Transactional</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---spring">
+  &ndash; Spring
+  <a class="anchor" href="#---spring">#</a>
+</h2>
+<ul>
+<li>Spring 是一个开源的轻量级 Java 开发框架</li>
+<li>Spring 的核心是控制反转（IoC）和面向切面（AOP）</li>
+</ul>
+<h2 id="---spring-优点">
+  &ndash; Spring 优点
+  <a class="anchor" href="#---spring-%e4%bc%98%e7%82%b9">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><div style="font-weight:400">方便解耦，简化开发</div></th>
+          <th style="text-align: left"><div style="font-weight:400">用户可以将所有对象的创建和依赖关系的维护，交给Spring管理</div></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">支持AOP编程</td>
+          <td style="text-align: left">Spring提供面向切面编程，可以方便的实现对程序进行权限拦截、运行监控等功能</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">支持声明式事务</td>
+          <td style="text-align: left">只需要通过配置就可以完成对事务的管理，而无需手动编程</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">方便程序测试</td>
+          <td style="text-align: left">Spring对Junit4支持，可以通过注解方便的测试Spring程序</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">集成各种优秀框架</td>
+          <td style="text-align: left">Spring内部提供了对各种优秀框架的直接支持</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">简化JavaEE的使用</td>
+          <td style="text-align: left">Spring对JavaEE开发中非常难用的一些API，都提供了封装，降低了使用难度</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---ioc">
+  &ndash; IoC
+  <a class="anchor" href="#---ioc">#</a>
+</h2>
+<ul>
+<li>Inversion of Control，即“控制反转”，是一种设计思想，用于解决对象之间的耦合问题。</li>
+<li>以前对象的创建及依赖关系是由开发人员自己维护，现在反转交给 spring 来完成创建及注入</li>
+<li>控制：指的是对象创建（实例化、管理）的权利</li>
+<li>反转：控制权交给外部环境了（spring框架、IoC容器）</li>
+</ul>
+<h2 id="---ioc-容器">
+  &ndash; IoC 容器
+  <a class="anchor" href="#---ioc-%e5%ae%b9%e5%99%a8">#</a>
+</h2>
+<ul>
+<li>具有依赖注入功能的容器，它可以创建对象，负责实例化、定位、配置应用程序中的对象及建立这些对象间的依赖</li>
+<li>IoC容器底层其实就是一个Bean工厂，Spring提供了两种IoC容器，即BeanFactory、ApplicationContext</li>
+<li>BeanFactory：最简单的IoC容器，它提供了IoC容器最基本的功能</li>
+<li>ApplicationContext：BeanFactory的子接口，并添加了更多的企业特定的功能</li>
+</ul>
+<h2 id="---iocdi">
+  &ndash; IoC、DI
+  <a class="anchor" href="#---iocdi">#</a>
+</h2>
+<ul>
+<li>DI，Dependency Injection，即“依赖注入”，由容器动态的将某个依赖关系注入到组件之中。</li>
+<li>IoC 是一种软件设计思想，DI 是这种软件设计思想的一个实现。</li>
+</ul>
+<h2 id="---aop">
+  &ndash; AOP
+  <a class="anchor" href="#---aop">#</a>
+</h2>
+<ul>
+<li>Aspect Oriented Programming，面向切面编程，是一种编程思想</li>
+<li>是通过预编译方式和运行期间动态代理实现程序功能的统一维护的一种技术</li>
+<li>在面向对象编程(OOP)中，基本单元是类(class)，而 AOP 中的基本单元是切面(aspect)</li>
+<li>OOP是解决了纵向的代码复用问题，AOP是解决了横向的代码复用问题</li>
+</ul>
+<h2 id="---aop-术语">
+  &ndash; AOP 术语
+  <a class="anchor" href="#---aop-%e6%9c%af%e8%af%ad">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">术语</th>
+          <th style="text-align: left">名称</th>
+          <th style="text-align: left">描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Jointpoint</td>
+          <td style="text-align: left">连接点</td>
+          <td style="text-align: left">程序类中，允许插入通知（Advice）的位置点</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Pointcut</td>
+          <td style="text-align: left">切入点</td>
+          <td style="text-align: left">程序类中，已经插入通知（Advice）的位置点</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Advice</td>
+          <td style="text-align: left">通知</td>
+          <td style="text-align: left">在切入点（Pointcut）上要执行的代码</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Aspect</td>
+          <td style="text-align: left">切面</td>
+          <td style="text-align: left">是切入点（Pointcut）和通知（Advice）的结合</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Target</td>
+          <td style="text-align: left">目标</td>
+          <td style="text-align: left">被织入通知（Advice）的目标对象，这个对象永远是一个被代理对象</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Weaving</td>
+          <td style="text-align: left">织入</td>
+          <td style="text-align: left">将通知（Advice）添加到目标类具体连接点上的过程</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---aop-通知类型">
+  &ndash; AOP 通知类型
+  <a class="anchor" href="#---aop-%e9%80%9a%e7%9f%a5%e7%b1%bb%e5%9e%8b">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">通知</th>
+          <th style="text-align: left">说明</th>
+          <th style="text-align: left">备注</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">around</td>
+          <td style="text-align: left">环绕通知</td>
+          <td style="text-align: left">在建议方法调用之前和之后，执行通知。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">before</td>
+          <td style="text-align: left">前置通知</td>
+          <td style="text-align: left">在一个方法执行之前，执行通知。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">after</td>
+          <td style="text-align: left">后置通知</td>
+          <td style="text-align: left">在一个方法执行之后，不考虑其结果，执行通知。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">after-returning</td>
+          <td style="text-align: left">正常返回通知</td>
+          <td style="text-align: left">在一个方法执行之后，只有在方法成功完成时，才能执行通知。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">after-throwing</td>
+          <td style="text-align: left">异常返回通知</td>
+          <td style="text-align: left">在一个方法执行之后，只有在方法退出抛出异常时，才能执行通知。</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---bean">
+  &ndash; Bean
+  <a class="anchor" href="#---bean">#</a>
+</h2>
+<ul>
+<li>Bean是指由Spring IoC容器实例化、组装和管理的对象</li>
+<li>可以把Spring IoC容器看作是一个大工厂，Bean就相当于工厂的产品</li>
+</ul>
+<h2 id="---bean-作用域">
+  &ndash; Bean 作用域
+  <a class="anchor" href="#---bean-%e4%bd%9c%e7%94%a8%e5%9f%9f">#</a>
+</h2>
+<ul>
+<li>对于prototype作用域的Bean来说，Spring IoC 容器只负责创建
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">作用域</th>
+          <th style="text-align: left">描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">singleton</td>
+          <td style="text-align: left">默认值，在 spring IoC 容器仅存在一个 Bean 实例</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">prototype</td>
+          <td style="text-align: left">每次通过 Spring 容器获取 Bean 时，容器都会创建一个新的 Bean 实例</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">request</td>
+          <td style="text-align: left">每次 HTTP 请求，容器都会创建一个 Bean 实例， 仅在当前 HTTP Request 内有效</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">session</td>
+          <td style="text-align: left">同一个 HTTP Session 共享一个 Bean 实例，仅在当前 HTTP Session 内有效</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">application</td>
+          <td style="text-align: left">同一个 Web 应用共享一个 Bean 实例，在当前 ServletContext 内有效</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<h2 id="---bean-生命周期">
+  &ndash; Bean 生命周期
+  <a class="anchor" href="#---bean-%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f">#</a>
+</h2>
+<ul>
+<li>
+<p>实例化</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>对于BeanFactory容器，当被请求未初始化的bean时，容器就会调用createBean进行实例化。
+</span></span><span style="display:flex;"><span>对于ApplicationContext容器，当容器启动结束后，通过获取BeanDefinition对象中的信息，实例化所有的bean
+</span></span></code></pre></div></li>
+<li>
+<p>属性注入</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>实例化后的对象被封装在BeanWrapper对象中，Spring根据BeanDefinition、BeanWrapper完成属性注入
+</span></span></code></pre></div></li>
+<li>
+<p>初始化</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、处理Aware接口
+</span></span><span style="display:flex;"><span>若Bean实现了接口BeanNameAware，则执行setBeanName()，设置bean的名字
+</span></span><span style="display:flex;"><span>若Bean实现了接口BeanFactoryAware，则执行setBeanFactory()，设置BeanFactory
+</span></span><span style="display:flex;"><span>若Bean实现了接口ApplicationContextAware，则执行setApplicationContext()，设置应用上下文
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2、BeanPostProcessor前置处理
+</span></span><span style="display:flex;"><span>若Bean实现了接口BeanPostProcessor，则先执行postProcessBeforeInitialization()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>3、InitializingBean与init-method
+</span></span><span style="display:flex;"><span>若Bean实现了接口InitializingBean，则执行afterPropertiesSet()
+</span></span><span style="display:flex;"><span>若Bean配置了属性init-method，则执行自定义方法；
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>4、BeanPostProcessor后置处理
+</span></span><span style="display:flex;"><span>若Bean实现了接口BeanPostProcessor，则先执行postProcessAfterInitialization()
+</span></span></code></pre></div></li>
+<li>
+<p>使用</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>此时 Bean 已经准备就绪，可以被使用了
+</span></span></code></pre></div></li>
+<li>
+<p>销毁</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>当Bean不再需要时，会进入清理阶段
+</span></span><span style="display:flex;"><span>若Bean实现了DisposableBean接口，则会调用其destory()；
+</span></span><span style="display:flex;"><span>若Bean配置了destory-method属性，则会调用其配置的销毁方法。
+</span></span></code></pre></div></li>
+</ul>
+<img src="/img/2024Q3/img_2024-08-14_001136.png" width="700"/>
+<h2 id="---spring-用到的设计模式">
+  &ndash; Spring 用到的设计模式
+  <a class="anchor" href="#---spring-%e7%94%a8%e5%88%b0%e7%9a%84%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f">#</a>
+</h2>
+<ul>
+<li>
+<p>单例模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>当使用Bean默认作用域时，用到了单例模式
+</span></span><span style="display:flex;"><span>在整个应用程序中只有一个Bean实例，由Spring容器负责管理
+</span></span><span style="display:flex;"><span>类似的如Service层的业务逻辑组件、DAO层的数据访问组件也是单例
+</span></span></code></pre></div></li>
+<li>
+<p>原型模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>当设置Bean为prototype作用域时，用到了原型模式
+</span></span><span style="display:flex;"><span>每次获取的是通过克隆生成的新实例，对其进行修改时，对原有实例对象不造成任何影响。
+</span></span></code></pre></div></li>
+<li>
+<p>工厂模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Spring中的BeanFactory、ApplicationContext类，用到了工厂模式
+</span></span><span style="display:flex;"><span>由工厂类根据传入的参数，动态的决定实例化哪个Bean
+</span></span></code></pre></div></li>
+<li>
+<p>代理模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Spring的AOP功能，是通过代理模式中的动态代理实现的
+</span></span></code></pre></div></li>
+<li>
+<p>模板模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Spring中的JdbcTemplate类，用到了模板模式
+</span></span><span style="display:flex;"><span>JdbcTemplate是Spring提供的用于简化JDBC操作的模板类，它封装了一些常见的JDBC操作
+</span></span></code></pre></div></li>
+<li>
+<p>策略模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Spring中访问资源的Resource接口，用到了策略模式
+</span></span><span style="display:flex;"><span>ClassPathResourece、FileSystemResource、ServletContextResource、UrlResource定义了不同的资源访问策略
+</span></span></code></pre></div></li>
+<li>
+<p>装饰器模式</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Spring中配置的DataSource可能是不同的数据源
+</span></span><span style="display:flex;"><span>SessionFactory根据用户的每次请求，将DataSource设置成不同的数据源，以达到切换数据源的目的
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---spring-中的单例-bean-是否线程安全">
+  &ndash; Spring 中的单例 Bean 是否线程安全
+  <a class="anchor" href="#---spring-%e4%b8%ad%e7%9a%84%e5%8d%95%e4%be%8b-bean-%e6%98%af%e5%90%a6%e7%ba%bf%e7%a8%8b%e5%ae%89%e5%85%a8">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Spring并没有对单例Bean进行任何多线程的封装处理，需要开发者手动处理
+</span></span><span style="display:flex;"><span>2. Spring关注的是：根据配置，创建单例Bean或多例Bean 
+</span></span></code></pre></div><h2 id="---autowiredresource">
+  &ndash; @Autowired、@Resource
+  <a class="anchor" href="#---autowiredresource">#</a>
+</h2>
+<ul>
+<li>
+<p>共同点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 都是用于Bean的注入
+</span></span><span style="display:flex;"><span>2. 都可以标注在字段和setter方法上
+</span></span></code></pre></div></li>
+<li>
+<p>@Autowired</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 是Spring提供的注解
+</span></span><span style="display:flex;"><span>2. 只能按照类型（byType）注入Bean
+</span></span><span style="display:flex;"><span>3. 可与@Qualifier一起使用，改为按照名称（ByName）注入Bean
+</span></span></code></pre></div></li>
+<li>
+<p>@Resource</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 是J2EE提供的注解，Spring 做了支持
+</span></span><span style="display:flex;"><span>2. 默认按照名称（ByName）注入bean
+</span></span><span style="display:flex;"><span>3. 可以通过属性（name、type）指定注入策略
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---transactional">
+  &ndash; @Transactional
+  <a class="anchor" href="#---transactional">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 表明该方法要参与事务
+</span></span><span style="display:flex;"><span>2. 配置相关属性来定制事务的参与方式和运行行为
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>声明式事务主要是得益于Spring AOP。使用一个事务拦截器，在方法调用的前后/周围进行事务性
+</span></span><span style="display:flex;"><span>增强（advice），来驱动事务完成。
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      Copyright © 2024-2025
+    </a>
+    <br/>
+    <a class="copyright" href="#" onclick="showIData()" title='Jianda'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---spring">&ndash; Spring</a></li>
+    <li><a href="#---spring-优点">&ndash; Spring 优点</a></li>
+    <li><a href="#---ioc">&ndash; IoC</a></li>
+    <li><a href="#---ioc-容器">&ndash; IoC 容器</a></li>
+    <li><a href="#---iocdi">&ndash; IoC、DI</a></li>
+    <li><a href="#---aop">&ndash; AOP</a></li>
+    <li><a href="#---aop-术语">&ndash; AOP 术语</a></li>
+    <li><a href="#---aop-通知类型">&ndash; AOP 通知类型</a></li>
+    <li><a href="#---bean">&ndash; Bean</a></li>
+    <li><a href="#---bean-作用域">&ndash; Bean 作用域</a></li>
+    <li><a href="#---bean-生命周期">&ndash; Bean 生命周期</a></li>
+    <li><a href="#---spring-用到的设计模式">&ndash; Spring 用到的设计模式</a></li>
+    <li><a href="#---spring-中的单例-bean-是否线程安全">&ndash; Spring 中的单例 Bean 是否线程安全</a></li>
+    <li><a href="#---autowiredresource">&ndash; @Autowired、@Resource</a></li>
+    <li><a href="#---transactional">&ndash; @Transactional</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

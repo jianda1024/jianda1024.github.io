@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Part.2">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://jianda1024.github.io/interview/07_concurrent/java-thread/p2/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Part.2">
+  <meta property="og:description" content="Part.2">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="07_concurrent">
+<title>Part.2 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://jianda1024.github.io/interview/07_concurrent/java-thread/p2/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.0fdf8641acbb3fdec8dc97c60315234b5f07e734f57857a0e9386ffeb5e63fc9.js" integrity="sha256-D9&#43;GQay7P97I3JfGAxUjS18H5zT1eFeg6Thv/rXmP8k=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="multiContent('https:\/\/jianda1024.github.io\/interview\/07_concurrent\/java-thread\/p2\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li id="idata">
+              <a href="https://jianda1024.github.io/idata/" class="flex align-center">
+                IData
+              </a>
+            </li>
+          
+        
+      
+        
+          
+            <li id="iwiki">
+              <a href="https://jianda1024.github.io/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-661fd25597bcfc1e85911c0831fb992a" class="toggle"  />
+    <label for="section-661fd25597bcfc1e85911c0831fb992a" class="flex justify-between">
+      <a role="button" class="">虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="toggle"  />
+    <label for="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87ebcf05b2c26e281354bbc3c0253da2" class="toggle"  />
+    <label for="section-87ebcf05b2c26e281354bbc3c0253da2" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="toggle"  />
+    <label for="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p3/" class="">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbede05a034232accf8c4193c4e4a300" class="toggle" checked />
+    <label for="section-bbede05a034232accf8c4193c4e4a300" class="flex justify-between">
+      <a role="button" class="">并发编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fadcf338a56044aec2f296cad8db79cc" class="toggle" checked />
+    <label for="section-fadcf338a56044aec2f296cad8db79cc" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p2/" class="active">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0d91623c892730f3e4776d912b2150a" class="toggle"  />
+    <label for="section-e0d91623c892730f3e4776d912b2150a" class="flex justify-between">
+      <a role="button" class="">基础框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="toggle"  />
+    <label for="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/08_framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f5c33a1527236dde615925dab5e470a" class="toggle"  />
+    <label for="section-5f5c33a1527236dde615925dab5e470a" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e6b99453e092c6ae1fdce69d1bcca576" class="toggle"  />
+    <label for="section-e6b99453e092c6ae1fdce69d1bcca576" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Part.2</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---volatile">&ndash; volatile</a></li>
+    <li><a href="#---synchronized">&ndash; synchronized</a></li>
+    <li><a href="#---synchronized-同步优化">&ndash; synchronized 同步优化</a></li>
+    <li><a href="#---synchronizedreentrantlock">&ndash; synchronized、ReentrantLock</a></li>
+    <li><a href="#---waitsleep">&ndash; wait()、sleep()</a></li>
+    <li><a href="#---waitnotifynotifyall">&ndash; wait()、notify()、notifyAll()</a></li>
+    <li><a href="#---interruptinterruptedisinterrupted">&ndash; interrupt()、interrupted()、isInterrupted()</a></li>
+    <li><a href="#---threadlocal">&ndash; ThreadLocal</a></li>
+    <li><a href="#---countdownlatch">&ndash; CountDownLatch</a></li>
+    <li><a href="#---cyclicbarrier">&ndash; CyclicBarrier</a></li>
+    <li><a href="#---semaphore">&ndash; Semaphore</a></li>
+    <li><a href="#---exchanger">&ndash; Exchanger</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---volatile">
+  &ndash; volatile
+  <a class="anchor" href="#---volatile">#</a>
+</h2>
+<ul>
+<li>
+<p>volatile</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 是java提供的一种轻量级同步机制
+</span></span><span style="display:flex;"><span>2. 用于修饰变量，保证所修饰变量的可见性，不保证原子性
+</span></span><span style="display:flex;"><span>3. 会禁止指令重排优化
+</span></span></code></pre></div></li>
+<li>
+<p>底层原理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 当对volatile变量进行写操作的时候，JVM会增加Lock前缀指令
+</span></span><span style="display:flex;"><span>2. 基于缓存一致性协议，cpu会检查缓存是否过期，如果过期，则重新读取系统内存数据
+</span></span><span style="display:flex;"><span>2. 缓存一致性：每个处理器通过嗅探在总线上传播的数据来检查自己缓存的值是不是过期
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---synchronized">
+  &ndash; synchronized
+  <a class="anchor" href="#---synchronized">#</a>
+</h2>
+<ul>
+<li>
+<p>synchronized</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 是Java提供的一种基于内置锁的同步机制
+</span></span><span style="display:flex;"><span>2. 保证原子性、可见性、有序性
+</span></span></code></pre></div></li>
+<li>
+<p>底层原理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>完全依赖于JVM虚拟机进行实现，基于Java对象头、Monitor监视器
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>当线程进入同步代码块时，如果此同步对象没有被锁定，
+</span></span><span style="display:flex;"><span>JVM会在当前线程的栈中创建Lock Record空间，用于存储锁对象的Mark Word的拷贝。
+</span></span><span style="display:flex;"><span>每一个被锁住的对象Mark Word都会和一个Lock Record关联，
+</span></span></code></pre></div></li>
+<li>
+<p>Lock Record 锁记录</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Lock Record，是线程私有的数据结构
+</span></span><span style="display:flex;"><span>2. Lock Record中有一个Owner字段存放拥有该锁的线程的唯一标识，表示该锁被这个线程占用
+</span></span></code></pre></div></li>
+<li>
+<p>Monitor监视器</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Monitor，可以理解为一种同步机制、一个对象。任何一个对象都有一个Monitor与之关联。
+</span></span><span style="display:flex;"><span>2. Monitor只能被一个线程持有，此时当前对象就处于锁定状态，其它线程只能阻塞等待。
+</span></span><span style="display:flex;"><span>3. 在JVM中，Synchronized是基于进入和退出Monitor对象，来实现方法同步和代码块同步。
+</span></span></code></pre></div></li>
+<li>
+<p>java对象头</p>
+<img src="/img/2024Q3/img_2024-08-11_223517.png" width="900"/>
+</li>
+</ul>
+<h2 id="---synchronized-同步优化">
+  &ndash; synchronized 同步优化
+  <a class="anchor" href="#---synchronized-%e5%90%8c%e6%ad%a5%e4%bc%98%e5%8c%96">#</a>
+</h2>
+<ul>
+<li>
+<p>为优化synchronized性能，在JDK1.6后增加了自适应的CAS自旋、锁消除、锁粗化、偏向锁、轻量级锁等策略</p>
+</li>
+<li>
+<p>锁膨胀：方向不可逆</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 无锁 ——&gt; 偏向锁：
+</span></span><span style="display:flex;"><span>当持有锁的线程再次请求该锁时，无需再做任何同步操作，即获取锁
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2. 偏向锁 ——&gt; 轻量级锁：
+</span></span><span style="display:flex;"><span>当存在第二个线程申请同一个锁对象时，偏向锁就会立即升级为轻量级锁
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>3. 轻量级锁——&gt; 重量级锁：
+</span></span><span style="display:flex;"><span>当同一时间有多个线程竞争锁时，锁就会被升级成重量级锁，此时其申请锁带来的开销也就变大
+</span></span></code></pre></div></li>
+<li>
+<p>其他策略</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><div style="font-weight:400">锁消除</div></th>
+          <th style="text-align: left"><div style="font-weight:400">当检测到不可能存在共享数据的竞争时，JVM会对这些同步锁进行消除</div></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">锁粗化</td>
+          <td style="text-align: left">将多个连续的加锁、解锁操作连接在一起，扩展成一个范围更大的锁</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">自旋锁</td>
+          <td style="text-align: left">是一种锁机制，尝试获取锁的线程不会立即阻塞，而是采用循环的方式去多次尝试</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">自适应自旋锁</td>
+          <td style="text-align: left">自旋的次数不是固定的，而是由前一次在同一个锁上的自旋时间及锁的拥有者的状态来决定</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<h2 id="---synchronizedreentrantlock">
+  &ndash; synchronized、ReentrantLock
+  <a class="anchor" href="#---synchronizedreentrantlock">#</a>
+</h2>
+<ul>
+<li>
+<p>相同点</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 都是用来协调多线程共享对象、变量的访问。
+</span></span><span style="display:flex;"><span>2. 都是可重入锁，同一线程可以多次获得同一个锁。
+</span></span><span style="display:flex;"><span>3. 都保证了可见性和互斥性。
+</span></span></code></pre></div></li>
+<li>
+<p>不同点</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">不同点</th>
+          <th style="text-align: left">synchronized</th>
+          <th style="text-align: left">ReentrantLock</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">实现级别</td>
+          <td style="text-align: left">是一个关键字，属于 JVM 级别</td>
+          <td style="text-align: left">是一个接口，属于 API 级别</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">底层实现</td>
+          <td style="text-align: left">是同步阻塞，使用悲观并发策略</td>
+          <td style="text-align: left">同步非阻塞，使用乐观并发策略</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">锁</td>
+          <td style="text-align: left">隐式的获得/释放锁，会自动释放锁</td>
+          <td style="text-align: left">显式的获得/释放锁，须手动释放锁</td>
+      </tr>
+  </tbody>
+</table>
+</li>
+<li>
+<p>ReentrantLock 高级功能</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 可实现公平锁
+</span></span><span style="display:flex;"><span>2. 可锁绑定多个条件
+</span></span><span style="display:flex;"><span>3. 等待可中断：当锁长时间不释放的时候，可以选择放弃等待
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---waitsleep">
+  &ndash; wait()、sleep()
+  <a class="anchor" href="#---waitsleep">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">wait()</th>
+          <th style="text-align: left">sleep()</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">所属类</td>
+          <td style="text-align: left">java.lang.Object</td>
+          <td style="text-align: left">java.lang.Thread</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">对象锁</td>
+          <td style="text-align: left">释放</td>
+          <td style="text-align: left">不释放</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">使用位置</td>
+          <td style="text-align: left">只能在同步块中使用</td>
+          <td style="text-align: left">任意地方</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">捕获异常</td>
+          <td style="text-align: left">不需要</td>
+          <td style="text-align: left">需要</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---waitnotifynotifyall">
+  &ndash; wait()、notify()、notifyAll()
+  <a class="anchor" href="#---waitnotifynotifyall">#</a>
+</h2>
+<ul>
+<li>
+<p>wait()</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 使当前线程等待，把当前线程放入等待池中
+</span></span><span style="display:flex;"><span>2. 释放当前的锁
+</span></span><span style="display:flex;"><span>3. 满足一定条件时被唤醒, 重新尝试获取这个锁
+</span></span><span style="display:flex;"><span>4. 须在 synchronized 同步块中调用
+</span></span></code></pre></div></li>
+<li>
+<p>notify()</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 唤醒在此对象监视器上等待的其中一个线程（由虚拟机控制）
+</span></span><span style="display:flex;"><span>2. 调用对象的 notify() 方法后，要等到执行 notify() 方法的线程将程序执行完，当前线程才会释放锁
+</span></span><span style="display:flex;"><span>3. 须在同步方法、同步块中调用
+</span></span></code></pre></div></li>
+<li>
+<p>notifyAll()</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 唤醒在此对象监视器上等待的所有线程
+</span></span><span style="display:flex;"><span>2. 由这些线程重新竞争锁，竞争成功者则继续执行
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---interruptinterruptedisinterrupted">
+  &ndash; interrupt()、interrupted()、isInterrupted()
+  <a class="anchor" href="#---interruptinterruptedisinterrupted">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 都是 java.lang.Thread 类中的方法
+</span></span><span style="display:flex;"><span>2. interrupt():     是实例方法，中断线程，设置中断标识为true
+</span></span><span style="display:flex;"><span>3. interrupted():   是静态方法，判断线程是否被中断，并清除中断状态
+</span></span><span style="display:flex;"><span>4. isInterrupted(): 是实例方法，获取线程的中断状态
+</span></span></code></pre></div><h2 id="---threadlocal">
+  &ndash; ThreadLocal
+  <a class="anchor" href="#---threadlocal">#</a>
+</h2>
+<ul>
+<li>
+<p>线程本地变量</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. ThreadLocal会为每个访问线程都创建一个本地副本
+</span></span><span style="display:flex;"><span>2. 各个线程实际上是操作独属于本线程的变量，从而起到线程隔离的作用，避免了线程安全问题
+</span></span></code></pre></div></li>
+<li>
+<p>实现原理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Thread类中，有个ThreadLocal.ThreadLocalMap 的成员变量
+</span></span><span style="display:flex;"><span>2. ThreadLocalMap的key是ThreadLocal实例本身，value则存储泛型对象值
+</span></span><span style="display:flex;"><span>3. 每个线程都是操作自己的成员变量，从而互相不影响
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---countdownlatch">
+  &ndash; CountDownLatch
+  <a class="anchor" href="#---countdownlatch">#</a>
+</h2>
+<ul>
+<li>
+<p>CountDownLatch</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>倒计时器：
+</span></span><span style="display:flex;"><span>一个或多个线程一直等待，直到其他线程完成某件事情之后再执行
+</span></span></code></pre></div></li>
+<li>
+<p>实现原理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 通过一个计数器进行实现。计数器初始值为线程的数量。
+</span></span><span style="display:flex;"><span>2. 每当一个线程执行完毕后，计数器的值就减1。
+</span></span><span style="display:flex;"><span>3. 当计数器的值为0时，表示所有线程都执行完毕，然后在CountDownLatch上等待的线程就可以恢复执行了
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---cyclicbarrier">
+  &ndash; CyclicBarrier
+  <a class="anchor" href="#---cyclicbarrier">#</a>
+</h2>
+<ul>
+<li>
+<p>CyclicBarrier</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>循环栅栏：
+</span></span><span style="display:flex;"><span>多个线程互相等待，直到全部都到达同一个同步点，再继续一起执行
+</span></span></code></pre></div></li>
+<li>
+<p>实现原理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 在CyclicBarrier类的内部有一个计数器
+</span></span><span style="display:flex;"><span>2. 每个线程在到达屏障点的时候都会调用await()将自己阻塞，此时计数器会减1
+</span></span><span style="display:flex;"><span>3. 当计数器减为0的时候，所有因调用await()而被阻塞的线程将被唤醒
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---semaphore">
+  &ndash; Semaphore
+  <a class="anchor" href="#---semaphore">#</a>
+</h2>
+<ul>
+<li>
+<p>Semaphore</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>信号灯：
+</span></span><span style="display:flex;"><span>作为一种流量控制手段，用于控制同时访问特定资源的线程数量，保证合理的使用共享资源
+</span></span></code></pre></div></li>
+<li>
+<p>实现原理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Semaphore管理一系列许可（仅维护许可的计数）。
+</span></span><span style="display:flex;"><span>2. 线程通过acquire()获取许可。当没有可用的许可的时候，线程阻塞，直到有可用的许可为止。
+</span></span><span style="display:flex;"><span>3. 线程通过release()释放许可。
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---exchanger">
+  &ndash; Exchanger
+  <a class="anchor" href="#---exchanger">#</a>
+</h2>
+<ul>
+<li>
+<p>Exchanger</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>交换器：
+</span></span><span style="display:flex;"><span>是一个用于线程间协作的工具类，用于两个线程间交换数据。
+</span></span></code></pre></div></li>
+<li>
+<p>实现原理</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. Exchanger提供了一个交换的同步点，在这个同步点两个线程能够交换数据。
+</span></span><span style="display:flex;"><span>2. 如果一个线程先执行exchange()，那它会阻塞等待另一个线程也执行exchange()。
+</span></span><span style="display:flex;"><span>3. 当两个线程就都达到了同步点，它们就可以交换数据。
+</span></span></code></pre></div></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      Copyright © 2024-2025
+    </a>
+    <br/>
+    <a class="copyright" href="#" onclick="showIData()" title='Jianda'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---volatile">&ndash; volatile</a></li>
+    <li><a href="#---synchronized">&ndash; synchronized</a></li>
+    <li><a href="#---synchronized-同步优化">&ndash; synchronized 同步优化</a></li>
+    <li><a href="#---synchronizedreentrantlock">&ndash; synchronized、ReentrantLock</a></li>
+    <li><a href="#---waitsleep">&ndash; wait()、sleep()</a></li>
+    <li><a href="#---waitnotifynotifyall">&ndash; wait()、notify()、notifyAll()</a></li>
+    <li><a href="#---interruptinterruptedisinterrupted">&ndash; interrupt()、interrupted()、isInterrupted()</a></li>
+    <li><a href="#---threadlocal">&ndash; ThreadLocal</a></li>
+    <li><a href="#---countdownlatch">&ndash; CountDownLatch</a></li>
+    <li><a href="#---cyclicbarrier">&ndash; CyclicBarrier</a></li>
+    <li><a href="#---semaphore">&ndash; Semaphore</a></li>
+    <li><a href="#---exchanger">&ndash; Exchanger</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

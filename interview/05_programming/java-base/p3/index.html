@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="interview" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Part.3">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://jianda1024.github.io/interview/05_programming/java-base/p3/">
+  <meta property="og:site_name" content="Interview">
+  <meta property="og:title" content="Part.3">
+  <meta property="og:description" content="Part.3">
+  <meta property="og:locale" content="interview">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="05_programming">
+<title>Part.3 | Interview</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://jianda1024.github.io/interview/05_programming/java-base/p3/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/interview.search.min.0fdf8641acbb3fdec8dc97c60315234b5f07e734f57857a0e9386ffeb5e63fc9.js" integrity="sha256-D9&#43;GQay7P97I3JfGAxUjS18H5zT1eFeg6Thv/rXmP8k=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+<link rel="stylesheet" href="/css/common.css" />
+<script defer src="/js/common/jquery.min.js"></script>
+<script defer src="/js/common.js"></script>
+
+
+
+
+
+
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+
+
+
+<h2 class="book-brand">
+  <div class="flex justify-between">
+    <a href="/interview"><span>Interview</span>
+    </a>
+    <a href="#" onclick="multiContent('https:\/\/jianda1024.github.io\/interview\/05_programming\/java-base\/p3\/')">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="font-size: 1rem;font-weight: bolder;">☰</span>
+    </a>
+  </div>
+  <div id="multi-content-list" class="style-hide" tabindex="0" aria-haspopup="true">
+    <ul>
+      
+        
+          
+            <li id="idata">
+              <a href="https://jianda1024.github.io/idata/" class="flex align-center">
+                IData
+              </a>
+            </li>
+          
+        
+      
+        
+          
+            <li id="iwiki">
+              <a href="https://jianda1024.github.io/" class="flex align-center">
+                IWiki
+              </a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+    </ul>
+  </div>
+</h2>
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-661fd25597bcfc1e85911c0831fb992a" class="toggle"  />
+    <label for="section-661fd25597bcfc1e85911c0831fb992a" class="flex justify-between">
+      <a role="button" class="">虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="toggle"  />
+    <label for="section-dfdf985e70ea5ef90a9ea1cc83fe3ac5" class="flex justify-between">
+      <a role="button" class="">Java虚拟机</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/04_jvm/java-jvm/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-87ebcf05b2c26e281354bbc3c0253da2" class="toggle" checked />
+    <label for="section-87ebcf05b2c26e281354bbc3c0253da2" class="flex justify-between">
+      <a role="button" class="">编程基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="toggle" checked />
+    <label for="section-d1e13c095ff36455a4fe7683ffcdd5f2" class="flex justify-between">
+      <a role="button" class="">Java基础</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/java-base/p3/" class="active">Part.3</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/network/" class="">网络</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/05_programming/linux/" class="">Linux</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-bbede05a034232accf8c4193c4e4a300" class="toggle"  />
+    <label for="section-bbede05a034232accf8c4193c4e4a300" class="flex justify-between">
+      <a role="button" class="">并发编程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fadcf338a56044aec2f296cad8db79cc" class="toggle"  />
+    <label for="section-fadcf338a56044aec2f296cad8db79cc" class="flex justify-between">
+      <a role="button" class="">Java多线程</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/07_concurrent/java-thread/p2/" class="">Part.2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e0d91623c892730f3e4776d912b2150a" class="toggle"  />
+    <label for="section-e0d91623c892730f3e4776d912b2150a" class="flex justify-between">
+      <a role="button" class="">基础框架</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="toggle"  />
+    <label for="section-ac53d98a8fcfecc71bb8b1e064cf9d8c" class="flex justify-between">
+      <a role="button" class="">Spring</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/08_framework/spring/p1/" class="">Part.1</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f5c33a1527236dde615925dab5e470a" class="toggle"  />
+    <label for="section-5f5c33a1527236dde615925dab5e470a" class="flex justify-between">
+      <a role="button" class="">服务治理</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/spring-cloud/" class="">SpringCloud</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/nginx/" class="">Nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/dubbo/" class="">Dubbo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/09_service/zookeeper/" class="">Zookeeper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>—</span>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e6b99453e092c6ae1fdce69d1bcca576" class="toggle"  />
+    <label for="section-e6b99453e092c6ae1fdce69d1bcca576" class="flex justify-between">
+      <a role="button" class="">开发工具</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/git/" class="">Git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/maven/" class="">Maven</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/interview/13_dev-tool/tomcat/" class="">Tomcat</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Part.3</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---hashmap-的工作原理">&ndash; HashMap 的工作原理</a></li>
+    <li><a href="#---hashmap-的数据结构">&ndash; HashMap 的数据结构</a></li>
+    <li><a href="#---hashmap-的数组的初始化长度">&ndash; HashMap 的数组的初始化长度</a></li>
+    <li><a href="#---hashmap-的容量">&ndash; HashMap 的容量</a></li>
+    <li><a href="#---hashmap-的数组什么时候扩容">&ndash; HashMap 的数组什么时候扩容</a></li>
+    <li><a href="#---hashmap-什么时候会转红黑树">&ndash; HashMap 什么时候会转红黑树</a></li>
+    <li><a href="#---hashmap-的数组长度为什么是2的幂次方数">&ndash; HashMap 的数组长度为什么是2的幂次方数</a></li>
+    <li><a href="#---hashmaphashtable">&ndash; HashMap、HashTable</a></li>
+    <li><a href="#---hashmapconcurrenthashmap">&ndash; HashMap、ConcurrentHashMap</a></li>
+    <li><a href="#---hashmaplinkedhashmaptreemap">&ndash; HashMap、LinkedHashMap、TreeMap</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="---hashmap-的工作原理">
+  &ndash; HashMap 的工作原理
+  <a class="anchor" href="#---hashmap-%e7%9a%84%e5%b7%a5%e4%bd%9c%e5%8e%9f%e7%90%86">#</a>
+</h2>
+<ul>
+<li>
+<p>底层数据结构</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>HashMap 底层是由数组和单向链表实现，数组中的每个元素都是链表，由 Node 内部类实现
+</span></span><span style="display:flex;"><span>HashMap 通过 put &amp; get 方法存储和获取元素对象
+</span></span></code></pre></div></li>
+<li>
+<p>存储对象时，将 K/V 键值传给 put() 方法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、调用 hash(K)方法计算 K的 hash值，然后结合数组长度，计算得数组下标；
+</span></span><span style="display:flex;"><span>2、判断数组该下标节点是否存在：
+</span></span><span style="display:flex;"><span>   A. 如果不存在，则新增节点，直接执行插入
+</span></span><span style="display:flex;"><span>   B. 如果已存在，即为发生哈希碰撞，则遍历该位置的链表，对比判断 K值、hash值，是否在链表节点中已经存在：
+</span></span><span style="display:flex;"><span>      a. 如果已存在，则更新链表节点的键值对；
+</span></span><span style="display:flex;"><span>      b. 如果不存在，则新增节点，插入链表的尾部（尾插法）或者红黑树中（树的添加方式）
+</span></span><span style="display:flex;"><span>3、判断是否需要扩容，调整数组大小；
+</span></span></code></pre></div></li>
+<li>
+<p>获取对象时，将 K 传给 get() 方法</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、调用 hash(K)方法计算 K的 hash值，然后结合数组长度，计算得数组下标，即找到了该 K所在的链表
+</span></span><span style="display:flex;"><span>2、顺序遍历链表，对比查找 K值、hash值两者相同的链表节点
+</span></span><span style="display:flex;"><span>3、如果找到，则返回链表节点的 V值，否则返回空
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---hashmap-的数据结构">
+  &ndash; HashMap 的数据结构
+  <a class="anchor" href="#---hashmap-%e7%9a%84%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84">#</a>
+</h2>
+<ul>
+<li>
+<p>JDK1.7及其之前，是数组+链表</p>
+<img src="/img/2024Q3/img_2024-07-29_181727.png" width="500"/>
+</li>
+<li>
+<p>JDK1.8及其之后，是数组+链表/红黑树</p>
+<img src="/img/2024Q3/img_2024-07-29_181728.png" width="500"/>
+</li>
+</ul>
+<h2 id="---hashmap-的数组的初始化长度">
+  &ndash; HashMap 的数组的初始化长度
+  <a class="anchor" href="#---hashmap-%e7%9a%84%e6%95%b0%e7%bb%84%e7%9a%84%e5%88%9d%e5%a7%8b%e5%8c%96%e9%95%bf%e5%ba%a6">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>默认的初始容量值是16，也可以手动指定
+</span></span></code></pre></div><h2 id="---hashmap-的容量">
+  &ndash; HashMap 的容量
+  <a class="anchor" href="#---hashmap-%e7%9a%84%e5%ae%b9%e9%87%8f">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、容量capacity，决定着table 数组的大小，默认是16，也可以构造时传入
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2、装载因子loadFactor，主要目的是用来确认table 数组是否需要动态扩展，默认值是0.75(概率泊松分布)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>3、阈值threshold，等于capacity * loadFactor，当超过阈值时 table 就需要动态扩容
+</span></span></code></pre></div><h2 id="---hashmap-的数组什么时候扩容">
+  &ndash; HashMap 的数组什么时候扩容
+  <a class="anchor" href="#---hashmap-%e7%9a%84%e6%95%b0%e7%bb%84%e4%bb%80%e4%b9%88%e6%97%b6%e5%80%99%e6%89%a9%e5%ae%b9">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>JDK1.7及其之前，以下两个条件同时满足时会扩容：
+</span></span><span style="display:flex;"><span>1、size 达到 threshold
+</span></span><span style="display:flex;"><span>2、table[index]!=null
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JDK1.8及其之后，以下两个条件满足其一时会扩容：
+</span></span><span style="display:flex;"><span>1、size达到threshold
+</span></span><span style="display:flex;"><span>2、当table[index]下的结点个数达到8个但是table.length又没有达到64
+</span></span></code></pre></div><h2 id="---hashmap-什么时候会转红黑树">
+  &ndash; HashMap 什么时候会转红黑树
+  <a class="anchor" href="#---hashmap-%e4%bb%80%e4%b9%88%e6%97%b6%e5%80%99%e4%bc%9a%e8%bd%ac%e7%ba%a2%e9%bb%91%e6%a0%91">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>当table[index]下的结点个数达到8个，但是table.length已经达到64
+</span></span></code></pre></div><h2 id="---hashmap-的数组长度为什么是2的幂次方数">
+  &ndash; HashMap 的数组长度为什么是2的幂次方数
+  <a class="anchor" href="#---hashmap-%e7%9a%84%e6%95%b0%e7%bb%84%e9%95%bf%e5%ba%a6%e4%b8%ba%e4%bb%80%e4%b9%88%e6%98%af2%e7%9a%84%e5%b9%82%e6%ac%a1%e6%96%b9%e6%95%b0">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>为了效率更快：
+</span></span><span style="display:flex;"><span>1、在HashMap中，先得到key的hashcode，然后通过hashcode &amp; (table.length - 1) 运算得到一个数组下标index
+</span></span><span style="display:flex;"><span>2、用与运算计算数组下标，相比于取余运算速度更快，但这有个前提条件，就是数组的长度得是一个2的幂次方数。 
+</span></span></code></pre></div><h2 id="---hashmaphashtable">
+  &ndash; HashMap、HashTable
+  <a class="anchor" href="#---hashmaphashtable">#</a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">HashMap</th>
+          <th style="text-align: left">HashTable</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">非线程安全，效率相对较高</td>
+          <td style="text-align: left">线程安全，效率相对较低</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">key/value 都允许为 null</td>
+          <td style="text-align: left">key/value 都不允许为 null</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">默认初始容量16，按 2n 进行扩容</td>
+          <td style="text-align: left">默认初始容量11，按 2n+1 进行扩容</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">重新计算hash值</td>
+          <td style="text-align: left">直接使用对象的 hashCode</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="---hashmapconcurrenthashmap">
+  &ndash; HashMap、ConcurrentHashMap
+  <a class="anchor" href="#---hashmapconcurrenthashmap">#</a>
+</h2>
+<ul>
+<li>
+<p>区别</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>HashMap：
+</span></span><span style="display:flex;"><span>1. key/value 都允许为 null值
+</span></span><span style="display:flex;"><span>2. 非线程安全
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ConcurrentHashMap：
+</span></span><span style="display:flex;"><span>1. key/value 都不允许为 null值
+</span></span><span style="display:flex;"><span>2. 线程安全
+</span></span></code></pre></div></li>
+<li>
+<p>ConcurrentHashMap 线程锁：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>JDK 1.7中
+</span></span><span style="display:flex;"><span>1、使用分段锁，相当于把一个 HashMap 分成多个段，每段分配一把锁。
+</span></span><span style="display:flex;"><span>2、锁粒度：基于 Segment，包含多个 HashEntry。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>JDK 1.8中
+</span></span><span style="display:flex;"><span>1、使用 CAS + synchronized + Node + 红黑树
+</span></span><span style="display:flex;"><span>2、锁粒度：Node（首结点）
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="---hashmaplinkedhashmaptreemap">
+  &ndash; HashMap、LinkedHashMap、TreeMap
+  <a class="anchor" href="#---hashmaplinkedhashmaptreemap">#</a>
+</h2>
+<ul>
+<li>
+<p>HashMap</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、底层是基于哈希表（散列表/数组）的数据结构
+</span></span><span style="display:flex;"><span>2、key是无序的
+</span></span></code></pre></div></li>
+<li>
+<p>TreeMap</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、底层是基于红黑树的数据结构
+</span></span><span style="display:flex;"><span>2、key是有序的
+</span></span><span style="display:flex;"><span>3、使用场景：在需要按自然顺序或自定义顺序遍历键的情况下
+</span></span></code></pre></div></li>
+<li>
+<p>LinkedHashMap</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1、继承自HashMap，其内部多维护了一个双向链表
+</span></span><span style="display:flex;"><span>2、key是有序的
+</span></span><span style="display:flex;"><span>3、使用场景：在需要输出的顺序和输入的顺序相同的情况下
+</span></span></code></pre></div></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+
+
+<div class="flex flex-wrap justify-center">
+  
+  <div class="copyright">
+    <a class="copyright" href="mailto:jianda1024@163.com" target="_blank" title='EmailTo: jianda1024@163.com'>
+      Copyright © 2024-2025
+    </a>
+    <br/>
+    <a class="copyright" href="#" onclick="showIData()" title='Jianda'>
+      <strong>Jianda</strong>
+    </a>
+  </div>
+</div>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#---hashmap-的工作原理">&ndash; HashMap 的工作原理</a></li>
+    <li><a href="#---hashmap-的数据结构">&ndash; HashMap 的数据结构</a></li>
+    <li><a href="#---hashmap-的数组的初始化长度">&ndash; HashMap 的数组的初始化长度</a></li>
+    <li><a href="#---hashmap-的容量">&ndash; HashMap 的容量</a></li>
+    <li><a href="#---hashmap-的数组什么时候扩容">&ndash; HashMap 的数组什么时候扩容</a></li>
+    <li><a href="#---hashmap-什么时候会转红黑树">&ndash; HashMap 什么时候会转红黑树</a></li>
+    <li><a href="#---hashmap-的数组长度为什么是2的幂次方数">&ndash; HashMap 的数组长度为什么是2的幂次方数</a></li>
+    <li><a href="#---hashmaphashtable">&ndash; HashMap、HashTable</a></li>
+    <li><a href="#---hashmapconcurrenthashmap">&ndash; HashMap、ConcurrentHashMap</a></li>
+    <li><a href="#---hashmaplinkedhashmaptreemap">&ndash; HashMap、LinkedHashMap、TreeMap</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

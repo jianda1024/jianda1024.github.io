@@ -50,7 +50,7 @@ function decryptHtml() {
     }
 
     var html =  '<div style="margin-bottom:1rem;">'
-        + '<button type="button" onclick="downloadSrcFile()" style="color:#A5A5A5">下载文件</button>'
+        + '<button type="button" onclick="downloadSrcFile()" style="color:#A5A5A5" title="下载源文件">原文件</button>'
         + '</div>';
     $("div.book-toc-content").prepend(html);
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>并发理论 on Document</title>
+    <title>并发理论 on IWiki</title>
     <link>https://jianda1024.github.io/program-lang/java/thread/theory/</link>
-    <description>Recent content in 并发理论 on Document</description>
+    <description>Recent content in 并发理论 on IWiki</description>
     <generator>Hugo</generator>
-    <language>doc</language>
+    <language>iwiki</language>
     <atom:link href="https://jianda1024.github.io/program-lang/java/thread/theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java 内存模型</title>

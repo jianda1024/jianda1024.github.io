@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Quartz on Document</title>
+    <title>Quartz on IWiki</title>
     <link>https://jianda1024.github.io/framework/quartz/</link>
-    <description>Recent content in Quartz on Document</description>
+    <description>Recent content in Quartz on IWiki</description>
     <generator>Hugo</generator>
-    <language>doc</language>
+    <language>iwiki</language>
     <atom:link href="https://jianda1024.github.io/framework/quartz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>核心类</title>

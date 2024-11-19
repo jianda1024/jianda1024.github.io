@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Map on Document</title>
+    <title>Map on IWiki</title>
     <link>https://jianda1024.github.io/program-lang/java/container/Map/</link>
-    <description>Recent content in Map on Document</description>
+    <description>Recent content in Map on IWiki</description>
     <generator>Hugo</generator>
-    <language>doc</language>
+    <language>iwiki</language>
     <atom:link href="https://jianda1024.github.io/program-lang/java/container/Map/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TreeMap</title>

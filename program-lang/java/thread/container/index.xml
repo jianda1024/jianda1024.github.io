@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>并发容器 on Document</title>
+    <title>并发容器 on IWiki</title>
     <link>https://jianda1024.github.io/program-lang/java/thread/container/</link>
-    <description>Recent content in 并发容器 on Document</description>
+    <description>Recent content in 并发容器 on IWiki</description>
     <generator>Hugo</generator>
-    <language>doc</language>
+    <language>iwiki</language>
     <atom:link href="https://jianda1024.github.io/program-lang/java/thread/container/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ThreadLocal</title>

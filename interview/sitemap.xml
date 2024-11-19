@@ -2,88 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jianda1024.github.io/interview/dev-tool/git/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/dev-tool/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/dev-tool/git/"
-                />
+    <loc>https://jianda1024.github.io/interview/13_dev-tool/git/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-base/</loc>
+    <loc>https://jianda1024.github.io/interview/05_programming/java-base/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/framework/mq/</loc>
+    <loc>https://jianda1024.github.io/interview/04_jvm/java-jvm/p1/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/framework/mq/mq/</loc>
+    <loc>https://jianda1024.github.io/interview/05_programming/java-base/p1/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/database/mysql/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/database/mysql/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/database/mysql/"
-                />
+    <loc>https://jianda1024.github.io/interview/07_concurrent/java-thread/p1/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/database/mysql/p1/</loc>
+    <loc>https://jianda1024.github.io/interview/08_framework/spring/p1/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/database/redis/p1/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/framework/spring/p1/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/distributed/p1/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-base/p1/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-jvm/p1/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-thread/p1/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/service-manage/spring-boot/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/leetcode/%E5%93%88%E5%B8%8C/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%981/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-base/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/program-base/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/program-base/"
-                />
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-base/network/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/program-base/network/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/program-base/network/"
-                />
+    <loc>https://jianda1024.github.io/interview/05_programming/network/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/interview/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="idata"
@@ -91,136 +24,43 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="iwiki"
+                href="https://jianda1024.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="interview"
                 href="https://jianda1024.github.io/interview/"
                 />
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-jvm/</loc>
+    <loc>https://jianda1024.github.io/interview/04_jvm/java-jvm/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-base/linux/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/program-base/linux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/program-base/linux/"
-                />
+    <loc>https://jianda1024.github.io/interview/05_programming/linux/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/dev-tool/maven/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/dev-tool/maven/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/dev-tool/maven/"
-                />
+    <loc>https://jianda1024.github.io/interview/13_dev-tool/maven/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/framework/spring/p2/</loc>
+    <loc>https://jianda1024.github.io/interview/04_jvm/java-jvm/p2/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-base/p2/</loc>
+    <loc>https://jianda1024.github.io/interview/05_programming/java-base/p2/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-jvm/p2/</loc>
+    <loc>https://jianda1024.github.io/interview/07_concurrent/java-thread/p2/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-thread/p2/</loc>
+    <loc>https://jianda1024.github.io/interview/08_framework/spring/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/database/redis/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/database/redis/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/database/redis/"
-                />
+    <loc>https://jianda1024.github.io/interview/09_service/spring-cloud/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/framework/spring/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/framework/spring/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/framework/spring/"
-                />
+    <loc>https://jianda1024.github.io/interview/07_concurrent/java-thread/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/service-manage/spring-cloud/</loc>
+    <loc>https://jianda1024.github.io/interview/05_programming/java-base/p3/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/</loc>
+    <loc>https://jianda1024.github.io/interview/13_dev-tool/tomcat/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E5%BF%85%E4%BC%9A%E9%A2%982/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/program-design/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/program-design/"
-                />
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/design-pattern/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/program-design/design-pattern/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/program-design/design-pattern/"
-                />
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-thread/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/leetcode/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/framework/mybatis/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/java-base/p3/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/dev-tool/tomcat/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/distributed/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E5%8F%82%E8%80%83%E9%A2%981/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/dev-tool/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/dev-tool/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/dev-tool/"
-                />
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/leetcode/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/dir/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/leetcode/%E5%AD%90%E4%B8%B2/</loc>
+    <loc>https://jianda1024.github.io/interview/04_jvm/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/interview/-/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="doc"
+                hreflang="iwiki"
                 href="https://jianda1024.github.io/-/"
                 />
     <xhtml:link
@@ -229,60 +69,24 @@
                 href="https://jianda1024.github.io/interview/-/"
                 />
   </url><url>
-    <loc>https://jianda1024.github.io/interview/service-manage/nginx/</loc>
+    <loc>https://jianda1024.github.io/interview/09_service/nginx/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/program-lang/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/program-lang/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/program-lang/"
-                />
+    <loc>https://jianda1024.github.io/interview/05_programming/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/service-manage/dubbo/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/service-manage/dubbo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/service-manage/dubbo/"
-                />
+    <loc>https://jianda1024.github.io/interview/09_service/dubbo/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/database/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/database/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/database/"
-                />
+    <loc>https://jianda1024.github.io/interview/09_service/zookeeper/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/service-manage/zookeeper/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/service-manage/zookeeper/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/service-manage/zookeeper/"
-                />
+    <loc>https://jianda1024.github.io/interview/07_concurrent/</loc>
+  </url><url>
+    <loc>https://jianda1024.github.io/interview/08_framework/</loc>
+  </url><url>
+    <loc>https://jianda1024.github.io/interview/09_service/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/interview/--/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="doc"
+                hreflang="iwiki"
                 href="https://jianda1024.github.io/--/"
                 />
     <xhtml:link
@@ -291,66 +95,20 @@
                 href="https://jianda1024.github.io/interview/--/"
                 />
   </url><url>
-    <loc>https://jianda1024.github.io/interview/framework/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/framework/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/framework/"
-                />
+    <loc>https://jianda1024.github.io/interview/---/</loc>
   </url><url>
-    <loc>https://jianda1024.github.io/interview/service-manage/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/service-manage/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="interview"
-                href="https://jianda1024.github.io/interview/service-manage/"
-                />
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%931/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%932/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%933/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%934/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%935/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9311/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9312/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9313/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9314/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E5%8D%8E%E4%B8%BA%E6%9C%BA%E8%AF%95/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9321/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E6%9C%BA%E8%AF%95%E9%A2%98%E5%BA%9322/</loc>
-  </url><url>
-    <loc>https://jianda1024.github.io/interview/program-design/structure-algorithm/huawei-od/%E5%85%A8/</loc>
+    <loc>https://jianda1024.github.io/interview/13_dev-tool/</loc>
   </url><url>
     <loc>https://jianda1024.github.io/interview/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/categories/"
+                hreflang="idata"
+                href="https://jianda1024.github.io/idata/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="idata"
-                href="https://jianda1024.github.io/idata/categories/"
+                hreflang="iwiki"
+                href="https://jianda1024.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -361,13 +119,13 @@
     <loc>https://jianda1024.github.io/interview/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="doc"
-                href="https://jianda1024.github.io/tags/"
+                hreflang="idata"
+                href="https://jianda1024.github.io/idata/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="idata"
-                href="https://jianda1024.github.io/idata/tags/"
+                hreflang="iwiki"
+                href="https://jianda1024.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"

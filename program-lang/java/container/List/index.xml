@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>List on Document</title>
+    <title>List on IWiki</title>
     <link>https://jianda1024.github.io/program-lang/java/container/List/</link>
-    <description>Recent content in List on Document</description>
+    <description>Recent content in List on IWiki</description>
     <generator>Hugo</generator>
-    <language>doc</language>
+    <language>iwiki</language>
     <atom:link href="https://jianda1024.github.io/program-lang/java/container/List/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vector</title>

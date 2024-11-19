@@ -1,6 +1,6 @@
 // 按钮：网页加密
 var html =  '<div style="margin-bottom:1rem;">'
-+ '<button type="button" onclick="encryptHtmlPage()" style="color:#A5A5A5">网页加密</button>'
++ '<button type="button" onclick="encryptHtmlPage()" style="color:#A5A5A5" title="请上传源文件">网页加密</button>'
 + '<input type="text" id="srcFileName" readonly="readonly" class="style-hide">'
 + '<input type="file" id="uploadSrcFile" class="style-hide" accept=".md"/>'
 + '</div>';
@@ -44,7 +44,7 @@ function encryptAndDownloadFile() {
 
     var fileName = $("#srcFileName").val();
     if (isEmpty(fileName)) {
-        alert("请上传原文本文件！");
+        alert("请上传原文件！");
         return;
     }
 

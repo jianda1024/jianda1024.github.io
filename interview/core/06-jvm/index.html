@@ -14,12 +14,9 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="interview">
 <title>虚拟机 | IWiki</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://jianda1024.github.io/interview/core/06-jvm/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/iwiki.search.min.7be66dc2569b98273d452d9db73341f350b0970afbb918738e51df1c29b9e65b.js" integrity="sha256-e&#43;ZtwlabmCc9RS2dtzNB81Cwlwr7uRhzjlHfHCm55ls=" crossorigin="anonymous"></script>
+  <script defer src="/iwiki.search.min.c03d3ab0f630e71aae3c06cb0eda846c528f763377a73f5dd15d46009b1fe3f0.js" integrity="sha256-wD06sPYw5xquPAbLDtqEbFKPdjN3pz9d0V1GAJsf4/A=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -4857,7 +4854,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-5850079118a8171a59314aaa525a0fee" class="toggle" checked />
     <label for="section-5850079118a8171a59314aaa525a0fee" class="flex justify-between">
-      <a role="button" class="">重点面试题</a>
+      <a role="button" class="">重点题</a>
     </label>
   
 
@@ -5155,18 +5152,18 @@ https://github.com/alex-shpak/hugo-book
   &ndash; JVM 的组成部分，运行流程是什么？
   <a class="anchor" href="#---jvm-%e7%9a%84%e7%bb%84%e6%88%90%e9%83%a8%e5%88%86%e8%bf%90%e8%a1%8c%e6%b5%81%e7%a8%8b%e6%98%af%e4%bb%80%e4%b9%88">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Java Virtual Machine，Java程序的运行环境
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Java Virtual Machine
 </span></span><span style="display:flex;"><span>好处：一次编写，到处运行，自动内存管理，垃圾回收机制
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>主要组成部分：
 </span></span><span style="display:flex;"><span>1. 类加载器，ClassLoader
 </span></span><span style="display:flex;"><span>2. 运行时数据区，Runtime Data Area
 </span></span><span style="display:flex;"><span>3. 执行引擎，Execution Engine
-</span></span><span style="display:flex;"><span>4. 本地库接口，Native Method Library
+</span></span><span style="display:flex;"><span>4. 本地方法库，Native Method Library
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>运行流程：
-</span></span><span style="display:flex;"><span>1. 类加载器把Java代码转换为字节码
-</span></span><span style="display:flex;"><span>2. 运行时数据区把字节码加载到内存中
-</span></span><span style="display:flex;"><span>3. 执行引擎将字节码翻译为底层系统指令，再交由CPU执行去执行，
-</span></span><span style="display:flex;"><span>4. 此时需要调用其他语言的本地库接口（Native Method Library）来实现整个程序的功能。
+</span></span><span style="display:flex;"><span>1. 类加载器，把Java代码转换为字节码
+</span></span><span style="display:flex;"><span>2. 运行时数据区，把字节码加载到内存中
+</span></span><span style="display:flex;"><span>3. 执行引擎，将字节码翻译为底层系统指令，再交由CPU去执行
+</span></span><span style="display:flex;"><span>4. 此时需要调用本地方法库，来实现整个程序的功能
 </span></span></code></pre></div><img src="/img/2024Q4/img_2024-11-19_122234.png" width="900"/>
 <h3 id="---jvm-的内存结构">
   &ndash; JVM 的内存结构？

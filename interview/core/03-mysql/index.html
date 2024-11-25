@@ -14,12 +14,9 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="interview">
 <title>MySQL | IWiki</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://jianda1024.github.io/interview/core/03-mysql/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/iwiki.search.min.7be66dc2569b98273d452d9db73341f350b0970afbb918738e51df1c29b9e65b.js" integrity="sha256-e&#43;ZtwlabmCc9RS2dtzNB81Cwlwr7uRhzjlHfHCm55ls=" crossorigin="anonymous"></script>
+  <script defer src="/iwiki.search.min.c03d3ab0f630e71aae3c06cb0eda846c528f763377a73f5dd15d46009b1fe3f0.js" integrity="sha256-wD06sPYw5xquPAbLDtqEbFKPdjN3pz9d0V1GAJsf4/A=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -4857,7 +4854,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-5850079118a8171a59314aaa525a0fee" class="toggle" checked />
     <label for="section-5850079118a8171a59314aaa525a0fee" class="flex justify-between">
-      <a role="button" class="">重点面试题</a>
+      <a role="button" class="">重点题</a>
     </label>
   
 
@@ -5115,6 +5112,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#---如何定位慢查询">&ndash; 如何定位慢查询？</a></li>
         <li><a href="#---如何分析慢-sql-语句">&ndash; 如何分析慢 SQL 语句？</a></li>
+        <li><a href="#---mysql-的存储引擎">&ndash; MySQL 的存储引擎？</a></li>
         <li><a href="#---什么是索引">&ndash; 什么是索引？</a></li>
         <li><a href="#---索引类型">&ndash; 索引类型</a></li>
         <li><a href="#---索引的底层数据结构是什么">&ndash; 索引的底层数据结构是什么？</a></li>
@@ -5122,7 +5120,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#---什么是聚簇索引非聚簇索引">&ndash; 什么是聚簇索引？非聚簇索引？</a></li>
         <li><a href="#---什么是回表查询">&ndash; 什么是回表查询？</a></li>
         <li><a href="#---什么是覆盖索引">&ndash; 什么是覆盖索引？</a></li>
-        <li><a href="#---mysql超大分页怎么处理">&ndash; MySQL超大分页怎么处理？</a></li>
+        <li><a href="#---mysql-超大分页怎么处理">&ndash; MySQL 超大分页怎么处理？</a></li>
         <li><a href="#---索引创建原则有哪些">&ndash; 索引创建原则有哪些？</a></li>
         <li><a href="#---什么情况下索引会失效">&ndash; 什么情况下索引会失效？</a></li>
         <li><a href="#---sql的优化">&ndash; SQL的优化？</a></li>
@@ -5136,7 +5134,6 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#---有使用过水平分库吗">&ndash; 有使用过水平分库吗？</a></li>
         <li><a href="#---数据库三范式">&ndash; 数据库三范式？</a></li>
         <li><a href="#---什么是视图">&ndash; 什么是视图？</a></li>
-        <li><a href="#---innodbmyisam">&ndash; InnoDB、MyISAM</a></li>
         <li><a href="#---deletetruncatedrop">&ndash; delete、truncate、drop</a></li>
       </ul>
     </li>
@@ -5162,7 +5159,7 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>方案一：开源工具
 </span></span><span style="display:flex;"><span>Arthas、Skywalking
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>方案二：MySQL自带慢日志
+</span></span><span style="display:flex;"><span>方案二：开启MySQL慢查询日志
 </span></span><span style="display:flex;"><span>可以在MySQL的系统配置文件中开启慢查询日志，并设置SQL执行时间超过多少就记录到日志文件
 </span></span></code></pre></div><h3 id="---如何分析慢-sql-语句">
   &ndash; 如何分析慢 SQL 语句？
@@ -5178,16 +5175,34 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>type			当前sql的连接的类型
 </span></span><span style="display:flex;"><span>extra			额外的优化建议
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>1. 通过key和key_len字段，检查是否命中了索引（索引本身存在是否有失效的情况）
-</span></span><span style="display:flex;"><span>2. 通过type字段，查看sql是否有进一步的优化空间，是否存在全索引扫描或全盘扫描
-</span></span><span style="display:flex;"><span>3. 通过extra字段，判断是否出现了回表的情况，如果出现了，可以尝试添加索引或修改返回字段来修复
+</span></span><span style="display:flex;"><span>1. 通过key和key_len字段，检查sql是否命中了索引
+</span></span><span style="display:flex;"><span>2. 通过type字段，检查sql是否存在全索引扫描或全盘扫描
+</span></span><span style="display:flex;"><span>3. 通过extra字段，检查sql是否出现了回表查询
+</span></span></code></pre></div><h3 id="---mysql-的存储引擎">
+  &ndash; MySQL 的存储引擎？
+  <a class="anchor" href="#---mysql-%e7%9a%84%e5%ad%98%e5%82%a8%e5%bc%95%e6%93%8e">#</a>
+</h3>
+<ul>
+<li>存储引擎：就是存储数据、建立索引、更新/查询数据等技术的实现方式。</li>
+<li>MySQL的默认存储引擎InnoDB</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>			InnoDB		MyISAM
+</span></span><span style="display:flex;"><span>主键			必须有		可以没有
+</span></span><span style="display:flex;"><span>锁级别		行级锁		表级锁
+</span></span><span style="display:flex;"><span>存储空间		占用多		占用少
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>事务			支持			不支持
+</span></span><span style="display:flex;"><span>外键			支持			不支持
+</span></span><span style="display:flex;"><span>自增列		支持			不支持
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>全文索引		不支持		支持
+</span></span><span style="display:flex;"><span>表的行数		不保存		保存
 </span></span></code></pre></div><h3 id="---什么是索引">
   &ndash; 什么是索引？
   <a class="anchor" href="#---%e4%bb%80%e4%b9%88%e6%98%af%e7%b4%a2%e5%bc%95">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>索引（index）是帮助MySQL高效获取数据的数据结构(有序)
-</span></span><span style="display:flex;"><span>提高数据检索的效率，降低数据库的IO成本（不需要全表扫描）
-</span></span><span style="display:flex;"><span>通过索引列对数据进行排序，降低数据排序的成本，降低了CPU的消耗
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>索引是一种特殊的数据结构，用于帮助MySQL高效的获取数据。
+</span></span><span style="display:flex;"><span>通过索引对数据的排序，提高了数据检索的效率，降低了IO成本和CPU的消耗
 </span></span></code></pre></div><h3 id="---索引类型">
   &ndash; 索引类型
   <a class="anchor" href="#---%e7%b4%a2%e5%bc%95%e7%b1%bb%e5%9e%8b">#</a>
@@ -5230,9 +5245,9 @@ https://github.com/alex-shpak/hugo-book
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>MySQL的默认存储引擎InnoDB使用的是B+树作为索引的存储结构。
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>选择B+树的原因：
-</span></span><span style="display:flex;"><span>1. 节点可以有更多子节点，路径更短；
-</span></span><span style="display:flex;"><span>2. 磁盘读写代价更低，非叶子节点只存储键值和指针，叶子节点存储数据；
-</span></span><span style="display:flex;"><span>3. B+树适合范围查询和扫描，因为叶子节点形成了一个双向链表。
+</span></span><span style="display:flex;"><span>1. 搜索路径更短：节点可以有更多子节点，搜索路径更短；
+</span></span><span style="display:flex;"><span>2. 磁盘读写代价更低：非叶子节点只存储键值和指针，叶子节点存储数据；
+</span></span><span style="display:flex;"><span>3. 更适合范围查询：所有数据都存储在叶子节点，并且叶子节点之间形成了双向链表。
 </span></span></code></pre></div><h3 id="---b树和b树的区别">
   &ndash; B树和B+树的区别？
   <a class="anchor" href="#---b%e6%a0%91%e5%92%8cb%e6%a0%91%e7%9a%84%e5%8c%ba%e5%88%ab">#</a>
@@ -5243,8 +5258,8 @@ https://github.com/alex-shpak/hugo-book
   &ndash; 什么是聚簇索引？非聚簇索引？
   <a class="anchor" href="#---%e4%bb%80%e4%b9%88%e6%98%af%e8%81%9a%e7%b0%87%e7%b4%a2%e5%bc%95%e9%9d%9e%e8%81%9a%e7%b0%87%e7%b4%a2%e5%bc%95">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>聚簇索引：	是指数据与索引放在一起，B+树的叶子节点保存了整行数据，通常只有一个聚簇索引，一般是由主键构成。
-</span></span><span style="display:flex;"><span>非聚簇索引：	是指数据与索引分开存储，B+树的叶子节点保存的是主键值，可以有多个非聚簇索引，通常自定义的索引都是非聚簇索引。
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>聚簇索引：	将数据与索引放在一起，其B+树叶子节点保存了整行数据，通常只有一个聚簇索引，一般是主键。
+</span></span><span style="display:flex;"><span>非聚簇索引：	将数据与索引分开存储，其B+树叶子节点保存的是主键值，可以有多个非聚簇索引，通常自定义的索引都是非聚簇索引。
 </span></span></code></pre></div><h3 id="---什么是回表查询">
   &ndash; 什么是回表查询？
   <a class="anchor" href="#---%e4%bb%80%e4%b9%88%e6%98%af%e5%9b%9e%e8%a1%a8%e6%9f%a5%e8%af%a2">#</a>
@@ -5254,22 +5269,21 @@ https://github.com/alex-shpak/hugo-book
   &ndash; 什么是覆盖索引？
   <a class="anchor" href="#---%e4%bb%80%e4%b9%88%e6%98%af%e8%a6%86%e7%9b%96%e7%b4%a2%e5%bc%95">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>覆盖索引：	是指在SELECT查询中，返回的列全部能在索引中找到，避免了回表查询，提高了性能。
-</span></span></code></pre></div><h3 id="---mysql超大分页怎么处理">
-  &ndash; MySQL超大分页怎么处理？
-  <a class="anchor" href="#---mysql%e8%b6%85%e5%a4%a7%e5%88%86%e9%a1%b5%e6%80%8e%e4%b9%88%e5%a4%84%e7%90%86">#</a>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>覆盖索引：	是指在SQL查询中，返回的列全部能在索引中找到，避免了回表查询，提高了性能。
+</span></span></code></pre></div><h3 id="---mysql-超大分页怎么处理">
+  &ndash; MySQL 超大分页怎么处理？
+  <a class="anchor" href="#---mysql-%e8%b6%85%e5%a4%a7%e5%88%86%e9%a1%b5%e6%80%8e%e4%b9%88%e5%a4%84%e7%90%86">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>在数据量比较大时，如果进行limit分页查询，在查询时，越往后，分页查询效率越低。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>可以通过覆盖索引加子查询形式进行优化：
-</span></span><span style="display:flex;"><span>首先查询数据的ID字段进行分页，然后根据ID列表用子查询来过滤只查询这些ID的数据，
+</span></span><span style="display:flex;"><span>可以通过覆盖索引+子查询进行优化
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>先分页查询数据的id字段，再根据id集合进行条件过滤，查询其他字段信息
 </span></span><span style="display:flex;"><span>因为查询ID时使用的是覆盖索引，所以效率可以提升。
 </span></span></code></pre></div><h3 id="---索引创建原则有哪些">
   &ndash; 索引创建原则有哪些？
   <a class="anchor" href="#---%e7%b4%a2%e5%bc%95%e5%88%9b%e5%bb%ba%e5%8e%9f%e5%88%99%e6%9c%89%e5%93%aa%e4%ba%9b">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 对于数据量较大，且查询比较频繁的表建立索引。（单表超过10万数据）
-</span></span><span style="display:flex;"><span>2. 选择查询频繁的字段作为索引，如查询条件、排序字段或分组字段。
+</span></span><span style="display:flex;"><span>2. 尽量选择查询频繁的字段作为索引，如查询条件、排序字段或分组字段。
 </span></span><span style="display:flex;"><span>3. 尽量选择区分度较高的字段作为索引，尽量建立唯一索引。
 </span></span><span style="display:flex;"><span>4. 尽量使用复合索引，覆盖SQL的返回值。
 </span></span><span style="display:flex;"><span>5. 对于长度较长的字段，考虑使用前缀索引。
@@ -5280,8 +5294,8 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 使用了联合索引，但没有遵循最左前缀法则，会导致索引失效
 </span></span><span style="display:flex;"><span>2. 使用了联合索引，但在中间使用了范围查询，会导致右边的条件索引失效。
-</span></span><span style="display:flex;"><span>3. 在索引字段上进行了运算或类型转换，会导致索引失效
-</span></span><span style="display:flex;"><span>4. 使用了以%开头的Like模糊查询，会导致索引失效
+</span></span><span style="display:flex;"><span>3. 在索引字段上，进行了运算或类型转换，会导致索引失效
+</span></span><span style="display:flex;"><span>4. 在Like模糊查询中，以%开头，会导致索引失效
 </span></span></code></pre></div><h3 id="---sql的优化">
   &ndash; SQL的优化？
   <a class="anchor" href="#---sql%e7%9a%84%e4%bc%98%e5%8c%96">#</a>
@@ -5350,7 +5364,7 @@ https://github.com/alex-shpak/hugo-book
       <tr>
           <td style="text-align: left">持久性</td>
           <td style="text-align: left">Durability</td>
-          <td style="text-align: left">事务一旦提交或回滚，它对数据库中的数据的改变就是永久的</td>
+          <td style="text-align: left">事务一旦提交或回滚，它对数据库数据的改变就是永久的</td>
       </tr>
   </tbody>
 </table>
@@ -5368,11 +5382,11 @@ https://github.com/alex-shpak/hugo-book
   <tbody>
       <tr>
           <td style="text-align: left">脏读</td>
-          <td style="text-align: left">在一个事务中，读到了另外一个事务还没有提交的“脏数据”。</td>
+          <td style="text-align: left">在一个事务中，读到了其他事务还没有提交的“脏数据”。</td>
       </tr>
       <tr>
           <td style="text-align: left">不可重复读</td>
-          <td style="text-align: left">在一个事务中，多次读取同一数据，由于其他事务的修改导致数据结果不一致</td>
+          <td style="text-align: left">在一个事务中，多次读取同一数据，由于其他事务的修改，导致结果不一致</td>
       </tr>
       <tr>
           <td style="text-align: left">幻读</td>
@@ -5445,10 +5459,10 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>1. 隐藏字段：
 </span></span><span style="display:flex;"><span>trx_id(事务id)，记录每一次操作的事务id，是自增的
-</span></span><span style="display:flex;"><span>roll_pointer(回滚指针)，指向上一个版本的事务版本记录地址
+</span></span><span style="display:flex;"><span>roll_pointer(回滚指针)，指向上一个事务版本记录的地址
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>2. undo log：
-</span></span><span style="display:flex;"><span>记录了不同版本的数据，通过roll_pointer指针形成一个版本链表
+</span></span><span style="display:flex;"><span>记录了不同版本的数据，通过回滚指针形成一个版本链表
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>3. read view：
 </span></span><span style="display:flex;"><span>定义了不同隔离级别下的快照读，决定了事务访问哪个版本的数据。
@@ -5458,7 +5472,7 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>MySQL主从复制的核心是二进制日志Binlog。步骤如下：
 </span></span><span style="display:flex;"><span>1. 主库在事务提交时，记录数据变更到Binlog。
-</span></span><span style="display:flex;"><span>2. 从库读取主库的Binlog，写入到从库的中继日志Relay Log。
+</span></span><span style="display:flex;"><span>2. 从库读取主库的Binlog，写入到从库的中继日志RelayLog。
 </span></span><span style="display:flex;"><span>3. 从库重做中继日志中的事件，反映到自己的数据中。
 </span></span></code></pre></div><h3 id="---有用过分库分表吗">
   &ndash; 有用过分库分表吗？
@@ -5477,14 +5491,12 @@ https://github.com/alex-shpak/hugo-book
   &ndash; 数据库三范式？
   <a class="anchor" href="#---%e6%95%b0%e6%8d%ae%e5%ba%93%e4%b8%89%e8%8c%83%e5%bc%8f">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>第一范式：原子性，字段是最小数据单元
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>第一范式：字段是最小数据单元
 </span></span><span style="display:flex;"><span>员工表，姓名字段仅包含员工的正式名称，就符合第一范式，
 </span></span><span style="display:flex;"><span>反之包含中文名、英文名、别名等，则意味着姓名字段是再拆分的
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>第二范式：唯一性，每一行都有唯一标识
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>第二范式：每一行都有唯一标识
 </span></span><span style="display:flex;"><span>员工表，定义工号作为主键
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>第三范式：独立性，非主键字段完全依赖于主键字段
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>第三范式：非主键字段完全依赖于主键字段
 </span></span><span style="display:flex;"><span>员工表包含了部门编码，它引用到部门表中的部门编号这个主键，此时符合第三范式
 </span></span><span style="display:flex;"><span>如果在员工表中又包含一个部门名称，则造成了数据的冗余，不符合第三范式
 </span></span></code></pre></div><h3 id="---什么是视图">
@@ -5493,119 +5505,20 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>是一个虚拟的表，它基于一个或多个数据库表的查询结果而创建，具有和物理表相同的功能。
 </span></span><span style="display:flex;"><span>视图的数据实际上存放在基表中，改变基表的数据会自动反映在其视图中
-</span></span></code></pre></div><h3 id="---innodbmyisam">
-  &ndash; InnoDB、MyISAM
-  <a class="anchor" href="#---innodbmyisam">#</a>
-</h3>
-<ul>
-<li>InnoDB：可靠性高或者要求事务处理的、表更新和查询都相当频繁的场景</li>
-<li>MyISAM：做很多count的计算的、插入修改不频繁而查询非常频繁的场景</li>
-</ul>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">区别</th>
-          <th style="text-align: left">InnoDB</th>
-          <th style="text-align: left">MyISAM</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">锁级别</td>
-          <td style="text-align: left">行级锁</td>
-          <td style="text-align: left">表级锁</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">主键</td>
-          <td style="text-align: left">必须有</td>
-          <td style="text-align: left">可以没有</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">事务、外键、自增列</td>
-          <td style="text-align: left">支持</td>
-          <td style="text-align: left">不支持</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">.</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">全文索引</td>
-          <td style="text-align: left">不支持</td>
-          <td style="text-align: left">支持</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">表的具体行数</td>
-          <td style="text-align: left">不保存</td>
-          <td style="text-align: left">保存</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">存储空间</td>
-          <td style="text-align: left">占用较多</td>
-          <td style="text-align: left">占用较少</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="---deletetruncatedrop">
+</span></span></code></pre></div><h3 id="---deletetruncatedrop">
   &ndash; delete、truncate、drop
   <a class="anchor" href="#---deletetruncatedrop">#</a>
 </h3>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">区别</th>
-          <th style="text-align: left">delete</th>
-          <th style="text-align: left">truncate</th>
-          <th style="text-align: left">drop</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">速度</td>
-          <td style="text-align: left">慢</td>
-          <td style="text-align: left">中</td>
-          <td style="text-align: left">快</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">空间</td>
-          <td style="text-align: left">不释放空间</td>
-          <td style="text-align: left">恢复到初始大小</td>
-          <td style="text-align: left">释放全部空间</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">表结构</td>
-          <td style="text-align: left">不删</td>
-          <td style="text-align: left">不删</td>
-          <td style="text-align: left">删除</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">类型</td>
-          <td style="text-align: left">DML</td>
-          <td style="text-align: left">DDL</td>
-          <td style="text-align: left">DDL</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">事务</td>
-          <td style="text-align: left">支持</td>
-          <td style="text-align: left">不支持</td>
-          <td style="text-align: left">不支持</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">trigger</td>
-          <td style="text-align: left">触发</td>
-          <td style="text-align: left">不触发</td>
-          <td style="text-align: left">不触发</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">生效时机</td>
-          <td style="text-align: left">事务提交后生效</td>
-          <td style="text-align: left">执行立即生效</td>
-          <td style="text-align: left">执行立即生效</td>
-      </tr>
-  </tbody>
-</table>
-</article>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>			delete			truncate		drop
+</span></span><span style="display:flex;"><span>速度			慢				中				快
+</span></span><span style="display:flex;"><span>表结构		不删				不删				删除
+</span></span><span style="display:flex;"><span>释放空间		不释放空间		恢复到初始大小	释放全部空间
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>类型			DML				DDL				DDL
+</span></span><span style="display:flex;"><span>事务			支持				不支持			不支持
+</span></span><span style="display:flex;"><span>触发器		触发				不触发			不触发
+</span></span><span style="display:flex;"><span>生效时机		事务提交后生效	立即生效			立即生效
+</span></span></code></pre></div></article>
  
       
 
@@ -5664,6 +5577,7 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#---如何定位慢查询">&ndash; 如何定位慢查询？</a></li>
         <li><a href="#---如何分析慢-sql-语句">&ndash; 如何分析慢 SQL 语句？</a></li>
+        <li><a href="#---mysql-的存储引擎">&ndash; MySQL 的存储引擎？</a></li>
         <li><a href="#---什么是索引">&ndash; 什么是索引？</a></li>
         <li><a href="#---索引类型">&ndash; 索引类型</a></li>
         <li><a href="#---索引的底层数据结构是什么">&ndash; 索引的底层数据结构是什么？</a></li>
@@ -5671,7 +5585,7 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#---什么是聚簇索引非聚簇索引">&ndash; 什么是聚簇索引？非聚簇索引？</a></li>
         <li><a href="#---什么是回表查询">&ndash; 什么是回表查询？</a></li>
         <li><a href="#---什么是覆盖索引">&ndash; 什么是覆盖索引？</a></li>
-        <li><a href="#---mysql超大分页怎么处理">&ndash; MySQL超大分页怎么处理？</a></li>
+        <li><a href="#---mysql-超大分页怎么处理">&ndash; MySQL 超大分页怎么处理？</a></li>
         <li><a href="#---索引创建原则有哪些">&ndash; 索引创建原则有哪些？</a></li>
         <li><a href="#---什么情况下索引会失效">&ndash; 什么情况下索引会失效？</a></li>
         <li><a href="#---sql的优化">&ndash; SQL的优化？</a></li>
@@ -5685,7 +5599,6 @@ https://github.com/alex-shpak/hugo-book
         <li><a href="#---有使用过水平分库吗">&ndash; 有使用过水平分库吗？</a></li>
         <li><a href="#---数据库三范式">&ndash; 数据库三范式？</a></li>
         <li><a href="#---什么是视图">&ndash; 什么是视图？</a></li>
-        <li><a href="#---innodbmyisam">&ndash; InnoDB、MyISAM</a></li>
         <li><a href="#---deletetruncatedrop">&ndash; delete、truncate、drop</a></li>
       </ul>
     </li>

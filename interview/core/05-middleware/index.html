@@ -14,12 +14,9 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="interview">
 <title>中间件 | IWiki</title>
-<link rel="manifest" href="/manifest.json">
-<link rel="icon" href="/favicon.png" >
-<link rel="canonical" href="https://jianda1024.github.io/interview/core/05-middleware/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/iwiki.search.min.7be66dc2569b98273d452d9db73341f350b0970afbb918738e51df1c29b9e65b.js" integrity="sha256-e&#43;ZtwlabmCc9RS2dtzNB81Cwlwr7uRhzjlHfHCm55ls=" crossorigin="anonymous"></script>
+  <script defer src="/iwiki.search.min.c03d3ab0f630e71aae3c06cb0eda846c528f763377a73f5dd15d46009b1fe3f0.js" integrity="sha256-wD06sPYw5xquPAbLDtqEbFKPdjN3pz9d0V1GAJsf4/A=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -4857,7 +4854,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-5850079118a8171a59314aaa525a0fee" class="toggle" checked />
     <label for="section-5850079118a8171a59314aaa525a0fee" class="flex justify-between">
-      <a role="button" class="">重点面试题</a>
+      <a role="button" class="">重点题</a>
     </label>
   
 
@@ -5147,34 +5144,28 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#---rabbitmq-%e5%a6%82%e4%bd%95%e4%bf%9d%e8%af%81%e6%b6%88%e6%81%af%e4%b8%8d%e4%b8%a2%e5%a4%b1">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 开启生产者确认机制
-</span></span><span style="display:flex;"><span>确保消息能被送达队列，如有错误则记录日志并修复数据。
+</span></span><span style="display:flex;"><span>确保消息能被送达到队列，如有错误则记录日志并修复数据。
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>2. 开启持久化功能
-</span></span><span style="display:flex;"><span>确保消息在未消费前不会在队列中丢失，需要对交换机、队列和消息本身都进行持久化。
+</span></span><span style="display:flex;"><span>确保未消费的消息不会在队列中丢失，需要对交换机、队列和消息本身都进行持久化。
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>3. 对消费者开启自动确认机制，并设置重试次数。
+</span></span><span style="display:flex;"><span>3. 开启消费者自动确认机制，并设置重试次数。
 </span></span><span style="display:flex;"><span>多次重试失败后将消息投递到异常交换机，交由人工处理。
 </span></span></code></pre></div><h3 id="---rabbitmq-消息的重复消费问题如何解决">
   &ndash; RabbitMQ 消息的重复消费问题如何解决？
   <a class="anchor" href="#---rabbitmq-%e6%b6%88%e6%81%af%e7%9a%84%e9%87%8d%e5%a4%8d%e6%b6%88%e8%b4%b9%e9%97%ae%e9%a2%98%e5%a6%82%e4%bd%95%e8%a7%a3%e5%86%b3">#</a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 通过业务唯一标识检查数据库中数据是否存在，若不存在则处理消息，若存在则忽略，避免重复消费。
-</span></span><span style="display:flex;"><span>2. 使用Redis分布式锁或数据库锁来确保操作的幂等性。
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 通过业务唯一标识，检查数据库中数据是否存在，若不存在则处理消息，若存在则忽略。
+</span></span><span style="display:flex;"><span>2. 使用Redis分布式锁或数据库锁。
 </span></span></code></pre></div><h3 id="---rabbitmq-中死信交换机了解吗">
   &ndash; RabbitMQ 中死信交换机了解吗？
   <a class="anchor" href="#---rabbitmq-%e4%b8%ad%e6%ad%bb%e4%bf%a1%e4%ba%a4%e6%8d%a2%e6%9c%ba%e4%ba%86%e8%a7%a3%e5%90%97">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>死信：
-</span></span><span style="display:flex;"><span>当消息超时未消费、拒绝被消费，或者消息队列满了，消息就会成为死信。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>死信交换机：
+</span></span><span style="display:flex;"><span>当消息超时未消费，拒绝被消费，或者消息队列满了，消息就会成为死信。
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>死信交换机：
 </span></span><span style="display:flex;"><span>用于接收死信投递的交换机，
 </span></span><span style="display:flex;"><span>可以在消息队列中配置dead-letter-exchange属性，来声明死信交换机。
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>延迟队列：
-</span></span><span style="display:flex;"><span>指进入队列的消息会被延迟消费的队列
-</span></span><span style="display:flex;"><span>用于超时订单、限时优惠、定时发布等业务，
-</span></span><span style="display:flex;"><span>可以通过死信交换机、消息存活时间TTL来实现。也可以通过安装插件DelayExchange来实现。
 </span></span></code></pre></div><h3 id="---rabbitmq-延迟队列有了解过吗">
   &ndash; RabbitMQ 延迟队列有了解过吗？
   <a class="anchor" href="#---rabbitmq-%e5%bb%b6%e8%bf%9f%e9%98%9f%e5%88%97%e6%9c%89%e4%ba%86%e8%a7%a3%e8%bf%87%e5%90%97">#</a>
@@ -5213,10 +5204,10 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#---kafka-%e5%a6%82%e4%bd%95%e4%bf%9d%e8%af%81%e6%b6%88%e6%81%af%e4%b8%8d%e4%b8%a2%e5%a4%b1">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>1. 生产者发送消息到Brocker丢失
-</span></span><span style="display:flex;"><span>设置异步发送，发送失败使用回调进行记录或重发
+</span></span><span style="display:flex;"><span>设置异步发送，发送失败时，使用回调函数，进行记录或重发
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>2. 消息在Brocker中存储丢失
-</span></span><span style="display:flex;"><span>在Broker中通过复制机制，设置acks参数为all，确保消息在所有副本中都得到保存。
+</span></span><span style="display:flex;"><span>使用Broker的复制机制，设置acks参数为all，确保消息在所有副本中都得到保存。
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>3. 消费者从Brocker接收消息丢失
 </span></span><span style="display:flex;"><span>消费者手动提交消费成功的偏移量，避免自动提交可能导致的数据丢失或重复消费。
